@@ -55,9 +55,9 @@ export default function HighlightCarousel() {
   return (
     <section
       aria-label="Yashica Training College highlights"
-      className="mt-2 rounded-2xl border border-slate-100 bg-slate-50/80 p-4 shadow-sm backdrop-blur"
+      className="mt-2 rounded-2xl border border-slate-100 bg-slate-50/80 p-4 sm:p-6 shadow-sm backdrop-blur"
     >
-      <div className="grid gap-4 sm:grid-cols-[minmax(0,1.4fr),minmax(0,1fr)] sm:items-stretch">
+      <div className="grid gap-4 sm:grid-cols-[minmax(0,1fr),minmax(0,1.3fr)] lg:grid-cols-[minmax(0,1fr),minmax(0,1.5fr)] sm:items-stretch">
         <div className="flex flex-col justify-between gap-3">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#852991]">
@@ -87,13 +87,13 @@ export default function HighlightCarousel() {
             ))}
           </div>
         </div>
-        <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
+        <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 min-h-[200px] sm:min-h-[280px]">
           <Image
             src={current.imageSrc}
             alt={current.imageAlt}
-            width={640}
-            height={360}
-            className="h-40 w-full object-cover sm:h-full"
+            width={800}
+            height={450}
+            className="h-full w-full object-cover"
             loading="lazy"
           />
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/55 to-transparent" />
