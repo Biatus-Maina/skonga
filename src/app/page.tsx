@@ -320,6 +320,7 @@ export default function Home() {
             <span className="inline-flex items-center rounded-full bg-[#d6c7df] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[#852991]">
               Vocational Excellence • Affordable Education • Community-Focused
             </span>
+            <HighlightCarousel />
             <h1 className="text-3xl font-semibold tracking-tight text-slate-900 text-center sm:text-left sm:text-4xl lg:text-5xl leading-tight">
               <span className="block sm:inline">Transforming lives</span>{" "}
               <span className="block sm:inline bg-gradient-to-r from-[#852991] to-[#a855b8] bg-clip-text text-transparent">
@@ -327,7 +328,6 @@ export default function Home() {
               </span>{" "}
               <span className="block sm:inline">and self-reliance.</span>
             </h1>
-            <HighlightCarousel />
             <p className="max-w-2xl text-lg text-slate-600">
               Yashica Training College is a leading center of excellence in vocational skills development, 
               equipping individuals aged 18–35 with critical skills including AI, hairdressing, beauty therapy, 
