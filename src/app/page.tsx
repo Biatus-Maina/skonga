@@ -311,15 +311,20 @@ export default function Home() {
         )}
       </header>
 
-      <main className="mx-auto max-w-6xl px-6 pb-24 pt-16 sm:pt-20">
+      <section className="w-full bg-gradient-to-r from-[#852991] via-[#9a4ba8] to-[#852991] mt-1 pb-4 sm:pb-5 pt-4 sm:pt-5">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-center text-lg sm:text-xl font-semibold text-white tracking-wide">
+            Vocational Excellence • Affordable Education • Community-Focused
+          </h2>
+        </div>
+      </section>
+
+      <main className="mx-auto max-w-6xl px-6 pb-24 pt-8 sm:pt-10">
         <section
           id="home"
           className="grid gap-10 rounded-3xl bg-white p-8 shadow-xl shadow-slate-200/60 lg:grid-cols-[1.1fr,0.9fr]"
         >
           <div className="space-y-6">
-            <span className="inline-flex items-center rounded-full bg-[#d6c7df] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[#852991]">
-              Vocational Excellence • Affordable Education • Community-Focused
-            </span>
             <HighlightCarousel />
             <h1 className="text-3xl font-semibold tracking-tight text-slate-900 text-center sm:text-left sm:text-4xl lg:text-5xl leading-tight">
               <span className="block sm:inline">Transforming lives</span>{" "}
