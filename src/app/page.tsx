@@ -756,6 +756,8 @@ export default function Home() {
               <a
                 key={link.name}
                 href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-800 transition hover:border-[#d6c7df] hover:bg-[#d6c7df] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
               >
                 {link.name}

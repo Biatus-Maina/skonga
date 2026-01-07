@@ -33,11 +33,17 @@ export default function HighlightCarousel() {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+    
     const id = window.setInterval(() => {
       setIndex((prev) => (prev + 1) % slides.length);
     }, AUTO_PLAY_MS);
 
-    return () => window.clearInterval(id);
+    return () => {
+      if (typeof window !== "undefined") {
+        window.clearInterval(id);
+      }
+    };
   }, []);
 
   const goTo = (to: number) => {
