@@ -5,25 +5,25 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
-    title: "Personalized pathways",
+    title: "Hands-on vocational training",
     description:
-      "From STEM labs to studio arts, students design an academic path that matches their strengths.",
-    imageSrc: "/media/carousel-1.svg",
-    imageAlt: "Students collaborating around laptops in a bright classroom",
+      "Practical skills in hairdressing, beauty therapy, plumbing, and electrical installation prepare you for immediate employment or entrepreneurship.",
+    imageSrc: "/media/carousel_1.jpg",
+    imageAlt: "Students learning practical vocational skills",
   },
   {
-    title: "Safe, caring community",
+    title: "Flexible learning schedules",
     description:
-      "Small advisory groups and attentive staff ensure every child is known, seen, and supported.",
-    imageSrc: "/media/carousel-2.svg",
-    imageAlt: "Friends walking together across a sunny school courtyard",
+      "Choose from Morning, Afternoon, or Evening shifts to fit your schedule. Quality education that adapts to your life.",
+    imageSrc: "/media/carousel_2.jpg",
+    imageAlt: "Flexible learning environment for working students",
   },
   {
-    title: "Beyond-the-classroom learning",
+    title: "Future-ready skills with AI",
     description:
-      "Service projects, competitions, and travel programs connect classroom learning to the wider world.",
-    imageSrc: "/media/carousel-3.svg",
-    imageAlt: "Student presenting in a modern science lab environment",
+      "Digital literacy, critical thinking, and AI applications integrated into technical trades for modern workforce readiness.",
+    imageSrc: "/media/carousel_3.jpg",
+    imageAlt: "Students learning technology and AI applications",
   },
 ];
 
@@ -48,13 +48,13 @@ export default function HighlightCarousel() {
 
   return (
     <section
-      aria-label="Skonga highlights"
+      aria-label="Yashica Training College highlights"
       className="mt-2 rounded-2xl border border-slate-100 bg-slate-50/80 p-4 shadow-sm backdrop-blur"
     >
       <div className="grid gap-4 sm:grid-cols-[minmax(0,1.4fr),minmax(0,1fr)] sm:items-stretch">
         <div className="flex flex-col justify-between gap-3">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-700">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#852991]">
               Highlight {index + 1} of {slides.length}
             </p>
             <p className="mt-1 text-base font-semibold text-slate-900">
@@ -72,7 +72,7 @@ export default function HighlightCarousel() {
                 onClick={() => goTo(i)}
                 className={`h-1.5 rounded-full transition-all ${
                   i === index
-                    ? "w-6 bg-blue-600"
+                    ? "w-6 bg-[#852991]"
                     : "w-2 bg-slate-300 hover:bg-slate-400"
                 }`}
                 aria-label={`Show highlight: ${slide.title}`}

@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Skonga School | Excellence in Learning",
+  title: "Yashica Training College | Vocational Skills Development",
   description:
-    "Skonga School is a forward-looking academy delivering rigorous academics, caring support, and a vibrant community for every learner.",
+    "Yashica Training College is a leading center of excellence in vocational skills development, transforming lives through affordable, quality education in hairdressing, beauty therapy, plumbing, electrical installation, music, and AI applications.",
 };
 
 export default function RootLayout({
