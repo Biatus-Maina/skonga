@@ -91,7 +91,7 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <div className="hidden items-center gap-3 sm:flex">
+        <div className="hidden items-center gap-3 sm:flex md:ml-4">
           <Link
             href="/#admissions"
             className="rounded-full bg-[#852991] px-4 py-2 text-sm font-semibold text-white shadow-md shadow-[#d6c7df] transition hover:bg-[#852991]/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"

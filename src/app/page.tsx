@@ -102,20 +102,20 @@ const faqs = [
 
 const gallery = [
   {
-    src: "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=900&q=80",
-    alt: "Students walking on a bright campus courtyard",
+    src: "/media/orientation_day.jpg",
+    alt: "Orientation Day Celebration",
   },
   {
-    src: "https://images.unsplash.com/photo-1523580846011-5d1bd9c0de0c?auto=format&fit=crop&w=900&q=80",
-    alt: "Modern library with natural light and study spaces",
+    src: "/media/sports_day_6.jpg",
+    alt: "Students enjoying games sessions at the student center",
   },
   {
-    src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80",
-    alt: "Science lab with students collaborating on experiments",
+    src: "/media/class_image_1.jpg",
+    alt: "Classrooms with students enjoying lessons from their instructors",
   },
   {
-    src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80",
-    alt: "Performing arts students rehearsing on stage",
+    src: "/media/discussion_forum.jpg",
+    alt: "Discussion session with students and instructors",
   },
 ];
 
@@ -138,10 +138,10 @@ const downloads = [
 ];
 
 const socialLinks = [
-  { name: "Facebook", href: "https://facebook.com" },
-  { name: "Instagram", href: "https://instagram.com" },
-  { name: "YouTube", href: "https://youtube.com" },
-  { name: "LinkedIn", href: "https://linkedin.com" },
+  { name: "Facebook", href: "#" },
+  { name: "Instagram", href: "#" },
+  { name: "YouTube", href: "#" },
+  { name: "LinkedIn", href: "#" },
 ];
 
 const values = [
@@ -402,7 +402,7 @@ export default function Home() {
                 <IconArrowRight />
               </Link>
               <Link
-                href="#about"
+                href="/academics"
                 className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition hover:border-[#d6c7df] hover:bg-[#d6c7df] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
               >
                 View Courses
@@ -428,7 +428,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/10" />
             <div className="relative h-full">
               <Image
-                src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1400&q=80"
+                src="/media/hero_training.jpg"
                 alt="Students at Yashica Training College"
                 width={1200}
                 height={900}
@@ -525,10 +525,10 @@ export default function Home() {
               </h2>
             </div>
             <Link
-              href="#contact"
+              href="/academics"
               className="inline-flex items-center text-sm font-semibold text-[#852991] underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
             >
-              Contact our team
+              Learn More
               <IconArrowRight />
             </Link>
           </div>
@@ -733,29 +733,27 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="space-y-4 rounded-3xl border border-slate-100 bg-white p-6 shadow-sm">
+          <div className="space-y-4 rounded-3xl border border-slate-100 bg-white p-6 shadow-sm overflow-hidden">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#852991]">
-              Virtual Tour
+              Special Offer
             </p>
             <h2 className="text-2xl font-semibold tracking-tight">
-              Explore our campus from anywhere
+              Limited Time Promotion
             </h2>
-            <video
-              className="aspect-video w-full overflow-hidden rounded-2xl border border-slate-200 bg-black"
-              controls
-              preload="metadata"
-              poster="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=60"
-            >
-              <source
-                src="https://cdn.coverr.co/videos/coverr-walking-in-the-university-1576/1080p.mp4"
-                type="video/mp4"
+            <div className="relative rounded-2xl overflow-hidden">
+              <Image
+                src="/media/promotion-intake.svg"
+                alt="Intake is ongoing - 50% off tuition fees waiver"
+                width={900}
+                height={500}
+                className="w-full h-auto"
+                loading="lazy"
               />
-              Your browser does not support the video tag.
-            </video>
-              <p className="text-sm text-slate-600">
-                Prefer an in-person visit? Contact us to schedule a tour of our facilities 
-                and learn more about our programs.
-              </p>
+            </div>
+            <p className="text-sm text-slate-600">
+              Don&apos;t miss this opportunity! Contact us today to learn more about 
+              eligibility and how to apply for the tuition fee waiver.
+            </p>
           </div>
         </section>
 
@@ -769,9 +767,6 @@ export default function Home() {
                 Gallery and highlights
               </h2>
             </div>
-            <p className="text-sm text-slate-600">
-              All assets optimized for fast loading in production.
-            </p>
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {gallery.map((item) => (
@@ -793,6 +788,15 @@ export default function Home() {
                 </p>
               </div>
             ))}
+          </div>
+          <div className="flex justify-center pt-6">
+            <a
+              href="https://flic.kr/ps/47jr8g"
+              className="inline-flex items-center rounded-full bg-[#852991] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#d6c7df] transition hover:bg-[#852991]/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
+            >
+              View Full Gallery
+              <IconArrowRight />
+            </a>
           </div>
         </section>
 
