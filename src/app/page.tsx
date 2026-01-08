@@ -422,17 +422,17 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="relative aspect-[16/9] overflow-hidden rounded-3xl bg-gradient-to-br from-[#852991] via-[#a855b8] to-[#d6c7df] shadow-2xl">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#852991] via-[#a855b8] to-[#d6c7df] shadow-2xl">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.25),transparent_35%)]" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(255,255,255,0.2),transparent_35%)]" />
             <div className="absolute inset-0 bg-black/10" />
-            <div className="relative h-full overflow-hidden">
+            <div className="relative h-full">
               <Image
                 src="/media/hero_training.jpg"
                 alt="Students at Yashica Training College"
                 width={1200}
                 height={900}
-                className="h-full w-full object-cover object-top opacity-90"
+                className="h-full w-full object-cover opacity-90"
                 priority
               />
             </div>
