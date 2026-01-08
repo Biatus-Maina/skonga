@@ -1,30 +1,73 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
-const departments = [
-  {
-    title: "Vocational Trades",
-    description:
-      "Hairdressing, Beauty Therapy (Nail Technology & Beauty Care), Plumbing, and Electrical Installation for practical, market-ready skills.",
-    courses: [
-      "Hairdressing",
-      "Beauty Therapy",
-      "Nail Technology",
-      "Beauty Care",
-      "Plumbing",
-      "Electrical Installation",
-    ],
-  },
-  {
-    title: "Creative Arts",
-    description:
-      "Music programs including Vocals, Piano, and DJing to nurture artistic talent and creative expression.",
-    courses: [
-      "Music - Vocals",
-      "Music - Piano",
-      "Music - DJing",
-    ],
-  },
+const vocationalTrades = {
+  title: "Vocational Trades",
+  introduction:
+    "Our Vocational Trades department offers hands-on, practical training in essential skills that lead directly to employment or entrepreneurship. With industry-standard equipment and experienced instructors, students gain real-world expertise in high-demand fields.",
+  courses: [
+    {
+      name: "Hairdressing",
+      description:
+        "Master the art of hair styling, cutting, coloring, and treatment. Learn modern techniques and traditional methods to serve diverse client needs.",
+      image: "/media/hairdressing.jpeg",
+    },
+    {
+      name: "Beauty Therapy",
+      description:
+        "Comprehensive beauty therapy training covering facial treatments, skincare, makeup application, and client consultation techniques.",
+      image: "/media/beauty_therapy.jpeg",
+    },
+    {
+      name: "Nail Technology",
+      description:
+        "Specialized training in manicure, pedicure, nail art, and nail extensions. Learn the latest trends and techniques in nail care.",
+      image: "/media/nail_technology.jpeg",
+    },
+    {
+      name: "Plumbing",
+      description:
+        "Practical plumbing skills including pipe installation, repairs, fixture installation, and maintenance for residential and commercial settings.",
+      image: "/media/plumbing.jpg",
+    },
+    {
+      name: "Electrical Installation",
+      description:
+        "Comprehensive electrical training covering wiring, circuit installation, safety protocols, and electrical system maintenance.",
+      image: "/media/elecrical_installation.jpg",
+    },
+  ],
+};
+
+const creativeArts = {
+  title: "Creative Arts",
+  introduction:
+    "The Creative Arts department nurtures artistic talent and creative expression through comprehensive music programs. Our programs develop technical skills, artistic vision, and performance confidence for aspiring musicians and DJs.",
+  courses: [
+    {
+      name: "Music - Vocals",
+      description:
+        "Develop your vocal technique, range, and performance skills. Learn breathing techniques, pitch control, and stage presence.",
+      image: "/media/music_vocals.webp",
+    },
+    {
+      name: "Music - Piano",
+      description:
+        "Master piano playing from fundamentals to advanced techniques. Learn music theory, sight-reading, and performance skills.",
+      image: "/media/piano_training.webp",
+    },
+    {
+      name: "Music - DJing",
+      description:
+        "Learn the art of DJing including mixing, beat matching, equipment operation, and creating seamless transitions for live performances.",
+      image: "/media/music_dJing.jpeg",
+    },
+  ],
+};
+
+const otherDepartments = [
   {
     title: "Future-Ready Skills",
     description:
@@ -81,30 +124,126 @@ export default function AcademicsPage() {
       </section>
 
       <main className="mx-auto max-w-6xl px-6 pb-24 pt-8 sm:pt-10">
-        <section className="space-y-8">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#852991]">
-                Academics
-              </p>
-              <h2 className="text-3xl font-semibold tracking-tight">
-                Departments and learning pathways
-              </h2>
-            </div>
-            <Link
-              href="/#contact"
-              className="inline-flex items-center text-sm font-semibold text-[#852991] underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
-            >
-              Contact our team
-              <IconArrowRight />
-            </Link>
-          </div>
-          <div className="grid gap-5 md:grid-cols-2">
-            {departments.map((department) => (
-              <div
-                key={department.title}
-                className="flex h-full flex-col rounded-3xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+        <section className="space-y-12">
+          <AnimateOnScroll>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#852991]">
+                  Academics
+                </p>
+                <h2 className="text-3xl font-semibold tracking-tight">
+                  Departments and learning pathways
+                </h2>
+              </div>
+              <Link
+                href="/#contact"
+                className="inline-flex items-center text-sm font-semibold text-[#852991] underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
               >
+                Contact our team
+                <IconArrowRight />
+              </Link>
+            </div>
+          </AnimateOnScroll>
+
+          {/* Vocational Trades Department */}
+          <AnimateOnScroll delay={100}>
+            <div className="space-y-6">
+              <div className="space-y-3">
+                <h3 className="text-2xl font-semibold text-slate-900">
+                  {vocationalTrades.title}
+                </h3>
+                <p className="text-base text-slate-600 max-w-3xl">
+                  {vocationalTrades.introduction}
+                </p>
+              </div>
+            </div>
+          </AnimateOnScroll>
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {vocationalTrades.courses.map((course, index) => (
+              <AnimateOnScroll key={course.name} delay={200 + index * 50}>
+                <div className="flex flex-col rounded-3xl border border-slate-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg overflow-hidden group">
+                  <div className="relative h-48 w-full overflow-hidden">
+                    <Image
+                      src={course.image}
+                      alt={course.name}
+                      width={400}
+                      height={300}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="flex flex-col flex-1 p-5 space-y-2">
+                    <h4 className="text-lg font-semibold text-slate-900">
+                      {course.name}
+                    </h4>
+                    <p className="text-sm text-slate-600 leading-relaxed flex-1">
+                      {course.description}
+                    </p>
+                    <Link
+                      href="/#contact"
+                      className="mt-4 inline-flex items-center justify-center rounded-full bg-[#852991] px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-[#d6c7df]/50 transition-all duration-300 hover:bg-[#9a4ba8] hover:shadow-lg hover:shadow-[#d6c7df] hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
+                    >
+                      Enroll Now
+                      <IconArrowRight />
+                    </Link>
+                  </div>
+                </div>
+              </AnimateOnScroll>
+            ))}
+          </div>
+
+          {/* Creative Arts Department */}
+          <AnimateOnScroll delay={100}>
+            <div className="space-y-6 mt-12">
+              <div className="space-y-3">
+                <h3 className="text-2xl font-semibold text-slate-900">
+                  {creativeArts.title}
+                </h3>
+                <p className="text-base text-slate-600 max-w-3xl">
+                  {creativeArts.introduction}
+                </p>
+              </div>
+            </div>
+          </AnimateOnScroll>
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {creativeArts.courses.map((course, index) => (
+              <AnimateOnScroll key={course.name} delay={200 + index * 50}>
+                <div className="flex flex-col rounded-3xl border border-slate-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg overflow-hidden group">
+                  <div className="relative h-48 w-full overflow-hidden">
+                    <Image
+                      src={course.image}
+                      alt={course.name}
+                      width={400}
+                      height={300}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="flex flex-col flex-1 p-5 space-y-2">
+                    <h4 className="text-lg font-semibold text-slate-900">
+                      {course.name}
+                    </h4>
+                    <p className="text-sm text-slate-600 leading-relaxed flex-1">
+                      {course.description}
+                    </p>
+                    <Link
+                      href="/#contact"
+                      className="mt-4 inline-flex items-center justify-center rounded-full bg-[#852991] px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-[#d6c7df]/50 transition-all duration-300 hover:bg-[#9a4ba8] hover:shadow-lg hover:shadow-[#d6c7df] hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
+                    >
+                      Enroll Now
+                      <IconArrowRight />
+                    </Link>
+                  </div>
+                </div>
+              </AnimateOnScroll>
+            ))}
+          </div>
+
+          {/* Other Departments */}
+          <div className="grid gap-5 md:grid-cols-2">
+            {otherDepartments.map((department, index) => (
+              <AnimateOnScroll key={department.title} delay={400 + index * 100}>
+                <div className="flex h-full flex-col rounded-3xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                 <p className="text-lg font-semibold text-slate-900">
                   {department.title}
                 </p>
@@ -113,7 +252,7 @@ export default function AcademicsPage() {
                 </p>
                 <div className="mt-4 space-y-2">
                   <p className="text-sm font-semibold text-slate-800">
-                    Courses Offered:
+                    Options Available:
                   </p>
                   <ul className="list-none space-y-1.5">
                     {department.courses.map((course, index) => (
@@ -128,6 +267,7 @@ export default function AcademicsPage() {
                   </ul>
                 </div>
               </div>
+              </AnimateOnScroll>
             ))}
           </div>
         </section>
