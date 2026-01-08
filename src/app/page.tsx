@@ -8,11 +8,11 @@ import HighlightCarousel from "@/components/HighlightCarousel";
 const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  { name: "Academics", href: "#academics" },
+  { name: "Academics", href: "/academics" },
   { name: "Admissions", href: "#admissions" },
   { name: "Calendar", href: "#calendar" },
-  { name: "News", href: "#news" },
-  { name: "Contact", href: "#contact" },
+  { name: "FAQ", href: "#faq" },
+  { name: "Student Center", href: "/student-center" },
 ];
 
 const stats = [
@@ -67,18 +67,36 @@ const admissionsSteps = [
   },
 ];
 
-const newsItems = [
+const faqs = [
   {
-    title: "New AI applications course launched for technical trades",
-    category: "Future Skills",
+    question: "What courses are offered at Yashica Training College?",
+    answer:
+      "We offer vocational trades (Hairdressing, Beauty Therapy, Plumbing, Electrical Installation), Creative Arts (Music - Vocals, Piano, DJing), and Future-Ready Skills (Digital Literacy, Critical Thinking, AI Applications). All programs are available in Morning, Afternoon, or Evening shifts.",
   },
   {
-    title: "Scholarship program expands to support more students",
-    category: "Community",
+    question: "How much does a course cost?",
+    answer:
+      "The total course cost for a 6-month program is KES 72,000, which includes tuition (KES 48,000), learning materials (KES 12,000), and administration & support (KES 12,000). We also offer scholarships for eligible students from underprivileged backgrounds.",
   },
   {
-    title: "Graduates secure employment and start successful businesses",
-    category: "Success Stories",
+    question: "What is the age requirement for enrollment?",
+    answer:
+      "Our programs are designed for youth aged 18–35 from low-income families in Gikambura, Kikuyu, Kawangware, and surrounding areas in Kiambu County.",
+  },
+  {
+    question: "How long are the courses?",
+    answer:
+      "All our vocational programs are 6 months in duration, providing intensive, hands-on training that prepares students for immediate employment or entrepreneurship.",
+  },
+  {
+    question: "Are scholarships available?",
+    answer:
+      "Yes, we actively seek to provide scholarships that cover tuition, learning materials, and essential supplies to remove barriers to education for youth from low-income families. Contact us to learn more about eligibility and the application process.",
+  },
+  {
+    question: "What support is provided after graduation?",
+    answer:
+      "Beyond technical training, we provide monitoring, mentorship, and linkages to employment or entrepreneurial opportunities. Our post-graduation support ensures graduates have pathways to success in their chosen fields.",
   },
 ];
 
@@ -171,6 +189,43 @@ function IconDownload() {
       <path d="M7 10l5 5 5-5" />
       <path d="M12 15V3" />
     </svg>
+  );
+}
+
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="rounded-2xl border border-slate-100 bg-white shadow-sm transition hover:shadow-md">
+      <button
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full px-6 py-4 text-left flex items-center justify-between focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#852991]"
+        aria-expanded={isOpen}
+      >
+        <h3 className="text-base font-semibold text-slate-900 pr-4">{question}</h3>
+        <svg
+          className={`w-5 h-5 text-[#852991] flex-shrink-0 transition-transform ${
+            isOpen ? "rotate-180" : ""
+          }`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+      </button>
+      {isOpen && (
+        <div className="px-6 pb-4">
+          <p className="text-sm text-slate-600 leading-relaxed">{answer}</p>
+        </div>
+      )}
+    </div>
   );
 }
 
@@ -513,10 +568,12 @@ export default function Home() {
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="#contact"
-                  className="inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-[#852991] shadow-lg shadow-black/20 transition hover:bg-[#d6c7df] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                  className="inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-semibold shadow-lg shadow-black/20 transition hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
                 >
-                  Contact Us
-                  <IconArrowRight />
+                  <span className="text-[#852991]">Contact Us</span>
+                  <span className="text-[#852991] ml-1">
+                    <IconArrowRight />
+                  </span>
                 </Link>
                 <a
                   href="/forms/registration.pdf"
@@ -614,43 +671,33 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="news" className="mt-20 space-y-8">
+        <section id="faq" className="mt-20 space-y-8">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#852991]">
-                News & Announcements
+                Frequently Asked Questions
               </p>
               <h2 className="text-3xl font-semibold tracking-tight">
-                Recent highlights from campus
+                Common questions about our programs
               </h2>
             </div>
-            <Link
+            <a
               href="#contact"
-              className="text-sm font-semibold text-[#852991] underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById("contact");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+              }}
+              className="text-sm font-semibold text-[#852991] underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991] cursor-pointer"
             >
-              Share an update
-            </Link>
+              Still have questions?
+            </a>
           </div>
-          <div className="grid gap-5 md:grid-cols-3">
-            {newsItems.map((item) => (
-              <article
-                key={item.title}
-                className="flex h-full flex-col rounded-3xl border border-slate-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
-              >
-                <p className="text-xs font-semibold uppercase tracking-wide text-[#852991]">
-                  {item.category}
-                </p>
-                <h3 className="mt-2 text-lg font-semibold text-slate-900">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-sm text-slate-600">
-                  Safe, static update ready for production. Contact communications
-                  for posting schedules.
-                </p>
-                <span className="mt-auto pt-4 text-sm font-semibold text-[#852991]">
-                  Read more
-                </span>
-              </article>
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <FAQItem key={index} question={faq.question} answer={faq.answer} />
             ))}
           </div>
         </section>
