@@ -26,11 +26,7 @@ const studentNews = [
 ];
 
 const studentResources = [
-  {
-    title: "Student Portal",
-    description: "Access your course materials, assignments, and progress tracking.",
-    link: "#",
-  },
+  
   {
     title: "Academic Calendar",
     description: "View important dates, holidays, and exam schedules.",
