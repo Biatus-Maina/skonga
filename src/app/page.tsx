@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import HighlightCarousel from "@/components/HighlightCarousel";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -379,11 +380,12 @@ export default function Home() {
         <div className="mb-8 sm:mb-10">
           <HighlightCarousel />
         </div>
-        <section
-          id="home"
-          className="grid gap-10 rounded-3xl bg-white p-8 shadow-xl shadow-slate-200/60 lg:grid-cols-[1.1fr,0.9fr]"
-        >
-          <div className="space-y-6">
+        <AnimateOnScroll>
+          <section
+            id="home"
+            className="grid gap-10 rounded-3xl bg-white p-8 shadow-xl shadow-slate-200/60 lg:grid-cols-[1.1fr,0.9fr]"
+          >
+            <div className="space-y-6">
             <h1 className="text-3xl font-semibold tracking-tight text-slate-900 text-center sm:text-left sm:text-4xl lg:text-5xl leading-tight">
               <span className="block sm:inline">Transforming lives</span>{" "}
               <span className="block sm:inline bg-gradient-to-r from-[#852991] to-[#a855b8] bg-clip-text text-transparent">
@@ -449,9 +451,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
+          </section>
+        </AnimateOnScroll>
 
-        <section id="about" className="mt-20 grid gap-10 lg:grid-cols-[1fr,1fr]">
+        <AnimateOnScroll delay={100}>
+          <section id="about" className="mt-20 grid gap-10 lg:grid-cols-[1fr,1fr]">
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#852991]">
               About Yashica
@@ -516,7 +520,8 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
+          </section>
+        </AnimateOnScroll>
 
         <section id="academics" className="mt-20 space-y-8">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
@@ -553,10 +558,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="admissions"
-          className="mt-20 rounded-3xl bg-gradient-to-r from-[#852991] via-[#9a4ba8] to-[#852991] p-8 text-white shadow-2xl"
-        >
+        <AnimateOnScroll delay={150}>
+          <section
+            id="admissions"
+            className="mt-20 rounded-3xl bg-gradient-to-r from-[#852991] via-[#9a4ba8] to-[#852991] p-8 text-white shadow-2xl"
+          >
           <div className="grid gap-8 lg:grid-cols-[1.1fr,0.9fr] lg:items-center">
             <div className="space-y-4">
               <p className="text-xs font-semibold uppercase tracking-[0.2em]">
@@ -601,7 +607,8 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+          </section>
+        </AnimateOnScroll>
 
         <section id="calendar" className="mt-20 grid gap-8 lg:grid-cols-[1fr,1fr]">
           <div className="space-y-4">
