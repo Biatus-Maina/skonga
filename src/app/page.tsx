@@ -276,14 +276,15 @@ export default function Home() {
       <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#d6c7df] bg-white text-[#852991] shadow-sm">
-              <span className="sr-only">Yashica Training College</span>
-              <span className="relative inline-flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-tr from-[#852991] to-[#d6c7df]">
-                <span className="absolute inset-[5px] rounded-full border border-white/60" />
-                <span className="relative text-xs font-bold tracking-[0.18em]">
-                  Y
-                </span>
-              </span>
+            <div className="flex h-11 w-11 items-center justify-center">
+              <Image
+                src="/media/logo.png"
+                alt="Yashica Training College Logo"
+                width={44}
+                height={44}
+                className="h-full w-auto"
+                priority
+              />
             </div>
             <div className="hidden sm:block">
               <p className="text-base font-semibold">Yashica Training College</p>
@@ -429,14 +430,14 @@ export default function Home() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(255,255,255,0.2),transparent_35%)]" />
             <div className="absolute inset-0 bg-black/10" />
             <div className="relative h-full">
-              <Image
+        <Image
                 src="/media/hero_training.jpg"
                 alt="Students at Yashica Training College"
                 width={1200}
                 height={900}
                 className="h-full w-full object-cover opacity-90"
-                priority
-              />
+          priority
+        />
             </div>
             <div className="absolute inset-x-6 bottom-6 rounded-2xl border border-white/30 bg-white/80 p-4 text-slate-900 shadow-lg backdrop-blur">
               <p className="text-sm font-semibold text-[#852991]">
@@ -480,14 +481,15 @@ export default function Home() {
           </div>
           <div className="space-y-5 rounded-3xl bg-white p-6 shadow-lg shadow-slate-200/50">
             <div className="rounded-2xl bg-slate-50 p-4">
-              <p className="text-sm font-semibold text-[#852991]">Leadership</p>
+              <p className="text-sm font-semibold text-[#852991]">Training Approach</p>
               <p className="text-base text-slate-700">
-                Director: Lilian Diana Wanzare
+                Hands-on, practical learning for real-world success
               </p>
               <p className="text-sm text-slate-600">
-                Director Wanzare leads Yashica Training College with a commitment to 
-                affordable, quality vocational education and community transformation through 
-                practical skills development.
+                Our curriculum emphasizes 70% practical training and 30% theory, ensuring students 
+                gain immediate, applicable skills. With modern workshops, industry-standard equipment, 
+                and experienced instructors, we prepare graduates for employment or entrepreneurship 
+                from day one.
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -877,8 +879,8 @@ export default function Home() {
                   </p>
                   <p className="text-sm text-slate-600">
                     Rubis Petrol Station, 2nd Floor, Gikambura, Kikuyu, Kiambu County
-                  </p>
-                </div>
+          </p>
+        </div>
               </div>
             </div>
             <iframe
@@ -908,12 +910,12 @@ export default function Home() {
               <a
                 key={link.name}
                 href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                 className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-800 transition hover:border-[#d6c7df] hover:bg-[#d6c7df] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
-              >
+          >
                 {link.name}
-              </a>
+          </a>
             ))}
           </div>
         </div>
