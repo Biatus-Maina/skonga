@@ -375,12 +375,14 @@ export default function Home() {
       </section>
 
       <main className="mx-auto max-w-6xl px-6 pb-24 pt-8 sm:pt-10">
+        <div className="mb-8 sm:mb-10">
+          <HighlightCarousel />
+        </div>
         <section
           id="home"
           className="grid gap-10 rounded-3xl bg-white p-8 shadow-xl shadow-slate-200/60 lg:grid-cols-[1.1fr,0.9fr]"
         >
           <div className="space-y-6">
-            <HighlightCarousel />
             <h1 className="text-3xl font-semibold tracking-tight text-slate-900 text-center sm:text-left sm:text-4xl lg:text-5xl leading-tight">
               <span className="block sm:inline">Transforming lives</span>{" "}
               <span className="block sm:inline bg-gradient-to-r from-[#852991] to-[#a855b8] bg-clip-text text-transparent">

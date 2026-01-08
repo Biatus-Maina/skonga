@@ -55,18 +55,18 @@ export default function HighlightCarousel() {
   return (
     <section
       aria-label="Yashica Training College highlights"
-      className="mt-2 rounded-2xl border border-slate-100 bg-slate-50/80 p-4 sm:p-6 shadow-sm backdrop-blur"
+      className="rounded-3xl border border-slate-200 bg-white p-4 sm:p-6 lg:p-8 shadow-xl shadow-slate-200/60"
     >
-      <div className="grid gap-4 sm:grid-cols-[minmax(0,1fr),minmax(0,1.3fr)] lg:grid-cols-[minmax(0,1fr),minmax(0,1.5fr)] sm:items-stretch">
-        <div className="flex flex-col justify-between gap-3">
+      <div className="grid gap-4 sm:gap-6 sm:grid-cols-[minmax(0,1fr),minmax(0,1.6fr)] lg:grid-cols-[minmax(0,1fr),minmax(0,2fr)] xl:grid-cols-[minmax(0,1fr),minmax(0,2.2fr)] sm:items-stretch">
+        <div className="flex flex-col justify-between gap-3 sm:gap-4">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#852991]">
               Highlight {index + 1} of {slides.length}
             </p>
-            <p className="mt-1 text-base font-semibold text-slate-900">
+            <p className="mt-1 text-base sm:text-lg font-semibold text-slate-900">
               {current.title}
             </p>
-            <p className="mt-1 text-sm text-slate-600">
+            <p className="mt-1 text-sm sm:text-base text-slate-600">
               {current.description}
             </p>
           </div>
@@ -87,12 +87,12 @@ export default function HighlightCarousel() {
             ))}
           </div>
         </div>
-        <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 min-h-[200px] sm:min-h-[280px]">
+        <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 min-h-[250px] sm:min-h-[360px] lg:min-h-[420px]">
           <Image
             src={current.imageSrc}
             alt={current.imageAlt}
-            width={800}
-            height={450}
+            width={1000}
+            height={563}
             className="h-full w-full object-cover"
             loading="lazy"
           />
