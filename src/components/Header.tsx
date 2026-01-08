@@ -65,7 +65,7 @@ export default function Header() {
               <span className="relative inline-flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-tr from-[#852991] to-[#d6c7df]">
                 <span className="absolute inset-[5px] rounded-full border border-white/60" />
                 <span className="relative text-xs font-bold tracking-[0.18em]">
-                  YT
+                  Y
                 </span>
               </span>
             </div>
