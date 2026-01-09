@@ -6,6 +6,7 @@ import { useState } from "react";
 import HighlightCarousel from "@/components/HighlightCarousel";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Footer from "@/components/Footer";
+import SlidingGallery from "@/components/SlidingGallery";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -757,27 +758,79 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="space-y-4 rounded-3xl border border-slate-100 bg-white p-6 shadow-sm overflow-hidden">
+          <div className="space-y-4 rounded-3xl border border-slate-100 bg-white p-6 shadow-sm">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#852991]">
-              Special Offer
+              Why Choose Us
             </p>
             <h2 className="text-2xl font-semibold tracking-tight">
-              Limited Time Promotion
+              Your pathway to success
             </h2>
-            <div className="relative rounded-2xl overflow-hidden">
-              <Image
-                src="/media/promotion-intake.svg"
-                alt="Intake is ongoing - 50% off tuition fees waiver"
-                width={900}
-                height={500}
-                className="w-full h-auto"
-                loading="lazy"
-              />
+            <div className="space-y-4">
+              <AnimateOnScroll delay={100}>
+                <div className="group rounded-2xl bg-gradient-to-r from-[#d6c7df] to-[#e8d9f0] px-4 py-3 border border-[#d6c7df] transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
+                  <div className="flex items-start gap-3">
+                    <div className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#852991] text-white text-sm font-bold shadow-sm">
+                      1
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-semibold text-[#852991]">Practical, Hands-On Training</p>
+                      <p className="text-sm text-slate-700 mt-1">
+                        70% practical training and 30% theory ensures you gain real-world skills 
+                        that employers value. Learn by doing, not just by reading.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={150}>
+                <div className="group rounded-2xl bg-slate-50 px-4 py-3 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
+                  <div className="flex items-start gap-3">
+                    <div className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#852991] text-white text-sm font-bold shadow-sm">
+                      2
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-semibold text-slate-900">Flexible Learning Options</p>
+                      <p className="text-sm text-slate-600 mt-1">
+                        Choose from Morning, Afternoon, or Evening shifts to fit your schedule. 
+                        Balance education with work and family commitments.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={200}>
+                <div className="group rounded-2xl bg-slate-50 px-4 py-3 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
+                  <div className="flex items-start gap-3">
+                    <div className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#852991] text-white text-sm font-bold shadow-sm">
+                      3
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-semibold text-slate-900">Affordable Education</p>
+                      <p className="text-sm text-slate-600 mt-1">
+                        Transparent pricing with scholarships available for eligible students. 
+                        Quality vocational education accessible to all.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </AnimateOnScroll>
+              <AnimateOnScroll delay={250}>
+                <div className="group rounded-2xl bg-slate-50 px-4 py-3 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
+                  <div className="flex items-start gap-3">
+                    <div className="flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#852991] text-white text-sm font-bold shadow-sm">
+                      4
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-semibold text-slate-900">Post-Graduation Support</p>
+                      <p className="text-sm text-slate-600 mt-1">
+                        We don&apos;t just train you—we support your journey with mentorship, 
+                        job placement assistance, and entrepreneurial linkages.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </AnimateOnScroll>
             </div>
-            <p className="text-sm text-slate-600">
-              Don&apos;t miss this opportunity! Contact us today to learn more about 
-              eligibility and how to apply for the tuition fee waiver.
-            </p>
           </div>
         </section>
 
@@ -813,6 +866,7 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <SlidingGallery />
           <div className="flex justify-center pt-6">
             <a
               href="https://flic.kr/ps/47jr8g"
