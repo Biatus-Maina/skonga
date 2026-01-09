@@ -9,14 +9,14 @@ const slides = [
     title: "Hands-on vocational training",
     description:
       "Practical skills in hairdressing, beauty therapy, plumbing, and electrical installation prepare you for immediate employment or entrepreneurship.",
-    imageSrc: "/media/carousel_1.jpg",
+    imageSrc: "/media/carousel_2.jpg",
     imageAlt: "Students learning practical vocational skills",
   },
   {
     title: "Flexible learning schedules",
     description:
       "Choose from Morning, Afternoon, or Evening shifts to fit your schedule. Quality education that adapts to your life.",
-    imageSrc: "/media/carousel_2.jpg",
+    imageSrc: "/media/carousel_4.jpg",
     imageAlt: "Flexible learning environment for working students",
   },
   {
