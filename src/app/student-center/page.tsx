@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const studentNews = [
   {
@@ -73,29 +74,49 @@ export default function StudentCenterPage() {
     <div className="bg-slate-50 text-slate-900">
       <Header />
 
-      <section className="w-full bg-gradient-to-r from-[#852991] via-[#9a4ba8] to-[#852991] mt-1 pb-4 sm:pb-5 pt-4 sm:pt-5">
-        <div className="mx-auto max-w-6xl px-6">
-          <h1 className="text-center text-2xl sm:text-3xl font-semibold text-white tracking-wide">
-            Student Center
-          </h1>
+      {/* Video Banner with Overlay Content */}
+      <section className="relative w-full overflow-hidden mt-1">
+        <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] w-full">
+          {/* Video Background */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/media/nail_tech.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/30" />
+          
+          {/* Overlay Content - Styled like Admissions Section */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="mx-auto max-w-6xl px-6 w-full">
+              <AnimateOnScroll>
+                <div className="group rounded-3xl bg-gradient-to-r from-[#852991]/85 via-[#9a4ba8]/80 to-[#852991]/85 backdrop-blur-md p-6 sm:p-8 text-white shadow-2xl border border-white/10 transition-all duration-500 hover:from-[#852991]/95 hover:via-[#9a4ba8]/90 hover:to-[#852991]/95 hover:shadow-[0_20px_50px_rgba(133,41,145,0.4)]">
+                  <div className="space-y-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] opacity-90 group-hover:opacity-100 transition-all duration-500 delay-100 transform translate-y-0 group-hover:-translate-y-1">
+                      Student Center
+                    </p>
+                    <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight transition-all duration-500 delay-150 transform translate-y-0 group-hover:-translate-y-1">
+                      Resources and information for students
+                    </h2>
+                    <p className="text-base text-white/90 max-w-3xl opacity-95 group-hover:opacity-100 transition-all duration-500 delay-200 transform translate-y-0 group-hover:-translate-y-0.5">
+                      Access news, resources, and support services designed to help you succeed in your educational journey at Yashica Training College.
+                    </p>
+                  </div>
+                </div>
+              </AnimateOnScroll>
+            </div>
+          </div>
         </div>
       </section>
 
       <main className="mx-auto max-w-6xl px-6 pb-24 pt-8 sm:pt-10">
         <section className="space-y-8">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#852991]">
-              Student Center
-            </p>
-            <h2 className="text-3xl font-semibold tracking-tight mt-2">
-              Resources and information for students
-            </h2>
-            <p className="text-base text-slate-600 mt-3">
-              Access news, resources, and support services designed to help you
-              succeed in your educational journey at Yashica Training College.
-            </p>
-          </div>
-
           <div className="mt-12">
             <h3 className="text-2xl font-semibold tracking-tight mb-6">
               Student News & Announcements
