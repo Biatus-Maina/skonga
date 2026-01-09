@@ -19,8 +19,8 @@ const navItems = [
 
 const stats = [
   { label: "Flexible learning", value: "3 shifts" },
-  { label: "Course duration", value: "6 months" },
-  { label: "Vocational programs", value: "7+" },
+  { label: "Course duration", value: "3-9 months" },
+  { label: "Vocational programs", value: "10+" },
   { label: "Target age group", value: "18–35" },
 ];
 
@@ -28,7 +28,7 @@ const departments = [
   {
     title: "Vocational Trades",
     description:
-      "Hairdressing, Beauty Therapy (Nail Technology & Beauty Care), Plumbing, Electrical Installation, and Baking and Pastry for practical, market-ready skills.",
+      "Hairdressing, Beauty Therapy (Nail Technology & Beauty Care), Plumbing, Electrical Installation, Baking and Pastry, Barbering, and Dreadlock for practical, market-ready skills.",
   },
   {
     title: "Creative Arts",
@@ -60,7 +60,7 @@ const admissionsSteps = [
   {
     title: "3. Enroll",
     detail:
-      "Complete enrollment with flexible payment options. Total course cost: KES 72,000 for 6 months.",
+      "Complete enrollment with flexible payment options. Course costs vary by duration: 3-month programs (Barbering, Dreadlock, Music - DJing, Music - Vocals) and 9-month programs (Hairdressing, Beauty Therapy, Baking and Pastry, Electrical Installation, Plumbing, Music - Piano).",
   },
   {
     title: "4. Start Learning",
@@ -73,7 +73,7 @@ const faqs = [
   {
     question: "What courses are offered at Yashica Training College?",
     answer:
-      "We offer vocational trades (Hairdressing, Beauty Therapy, Plumbing, Electrical Installation), Creative Arts (Music - Vocals, Piano, DJing), and Future-Ready Skills (Digital Literacy, Critical Thinking, AI Applications). All programs are available in Morning, Afternoon, or Evening shifts.",
+      "We offer vocational trades (Hairdressing, Beauty Therapy, Plumbing, Electrical Installation, Baking and Pastry, Barbering, Dreadlock), Creative Arts (Music - Vocals, Piano, DJing), and Future-Ready Skills (Digital Literacy, Critical Thinking, AI Applications). All programs are available in Morning, Afternoon, or Evening shifts.",
   },
   {
     question: "How much does a course cost?",
@@ -88,7 +88,7 @@ const faqs = [
   {
     question: "How long are the courses?",
     answer:
-      "All our vocational programs are 6 months in duration, providing intensive, hands-on training that prepares students for immediate employment or entrepreneurship.",
+      "We offer flexible course durations to suit different learning needs. Our 9-month programs include Hairdressing, Beauty Therapy, Baking and Pastry, Electrical Installation, Plumbing, and Music - Piano. Our 3-month programs include Barbering, Dreadlock, Music - DJing, and Music - Vocals. All programs provide intensive, hands-on training that prepares students for immediate employment or entrepreneurship.",
   },
   {
     question: "Are scholarships available?",
@@ -667,16 +667,29 @@ export default function Home() {
                   KES 12,000
                 </span>
               </div>
-              <div className="flex items-center justify-between rounded-2xl bg-gradient-to-r from-[#d6c7df] to-[#e8d9f0] px-4 py-3 border border-[#d6c7df]">
-                <div>
-                  <p className="text-sm font-semibold text-slate-900">
-                    Total Course Cost (6 months)
-                  </p>
-                  <p className="text-xs text-slate-600">All inclusive</p>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between rounded-2xl bg-gradient-to-r from-[#d6c7df] to-[#e8d9f0] px-4 py-3 border border-[#d6c7df]">
+                  <div>
+                    <p className="text-sm font-semibold text-slate-900">
+                      Total Course Cost (3 months)
+                    </p>
+                    <p className="text-xs text-slate-600">Barbering, Dreadlock, Music - DJing, Music - Vocals</p>
+                  </div>
+                  <span className="rounded-full bg-[#852991] px-3 py-1 text-xs font-semibold text-white">
+                    KES 36,000
+                  </span>
                 </div>
-                <span className="rounded-full bg-[#852991] px-3 py-1 text-xs font-semibold text-white">
-                  KES 72,000
-                </span>
+                <div className="flex items-center justify-between rounded-2xl bg-gradient-to-r from-[#d6c7df] to-[#e8d9f0] px-4 py-3 border border-[#d6c7df]">
+                  <div>
+                    <p className="text-sm font-semibold text-slate-900">
+                      Total Course Cost (9 months)
+                    </p>
+                    <p className="text-xs text-slate-600">Hairdressing, Beauty Therapy, Baking and Pastry, Electrical Installation, Plumbing, Music - Piano</p>
+                  </div>
+                  <span className="rounded-full bg-[#852991] px-3 py-1 text-xs font-semibold text-white">
+                    KES 108,000
+                  </span>
+                </div>
               </div>
             </div>
           </div>
