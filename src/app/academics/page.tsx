@@ -39,6 +39,12 @@ const vocationalTrades = {
         "Comprehensive electrical training covering wiring, circuit installation, safety protocols, and electrical system maintenance.",
       image: "/media/elecrical_installation.jpg",
     },
+    {
+      name: "Baking and Pastry",
+      description:
+        "Learn the art of baking and pastry making including bread, cakes, pastries, and confectionery. Master techniques for both traditional and modern baked goods.",
+      image: "/media/baking_and_pastry.jpeg",
+    },
   ],
 };
 

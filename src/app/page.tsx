@@ -28,7 +28,7 @@ const departments = [
   {
     title: "Vocational Trades",
     description:
-      "Hairdressing, Beauty Therapy (Nail Technology & Beauty Care), Plumbing, and Electrical Installation for practical, market-ready skills.",
+      "Hairdressing, Beauty Therapy (Nail Technology & Beauty Care), Plumbing, Electrical Installation, and Baking and Pastry for practical, market-ready skills.",
   },
   {
     title: "Creative Arts",
@@ -377,10 +377,9 @@ export default function Home() {
         </div>
       </section>
 
+      <HighlightCarousel />
+      
       <main className="mx-auto max-w-6xl px-6 pb-24 pt-8 sm:pt-10">
-        <div className="mb-8 sm:mb-10">
-          <HighlightCarousel />
-        </div>
         <AnimateOnScroll>
           <section
             id="home"
@@ -898,7 +897,7 @@ export default function Home() {
               loading="lazy"
               allowFullScreen
             />
-          </div>
+        </div>
         </section>
       </main>
 

@@ -1,6 +1,7 @@
  "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const slides = [
@@ -55,68 +56,105 @@ export default function HighlightCarousel() {
   return (
     <section
       aria-label="Yashica Training College highlights"
-      className="rounded-3xl border border-slate-200 bg-white p-4 sm:p-6 lg:p-8 shadow-xl shadow-slate-200/60"
+      className="relative w-full overflow-hidden"
     >
-      <div className="grid gap-4 sm:gap-6 sm:grid-cols-[minmax(0,1fr),minmax(0,1.6fr)] lg:grid-cols-[minmax(0,1fr),minmax(0,2fr)] xl:grid-cols-[minmax(0,1fr),minmax(0,2.2fr)] sm:items-stretch">
-        <div className="flex flex-col justify-between gap-3 sm:gap-4">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#852991]">
-              Highlight {index + 1} of {slides.length}
-            </p>
-            <p className="mt-1 text-base sm:text-lg font-semibold text-slate-900">
-              {current.title}
-            </p>
-            <p className="mt-1 text-sm sm:text-base text-slate-600">
-              {current.description}
-            </p>
-          </div>
-          <div className="mt-2 flex flex-wrap items-center gap-1.5">
-            {slides.map((slide, i) => (
-              <button
-                key={slide.title}
-                type="button"
-                onClick={() => goTo(i)}
-                className={`h-1.5 rounded-full transition-all ${
-                  i === index
-                    ? "w-6 bg-[#852991]"
-                    : "w-2 bg-slate-300 hover:bg-slate-400"
-                }`}
-                aria-label={`Show highlight: ${slide.title}`}
-                aria-pressed={i === index}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 min-h-[320px] sm:min-h-[480px] lg:min-h-[560px] xl:min-h-[640px]">
+      <div className="relative h-[500px] sm:h-[600px] lg:h-[700px] w-full group">
+        {/* Background Image */}
+        <div className="absolute inset-0">
           <Image
             src={current.imageSrc}
             alt={current.imageAlt}
-            width={1000}
-            height={563}
-            className="h-full w-full object-cover"
-            loading="lazy"
+            width={1920}
+            height={1080}
+            className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            priority
           />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/55 to-transparent" />
-          <div className="pointer-events-none absolute inset-0 border border-black/5" />
-          <div className="absolute right-2 top-2 flex items-center gap-1">
-            <button
-              type="button"
-              onClick={() => goTo(index - 1)}
-              className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white/60 bg-black/35 text-white shadow-sm backdrop-blur-sm transition hover:bg-black/55 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              aria-label="Previous highlight image"
-            >
-              ‹
-            </button>
-            <button
-              type="button"
-              onClick={() => goTo(index + 1)}
-              className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white/60 bg-black/35 text-white shadow-sm backdrop-blur-sm transition hover:bg-black/55 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              aria-label="Next highlight image"
-            >
-              ›
-            </button>
+        </div>
+        
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/45 to-black/35 transition-opacity duration-500 group-hover:opacity-40" />
+        
+        {/* Content Overlay */}
+        <div className="relative h-full flex items-center justify-center px-6 sm:px-8 lg:px-12">
+          <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-6">
+            {/* Badge */}
+            <div className="inline-block opacity-80 group-hover:opacity-100 transition-all duration-500 delay-100 transform translate-y-0 group-hover:-translate-y-1">
+              <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.3em] text-white/95 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full border border-white/30">
+                Highlight {index + 1} of {slides.length}
+              </p>
+            </div>
+            
+            {/* Title */}
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white opacity-90 group-hover:opacity-100 transition-all duration-500 delay-150 transform translate-y-0 group-hover:-translate-y-1 drop-shadow-2xl">
+              {current.title}
+            </h2>
+            
+            {/* Description */}
+            <p className="text-base sm:text-lg lg:text-xl text-white/85 group-hover:text-white/100 max-w-2xl mx-auto leading-relaxed opacity-90 group-hover:opacity-100 transition-all duration-500 delay-200 transform translate-y-0 group-hover:-translate-y-1 drop-shadow-lg">
+              {current.description}
+            </p>
+            
+            {/* View Courses Button */}
+            <div className="pt-2 opacity-90 group-hover:opacity-100 transition-all duration-500 delay-300 transform translate-y-0 group-hover:-translate-y-1">
+              <Link
+                href="/academics"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#852991] px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-semibold text-white shadow-xl shadow-[#852991]/30 transition-all duration-300 hover:bg-[#9a4ba8] hover:shadow-2xl hover:shadow-[#852991]/40 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+              >
+                View Available Courses
+                <svg
+                  aria-hidden="true"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
+        
+        {/* Navigation Controls */}
+        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex items-center gap-2 z-10">
+          {slides.map((slide, i) => (
+            <button
+              key={slide.title}
+              type="button"
+              onClick={() => goTo(i)}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                i === index
+                  ? "w-8 bg-white shadow-lg"
+                  : "w-2 bg-white/50 hover:bg-white/80"
+              }`}
+              aria-label={`Show highlight: ${slide.title}`}
+              aria-pressed={i === index}
+            />
+          ))}
+        </div>
+        
+        {/* Previous/Next Buttons */}
+        <button
+          type="button"
+          onClick={() => goTo(index - 1)}
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-black/30 backdrop-blur-sm text-white shadow-lg transition-all hover:bg-black/50 hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white z-10"
+          aria-label="Previous highlight image"
+        >
+          <span className="text-2xl">‹</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => goTo(index + 1)}
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-black/30 backdrop-blur-sm text-white shadow-lg transition-all hover:bg-black/50 hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white z-10"
+          aria-label="Next highlight image"
+        >
+          <span className="text-2xl">›</span>
+        </button>
       </div>
     </section>
   );
