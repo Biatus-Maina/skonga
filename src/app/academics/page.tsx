@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Footer from "@/components/Footer";
+import AcademicsCarousel from "@/components/AcademicsCarousel";
 
 const vocationalTrades = {
   title: "Vocational Trades",
@@ -142,27 +143,51 @@ export default function AcademicsPage() {
         </div>
       </section>
 
+      {/* Carousel with Overlay Header */}
+      <div className="relative">
+        <AnimateOnScroll>
+          <AcademicsCarousel />
+        </AnimateOnScroll>
+        
+        {/* Academics Header Section Overlay */}
+        <div className="absolute top-0 left-0 right-0 z-10">
+          <div className="mx-auto max-w-6xl px-6 pt-8 sm:pt-10 pb-6">
+            <AnimateOnScroll>
+              <div className="group rounded-3xl bg-gradient-to-r from-[#852991]/85 via-[#9a4ba8]/80 to-[#852991]/85 backdrop-blur-md p-6 sm:p-8 text-white shadow-2xl border border-white/10 transition-all duration-500 hover:from-[#852991]/95 hover:via-[#9a4ba8]/90 hover:to-[#852991]/95">
+                <div className="grid gap-6 lg:grid-cols-[1.1fr,0.9fr] lg:items-center">
+                  <div className="space-y-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] opacity-90 group-hover:opacity-100 transition-all duration-500 delay-100 transform translate-y-0 group-hover:-translate-y-1">
+                      Academics
+                    </p>
+                    <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight transition-all duration-500 delay-150 transform translate-y-0 group-hover:-translate-y-1">
+                      Departments and learning pathways
+                    </h2>
+                    <p className="text-sm sm:text-base text-white/95 transition-all duration-500 delay-200 opacity-95 group-hover:opacity-100 transform translate-y-0 group-hover:-translate-y-0.5">
+                      {vocationalTrades.introduction}
+                    </p>
+                  </div>
+                  <div className="flex items-start justify-end">
+                    <Link
+                      href="/#contact"
+                      className="inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-semibold shadow-lg shadow-black/20 transition-all duration-300 delay-300 hover:bg-slate-50 hover:scale-105 hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white transform translate-y-0 group-hover:translate-y-0"
+                    >
+                      <span className="text-[#852991] transition-transform duration-300 group-hover:translate-x-1">
+                        Contact our team
+                      </span>
+                      <span className="text-[#852991] ml-1 transition-transform duration-300 group-hover:translate-x-1">
+                        <IconArrowRight />
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </AnimateOnScroll>
+          </div>
+        </div>
+      </div>
+
       <main className="mx-auto max-w-6xl px-6 pb-24 pt-8 sm:pt-10">
         <section className="space-y-12">
-          <AnimateOnScroll>
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#852991]">
-                  Academics
-                </p>
-                <h2 className="text-3xl font-semibold tracking-tight">
-                  Departments and learning pathways
-                </h2>
-              </div>
-              <Link
-                href="/#contact"
-                className="inline-flex items-center text-sm font-semibold text-[#852991] underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
-              >
-                Contact our team
-                <IconArrowRight />
-              </Link>
-            </div>
-          </AnimateOnScroll>
 
           {/* Vocational Trades Department */}
           <AnimateOnScroll delay={100}>
@@ -171,9 +196,6 @@ export default function AcademicsPage() {
                 <h3 className="text-2xl font-semibold text-slate-900">
                   {vocationalTrades.title}
                 </h3>
-                <p className="text-base text-slate-600 max-w-3xl">
-                  {vocationalTrades.introduction}
-                </p>
               </div>
             </div>
           </AnimateOnScroll>
