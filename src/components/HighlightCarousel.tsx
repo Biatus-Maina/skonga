@@ -9,7 +9,7 @@ const slides = [
     title: "Hands-on vocational training",
     description:
       "Practical skills in hairdressing, beauty therapy, plumbing, and electrical installation prepare you for immediate employment or entrepreneurship.",
-    imageSrc: "/media/carousel_2.jpg",
+    imageSrc: "/media/carousel_1.jpg",
     imageAlt: "Students learning practical vocational skills",
   },
   {
@@ -23,9 +23,9 @@ const slides = [
     title: "Future-ready skills with AI",
     description:
       "Digital literacy, critical thinking, and AI applications integrated into technical trades for modern workforce readiness.",
-    imageSrc: "/media/carousel_3.jpg",
+    imageSrc: "/media/carousel_2.jpg",
     imageAlt: "Students learning technology and AI applications",
-  },
+  }
 ];
 
 const AUTO_PLAY_MS = 7000;
