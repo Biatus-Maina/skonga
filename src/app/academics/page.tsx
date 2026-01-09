@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import Footer from "@/components/Footer";
 
 const vocationalTrades = {
   title: "Vocational Trades",
@@ -272,6 +273,7 @@ export default function AcademicsPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

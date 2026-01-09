@@ -87,7 +87,7 @@ export default function HighlightCarousel() {
             ))}
           </div>
         </div>
-        <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 min-h-[250px] sm:min-h-[360px] lg:min-h-[420px]">
+        <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 min-h-[320px] sm:min-h-[480px] lg:min-h-[560px] xl:min-h-[640px]">
           <Image
             src={current.imageSrc}
             alt={current.imageAlt}

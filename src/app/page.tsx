@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import HighlightCarousel from "@/components/HighlightCarousel";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import Footer from "@/components/Footer";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -865,14 +866,14 @@ export default function Home() {
               </div>
               <div className="flex items-start gap-3">
                 <div className="mt-1 h-8 w-8 rounded-full bg-[#d6c7df] text-center text-[#852991]">
-                  <span className="inline-block pt-1.5 text-sm">👤</span>
+                  <span className="inline-block pt-1.5 text-sm">📧</span>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-900">
-                    Director
+                    Email
                   </p>
                   <p className="text-sm text-slate-600">
-                    Lilian Diana Wanzare • 0722 268484
+                    yashicatrainingcollege@gmail.com
                   </p>
                 </div>
               </div>
@@ -901,32 +902,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer
-        id="contact"
-        className="border-t border-slate-200 bg-white py-10 text-slate-800"
-      >
-        <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="text-lg font-semibold">Yashica Training College</p>
-            <p className="text-sm text-slate-600">
-              Transforming lives through vocational skills and self-reliance.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            {socialLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-                className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-800 transition hover:border-[#d6c7df] hover:bg-[#d6c7df] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
-          >
-                {link.name}
-          </a>
-            ))}
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
