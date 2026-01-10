@@ -8,7 +8,7 @@ import AcademicsCarousel from "@/components/AcademicsCarousel";
 const vocationalTrades = {
   title: "Vocational Trades",
   introduction:
-    "Our Vocational Trades department offers hands-on, practical training in essential skills that lead directly to employment or entrepreneurship. With industry-standard equipment and experienced instructors, students gain real-world expertise in high-demand fields. We offer flexible course durations: 9-month programs include Hairdressing, Beauty Therapy, Baking and Pastry, Electrical Installation, Plumbing, and Music - Piano. Our 3-month programs include Barbering, Dreadlock, Music - DJing, and Music - Vocals.",
+    "Our Vocational Trades department offers hands-on, practical training in essential skills that lead directly to employment or entrepreneurship. With industry-standard equipment and experienced instructors, students gain real-world expertise in high-demand fields. We offer flexible course durations: 9-month programs include Hairdressing, Beauty Therapy, Electrical Installation, Plumbing, and Music - Piano. Our 3-month programs include Baking and Pastry, Make up, Nail Tech, Barbering, Dreadlock, Music - DJing and Music - Vocals.",
   courses: [
     {
       name: "Hairdressing",
@@ -102,11 +102,7 @@ const otherDepartments = [
     title: "Flexible Scheduling",
     description:
       "Morning, Afternoon, and Evening shifts available to accommodate different student needs and commitments.",
-    courses: [
-      "Morning Shift",
-      "Afternoon Shift",
-      "Evening Shift",
-    ],
+    courses: ["Morning Shift", "Afternoon Shift", "Evening Shift"],
   },
 ];
 
@@ -148,7 +144,7 @@ export default function AcademicsPage() {
         <AnimateOnScroll>
           <AcademicsCarousel />
         </AnimateOnScroll>
-        
+
         {/* Academics Header Section Overlay */}
         <div className="absolute top-0 left-0 right-0 z-10">
           <div className="mx-auto max-w-6xl px-6 pt-8 sm:pt-10 pb-6">
@@ -188,7 +184,6 @@ export default function AcademicsPage() {
 
       <main className="mx-auto max-w-6xl px-6 pb-24 pt-8 sm:pt-10">
         <section className="space-y-12">
-
           {/* Vocational Trades Department */}
           <AnimateOnScroll delay={100}>
             <div className="space-y-6">
@@ -285,29 +280,29 @@ export default function AcademicsPage() {
             {otherDepartments.map((department, index) => (
               <AnimateOnScroll key={department.title} delay={400 + index * 100}>
                 <div className="flex h-full flex-col rounded-3xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                <p className="text-lg font-semibold text-slate-900">
-                  {department.title}
-                </p>
-                <p className="mt-3 text-sm text-slate-600">
-                  {department.description}
-                </p>
-                <div className="mt-4 space-y-2">
-                  <p className="text-sm font-semibold text-slate-800">
-                    Options Available:
+                  <p className="text-lg font-semibold text-slate-900">
+                    {department.title}
                   </p>
-                  <ul className="list-none space-y-1.5">
-                    {department.courses.map((course, index) => (
-                      <li
-                        key={index}
-                        className="flex items-start gap-2 text-sm text-slate-700"
-                      >
-                        <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#852991] flex-shrink-0" />
-                        <span>{course}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="mt-3 text-sm text-slate-600">
+                    {department.description}
+                  </p>
+                  <div className="mt-4 space-y-2">
+                    <p className="text-sm font-semibold text-slate-800">
+                      Options Available:
+                    </p>
+                    <ul className="list-none space-y-1.5">
+                      {department.courses.map((course, index) => (
+                        <li
+                          key={index}
+                          className="flex items-start gap-2 text-sm text-slate-700"
+                        >
+                          <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#852991] flex-shrink-0" />
+                          <span>{course}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-              </div>
               </AnimateOnScroll>
             ))}
           </div>
@@ -317,4 +312,3 @@ export default function AcademicsPage() {
     </div>
   );
 }
-

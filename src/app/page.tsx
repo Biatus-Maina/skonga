@@ -12,6 +12,7 @@ const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Academics", href: "/academics" },
+  { name: "Testimonials", href: "/testimonials" },
   { name: "Admissions", href: "#admissions" },
   { name: "Calendar", href: "#calendar" },
   { name: "FAQ", href: "#faq" },
@@ -51,7 +52,8 @@ const departments = [
 const admissionsSteps = [
   {
     title: "1. Contact Us",
-    detail: "Call or WhatsApp to inquire about courses, schedules, and scholarship opportunities.",
+    detail:
+      "Call or WhatsApp to inquire about courses, schedules, and scholarship opportunities.",
   },
   {
     title: "2. Choose Program",
@@ -126,7 +128,8 @@ const downloads = [
   {
     name: "2025–26 Enrollment Packet",
     href: "/forms/registration.pdf",
-    description: "Course information, requirements, and scholarship application details.",
+    description:
+      "Course information, requirements, and scholarship application details.",
   },
   {
     name: "Student Handbook & Policies",
@@ -138,13 +141,6 @@ const downloads = [
     href: "/forms/health-clearance.pdf",
     description: "Application forms and enrollment guidelines.",
   },
-];
-
-const socialLinks = [
-  { name: "Facebook", href: "#" },
-  { name: "Instagram", href: "#" },
-  { name: "YouTube", href: "#" },
-  { name: "LinkedIn", href: "#" },
 ];
 
 const values = [
@@ -206,7 +202,9 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         className="w-full px-6 py-4 text-left flex items-center justify-between focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#852991]"
         aria-expanded={isOpen}
       >
-        <h3 className="text-base font-semibold text-slate-900 pr-4">{question}</h3>
+        <h3 className="text-base font-semibold text-slate-900 pr-4">
+          {question}
+        </h3>
         <svg
           className={`w-5 h-5 text-[#852991] flex-shrink-0 transition-transform ${
             isOpen ? "rotate-180" : ""
@@ -290,7 +288,9 @@ export default function Home() {
               />
             </div>
             <div className="hidden sm:block">
-              <p className="text-base font-semibold">Yashica Training College</p>
+              <p className="text-base font-semibold">
+                Yashica Training College
+              </p>
               <p className="text-sm text-slate-500">
                 Transforming lives through vocational skills.
               </p>
@@ -299,7 +299,10 @@ export default function Home() {
               <p className="text-sm font-semibold">Yashica</p>
             </div>
           </div>
-          <nav aria-label="Primary" className="hidden items-center gap-5 md:flex">
+          <nav
+            aria-label="Primary"
+            className="hidden items-center gap-5 md:flex"
+          >
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -379,14 +382,13 @@ export default function Home() {
       </section>
 
       <HighlightCarousel />
-      
+
       <main className="mx-auto max-w-6xl px-6 pb-24 pt-8 sm:pt-10">
-        <AnimateOnScroll>
-          <section
-            id="home"
-            className="grid gap-10 rounded-3xl bg-white p-8 shadow-xl shadow-slate-200/60 lg:grid-cols-[1.1fr,0.9fr]"
-          >
-            <div className="space-y-6">
+        <section
+          id="home"
+          className="grid gap-10 rounded-3xl bg-white p-8 shadow-xl shadow-slate-200/60 lg:grid-cols-[1.1fr,0.9fr]"
+        >
+          <div className="space-y-6">
             <h1 className="text-3xl font-semibold tracking-tight text-slate-900 text-center sm:text-left sm:text-4xl lg:text-5xl leading-tight">
               <span className="block sm:inline">Transforming lives</span>{" "}
               <span className="block sm:inline bg-gradient-to-r from-[#852991] to-[#a855b8] bg-clip-text text-transparent">
@@ -395,11 +397,14 @@ export default function Home() {
               <span className="block sm:inline">and self-reliance.</span>
             </h1>
             <p className="max-w-2xl text-lg text-slate-600">
-              Yashica Training College is a leading center of excellence in vocational skills development, 
-              equipping individuals aged 18–35 with critical skills including AI, hairdressing, beauty therapy, 
-              plumbing, electrical installation, and music fostering self-reliance and community transformation.
+              Yashica Training College is a leading center of excellence in
+              vocational skills development, equipping Young Adults from
+              Gikambura, Kikuyu, Kawangware, and surrounding areas in Kiambu
+              County with critical skills including AI, hairdressing, beauty
+              therapy, plumbing, electrical installation, and music fostering
+              self-reliance and community transformation.
             </p>
-            <div className="flex flex-col gap-3 sm:flex-row">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
                 href="#admissions"
                 className="inline-flex items-center justify-center rounded-full bg-[#852991] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#d6c7df] transition hover:bg-[#852991]/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
@@ -412,6 +417,12 @@ export default function Home() {
                 className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition hover:border-[#d6c7df] hover:bg-[#d6c7df] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
               >
                 View Courses
+              </Link>
+              <Link
+                href="/testimonials"
+                className="inline-flex items-center justify-center rounded-full border border-[#852991] bg-white px-5 py-3 text-sm font-semibold text-[#852991] transition hover:bg-[#852991] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
+              >
+                Success Stories
               </Link>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -433,94 +444,127 @@ export default function Home() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(255,255,255,0.2),transparent_35%)]" />
             <div className="absolute inset-0 bg-black/10" />
             <div className="relative h-full">
-        <Image
+              <Image
                 src="/media/hero_training.jpg"
                 alt="Students at Yashica Training College"
                 width={1200}
                 height={900}
                 className="h-full w-full object-cover opacity-90"
-          priority
-        />
+                priority
+              />
             </div>
             <div className="absolute inset-x-6 bottom-6 rounded-2xl border border-white/30 bg-white/80 p-4 text-slate-900 shadow-lg backdrop-blur">
               <p className="text-sm font-semibold text-[#852991]">
-                Practical, hands-on training for real-world success
+                Empowering youth in Gikambura, Kikuyu & Kawangware
               </p>
               <p className="text-sm text-slate-700">
-                Modern workshops, flexible schedules, and mentorship support 
-                designed to transform lives and communities.
+                Modern workshops, flexible schedules, and mentorship support
+                creating economic opportunities right here in our communities.
               </p>
             </div>
           </div>
-          </section>
-        </AnimateOnScroll>
+        </section>
 
         <AnimateOnScroll delay={100}>
-          <section id="about" className="mt-20 grid gap-10 lg:grid-cols-[1fr,1fr]">
-          <div className="space-y-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#852991]">
-              About Yashica
-            </p>
-            <h2 className="text-3xl font-semibold tracking-tight">
-              Mission-driven, community-focused, transforming lives.
-            </h2>
-            <p className="text-base text-slate-600">
-              Yashica Training College aims to be a leading center of excellence in vocational skills development. 
-              Our mission is to transform lives and communities by equipping individuals with critical skills, 
-              including Artificial Intelligence (AI), to foster self-reliance. We provide affordable, quality education 
-              with flexible learning options, prioritizing inclusivity, fairness, and community-backed support.
-            </p>
-            <div className="grid gap-3 sm:grid-cols-2">
-              {values.map((value) => (
-                <div
-                  key={value}
-                  className="flex items-start gap-3 rounded-2xl border border-slate-100 bg-white px-4 py-3 shadow-sm"
-                >
-                  <span className="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#d6c7df] text-[#852991]">
-                    ✓
-                  </span>
-                  <p className="text-sm font-medium text-slate-800">{value}</p>
+          <section
+            id="about"
+            className="mt-20 grid gap-10 lg:grid-cols-[1fr,1fr]"
+          >
+            <div className="space-y-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#852991]">
+                About Yashica
+              </p>
+              <h2 className="text-3xl font-semibold tracking-tight">
+                Mission-driven, community-focused, transforming lives.
+              </h2>
+              <p className="text-base text-slate-600">
+                Yashica Training College is dedicated to creating lasting impact
+                for youth in Gikambura, Kikuyu, Kawangware, and surrounding
+                areas in Kiambu County. Our vision is to be a leading center of
+                excellence in vocational skills development, transforming lives
+                and communities by equipping individuals with critical
+                Artificial Intelligence skills to foster self-reliance and
+                transform communities. Through affordable, quality education and
+                community-focused programs, we&apos;re building pathways to
+                self-reliance and economic empowerment right here in our local
+                communities.
+              </p>
+
+              <p className="text-base text-slate-600">
+                <strong>
+                  Our vision is to be a leading center of excellence in
+                  vocational skills development that transforms lives and
+                  communities.
+                </strong>
+              </p>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                {values.map((value) => (
+                  <div
+                    key={value}
+                    className="flex items-start gap-3 rounded-2xl border border-slate-100 bg-white px-4 py-3 shadow-sm"
+                  >
+                    <span className="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#d6c7df] text-[#852991]">
+                      ✓
+                    </span>
+                    <p className="text-sm font-medium text-slate-800">
+                      {value}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="space-y-5 rounded-3xl bg-white p-6 shadow-lg shadow-slate-200/50">
+              <div className="rounded-2xl bg-slate-50 p-4">
+                <p className="text-sm font-semibold text-[#852991]">
+                  Training Approach
+                </p>
+                <p className="text-base text-slate-700">
+                  Hands-on, practical learning for real-world success
+                </p>
+                <p className="text-sm text-slate-600">
+                  Our curriculum emphasizes 70% practical training and 30%
+                  theory, ensuring students gain immediate, applicable skills.
+                  With modern workshops, industry-standard equipment, and
+                  experienced instructors, we prepare graduates for employment
+                  or entrepreneurship from day one.
+                </p>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
+                  <p className="text-lg font-semibold">Location</p>
+                  <p className="text-sm text-slate-600">
+                    Rubis Petrol Station, 2nd Floor, Gikambura, Kikuyu, Kiambu
+                    County. Easily accessible for students from surrounding
+                    areas.
+                  </p>
                 </div>
-              ))}
-            </div>
-          </div>
-          <div className="space-y-5 rounded-3xl bg-white p-6 shadow-lg shadow-slate-200/50">
-            <div className="rounded-2xl bg-slate-50 p-4">
-              <p className="text-sm font-semibold text-[#852991]">Training Approach</p>
-              <p className="text-base text-slate-700">
-                Hands-on, practical learning for real-world success
-              </p>
-              <p className="text-sm text-slate-600">
-                Our curriculum emphasizes 70% practical training and 30% theory, ensuring students 
-                gain immediate, applicable skills. With modern workshops, industry-standard equipment, 
-                and experienced instructors, we prepare graduates for employment or entrepreneurship 
-                from day one.
-              </p>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
-                <p className="text-lg font-semibold">Location</p>
-                <p className="text-sm text-slate-600">
-                  Rubis Petrol Station, 2nd Floor, Gikambura, Kikuyu, Kiambu County. 
-                  Easily accessible for students from surrounding areas.
-                </p>
+                <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
+                  <p className="text-lg font-semibold">Social Footprint</p>
+                  <p className="text-sm text-slate-600">
+                    By equipping young adults from Gikambura, Kikuyu, Kawangware
+                    and other parts of the nation with essential vocational
+                    skills, we are fostering a new generation of professionals
+                    and entrepreneurs. Our guiding principle is to catalyze
+                    economic growth and significantly reduce unemployment across
+                    Kiambu County and the whole nation at large.
+                  </p>
+                </div>
               </div>
-              <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
-                <p className="text-lg font-semibold">Target Audience</p>
-                <p className="text-sm text-slate-600">
-                  Youth aged 18–35 from low-income families in Gikambura, Kikuyu, 
-                  Kawangware, and surrounding communities.
+              <div className="rounded-2xl border border-slate-100 bg-gradient-to-r from-[#d6c7df] to-[#e8d9f0] p-4">
+                <p className="text-sm font-semibold text-[#852991]">
+                  Local Community Development
+                </p>
+                <p className="text-sm text-slate-700">
+                  Beyond skills training, we&apos;re committed to transforming
+                  our local communities through graduate employment placement,
+                  entrepreneurship support, and partnerships with local
+                  businesses. Our goal is to see our graduates become employers
+                  and community leaders in Gikambura, Kikuyu, Kawangware, and
+                  beyond.
                 </p>
               </div>
             </div>
-            <div className="rounded-2xl border border-slate-100 bg-gradient-to-r from-[#d6c7df] to-[#e8d9f0] p-4">
-              <p className="text-sm font-semibold text-[#852991]">Holistic Support</p>
-              <p className="text-sm text-slate-700">
-                Beyond technical training, we provide monitoring, mentorship, and linkages 
-                to employment or entrepreneurial opportunities post-graduation.
-              </p>
-            </div>
-          </div>
           </section>
         </AnimateOnScroll>
 
@@ -564,54 +608,58 @@ export default function Home() {
             id="admissions"
             className="mt-20 rounded-3xl bg-gradient-to-r from-[#852991] via-[#9a4ba8] to-[#852991] p-8 text-white shadow-2xl"
           >
-          <div className="grid gap-8 lg:grid-cols-[1.1fr,0.9fr] lg:items-center">
-            <div className="space-y-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em]">
-                Admissions
-              </p>
-              <h2 className="text-3xl font-semibold tracking-tight">
-                Affordable enrollment with flexible payment options.
-              </h2>
-              <p className="text-base text-white/90">
-                Our transparent pricing structure makes quality vocational education accessible. 
-                Scholarships available for eligible students from underprivileged backgrounds.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Link
-                  href="#contact"
-                  className="inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-semibold shadow-lg shadow-black/20 transition hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-                >
-                  <span className="text-[#852991]">Contact Us</span>
-                  <span className="text-[#852991] ml-1">
-                    <IconArrowRight />
-                  </span>
-                </Link>
-                <a
-                  href="/forms/registration.pdf"
-                  className="inline-flex items-center rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-                  download
-                >
-                  Download Forms
-                  <IconDownload />
-                </a>
+            <div className="grid gap-8 lg:grid-cols-[1.1fr,0.9fr] lg:items-center">
+              <div className="space-y-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em]">
+                  Admissions
+                </p>
+                <h2 className="text-3xl font-semibold tracking-tight">
+                  Affordable enrollment with flexible payment options.
+                </h2>
+                <p className="text-base text-white/90">
+                  Our transparent pricing structure makes quality vocational
+                  education accessible. Scholarships available for eligible
+                  students from underprivileged backgrounds.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    href="#contact"
+                    className="inline-flex items-center rounded-full bg-white px-5 py-3 text-sm font-semibold shadow-lg shadow-black/20 transition hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                  >
+                    <span className="text-[#852991]">Contact Us</span>
+                    <span className="text-[#852991] ml-1">
+                      <IconArrowRight />
+                    </span>
+                  </Link>
+                  <a
+                    href="/forms/registration.pdf"
+                    className="inline-flex items-center rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                    download
+                  >
+                    Download Forms
+                    <IconDownload />
+                  </a>
+                </div>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {admissionsSteps.map((step) => (
+                  <div
+                    key={step.title}
+                    className="h-full rounded-2xl border border-white/20 bg-white/10 p-4 shadow-lg backdrop-blur"
+                  >
+                    <p className="text-base font-semibold">{step.title}</p>
+                    <p className="mt-2 text-sm text-white/90">{step.detail}</p>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {admissionsSteps.map((step) => (
-                <div
-                  key={step.title}
-                  className="h-full rounded-2xl border border-white/20 bg-white/10 p-4 shadow-lg backdrop-blur"
-                >
-                  <p className="text-base font-semibold">{step.title}</p>
-                  <p className="mt-2 text-sm text-white/90">{step.detail}</p>
-                </div>
-              ))}
-            </div>
-          </div>
           </section>
         </AnimateOnScroll>
 
-        <section id="calendar" className="mt-20 grid gap-8 lg:grid-cols-[1fr,1fr]">
+        <section
+          id="calendar"
+          className="mt-20 grid gap-8 lg:grid-cols-[1fr,1fr]"
+        >
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#852991]">
               Course Pricing
@@ -620,18 +668,10 @@ export default function Home() {
               Transparent and affordable fees
             </h2>
             <p className="text-base text-slate-600">
-              Our 6-month programs are designed to be accessible with clear, 
-              upfront pricing. Financial aid and scholarships available for eligible students.
+              Our 6-month programs are designed to be accessible with clear,
+              upfront pricing. Financial aid and scholarships available for
+              eligible students.
             </p>
-            <div className="rounded-3xl border border-slate-100 bg-white p-4 shadow-sm">
-              <p className="text-sm font-semibold text-slate-800">
-                Flexible Scheduling
-              </p>
-              <p className="text-sm text-slate-600">
-                Choose from Morning, Afternoon, or Evening shifts to fit your schedule 
-                and commitments.
-              </p>
-            </div>
           </div>
           <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-sm">
             <div className="space-y-4">
@@ -674,7 +714,9 @@ export default function Home() {
                     <p className="text-sm font-semibold text-slate-900">
                       Total Course Cost (3 months)
                     </p>
-                    <p className="text-xs text-slate-600">Barbering, Dreadlock, Music - DJing, Music - Vocals</p>
+                    <p className="text-xs text-slate-600">
+                      Barbering, Dreadlock, Music - DJing, Music - Vocals
+                    </p>
                   </div>
                   <span className="rounded-full bg-[#852991] px-3 py-1 text-xs font-semibold text-white">
                     KES 36,000
@@ -685,7 +727,10 @@ export default function Home() {
                     <p className="text-sm font-semibold text-slate-900">
                       Total Course Cost (9 months)
                     </p>
-                    <p className="text-xs text-slate-600">Hairdressing, Beauty Therapy, Baking and Pastry, Electrical Installation, Plumbing, Music - Piano</p>
+                    <p className="text-xs text-slate-600">
+                      Hairdressing, Beauty Therapy, Baking and Pastry,
+                      Electrical Installation, Plumbing, Music - Piano
+                    </p>
                   </div>
                   <span className="rounded-full bg-[#852991] px-3 py-1 text-xs font-semibold text-white">
                     KES 108,000
@@ -712,7 +757,10 @@ export default function Home() {
                 e.preventDefault();
                 const element = document.getElementById("contact");
                 if (element) {
-                  element.scrollIntoView({ behavior: "smooth", block: "start" });
+                  element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
                 }
               }}
               className="text-sm font-semibold text-[#852991] underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991] cursor-pointer"
@@ -722,7 +770,11 @@ export default function Home() {
           </div>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <FAQItem key={index} question={faq.question} answer={faq.answer} />
+              <FAQItem
+                key={index}
+                question={faq.question}
+                answer={faq.answer}
+              />
             ))}
           </div>
         </section>
@@ -733,27 +785,45 @@ export default function Home() {
               Student Support & Scholarships
             </p>
             <h2 className="text-3xl font-semibold tracking-tight">
-              Committed to underprivileged youth
+              Transforming communities through youth empowerment
             </h2>
             <div className="space-y-4">
               <div className="rounded-2xl bg-gradient-to-r from-[#d6c7df] to-[#e8d9f0] px-4 py-3 border border-[#d6c7df]">
-                <p className="text-sm font-semibold text-[#852991]">Financial Aid</p>
+                <p className="text-sm font-semibold text-[#852991]">
+                  Financial Aid
+                </p>
                 <p className="text-sm text-slate-700 mt-1">
-                  We actively seek to provide scholarships that cover tuition, learning materials, 
-                  and essential supplies to remove barriers to education for youth from low-income families.
+                  We actively provide scholarships covering tuition, learning
+                  materials, and essential supplies to remove barriers to
+                  education for youth from low-income families across Gikambura,
+                  Kikuyu, Kawangware, and surrounding areas. Our goal is to
+                  ensure no young person in our community is left behind due to
+                  financial constraints.
                 </p>
               </div>
               <div className="rounded-2xl bg-slate-50 px-4 py-3">
-                <p className="text-sm font-semibold text-slate-900">Target Communities</p>
+                <p className="text-sm font-semibold text-slate-900">
+                  Community Impact Goals
+                </p>
                 <p className="text-sm text-slate-600 mt-1">
-                  Gikambura, Kikuyu, Kawangware, and surrounding areas in Kiambu County.
+                  Creating economic opportunities and reducing youth
+                  unemployment in Gikambura, Kikuyu, Kawangware, and surrounding
+                  areas. We aim to graduate 200+ skilled professionals annually
+                  who become catalysts for local economic development and
+                  community transformation in Kiambu County.
                 </p>
               </div>
               <div className="rounded-2xl bg-slate-50 px-4 py-3">
-                <p className="text-sm font-semibold text-slate-900">Post-Graduation Support</p>
+                <p className="text-sm font-semibold text-slate-900">
+                  Post-Graduation Support
+                </p>
                 <p className="text-sm text-slate-600 mt-1">
-                  Monitoring, mentorship, and linkages to employment or entrepreneurial opportunities 
-                  ensure graduates have pathways to success.
+                  We provide comprehensive support including job placement
+                  assistance, business startup mentorship, and connections with
+                  local employers and entrepreneurs. Our graduates don&apos;t
+                  just find jobs they create businesses, employ others, and
+                  become community leaders driving positive change in their
+                  neighborhoods.
                 </p>
               </div>
             </div>
@@ -773,10 +843,13 @@ export default function Home() {
                       1
                     </div>
                     <div className="flex-1">
-                      <p className="text-sm font-semibold text-[#852991]">Practical, Hands-On Training</p>
+                      <p className="text-sm font-semibold text-[#852991]">
+                        Practical, Hands-On Training
+                      </p>
                       <p className="text-sm text-slate-700 mt-1">
-                        70% practical training and 30% theory ensures you gain real-world skills 
-                        that employers value. Learn by doing, not just by reading.
+                        70% practical training and 30% theory ensures you gain
+                        real-world skills that employers value. Learn by doing,
+                        not just by reading.
                       </p>
                     </div>
                   </div>
@@ -789,10 +862,13 @@ export default function Home() {
                       2
                     </div>
                     <div className="flex-1">
-                      <p className="text-sm font-semibold text-slate-900">Flexible Learning Options</p>
+                      <p className="text-sm font-semibold text-slate-900">
+                        Flexible Learning Options
+                      </p>
                       <p className="text-sm text-slate-600 mt-1">
-                        Choose from Morning, Afternoon, or Evening shifts to fit your schedule. 
-                        Balance education with work and family commitments.
+                        Choose from Morning, Afternoon, or Evening shifts to fit
+                        your schedule. Balance education with work and family
+                        commitments.
                       </p>
                     </div>
                   </div>
@@ -805,10 +881,13 @@ export default function Home() {
                       3
                     </div>
                     <div className="flex-1">
-                      <p className="text-sm font-semibold text-slate-900">Affordable Education</p>
+                      <p className="text-sm font-semibold text-slate-900">
+                        Affordable Education
+                      </p>
                       <p className="text-sm text-slate-600 mt-1">
-                        Transparent pricing with scholarships available for eligible students. 
-                        Quality vocational education accessible to all.
+                        Transparent pricing with scholarships available for
+                        eligible students. Quality vocational education
+                        accessible to all.
                       </p>
                     </div>
                   </div>
@@ -821,10 +900,13 @@ export default function Home() {
                       4
                     </div>
                     <div className="flex-1">
-                      <p className="text-sm font-semibold text-slate-900">Post-Graduation Support</p>
+                      <p className="text-sm font-semibold text-slate-900">
+                        Post-Graduation Support
+                      </p>
                       <p className="text-sm text-slate-600 mt-1">
-                        We don&apos;t just train you—we support your journey with mentorship, 
-                        job placement assistance, and entrepreneurial linkages.
+                        We don&apos;t just train you we support your journey
+                        with mentorship, job placement assistance, and
+                        entrepreneurial linkages.
                       </p>
                     </div>
                   </div>
@@ -886,10 +968,11 @@ export default function Home() {
             <h2 className="text-3xl font-semibold tracking-tight">
               Ready-to-use PDF resources
             </h2>
-              <p className="text-base text-slate-600">
-                Access enrollment packets, course applications, and student handbooks quickly.
-                Files are static, versioned, and production-ready.
-              </p>
+            <p className="text-base text-slate-600">
+              Access enrollment packets, course applications, and student
+              handbooks quickly. Files are static, versioned, and
+              production-ready.
+            </p>
             <div className="grid gap-3">
               {downloads.map((item) => (
                 <a
@@ -935,9 +1018,7 @@ export default function Home() {
                   <span className="inline-block pt-1.5 text-sm">📧</span>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-slate-900">
-                    Email
-                  </p>
+                  <p className="text-sm font-semibold text-slate-900">Email</p>
                   <p className="text-sm text-slate-600">
                     yashicatrainingcollege@gmail.com
                   </p>
@@ -952,9 +1033,10 @@ export default function Home() {
                     Visit us
                   </p>
                   <p className="text-sm text-slate-600">
-                    Rubis Petrol Station, 2nd Floor, Gikambura, Kikuyu, Kiambu County
-          </p>
-        </div>
+                    Rubis Petrol Station, 2nd Floor, Gikambura, Kikuyu, Kiambu
+                    County
+                  </p>
+                </div>
               </div>
             </div>
             <iframe
@@ -964,7 +1046,7 @@ export default function Home() {
               loading="lazy"
               allowFullScreen
             />
-        </div>
+          </div>
         </section>
       </main>
 

@@ -28,7 +28,6 @@ const studentNews = [
 ];
 
 const studentResources = [
-  
   {
     title: "Academic Calendar",
     description: "View important dates, holidays, and exam schedules.",
@@ -36,12 +35,14 @@ const studentResources = [
   },
   {
     title: "Student Handbook",
-    description: "Download the complete student handbook with policies and guidelines.",
+    description:
+      "Download the complete student handbook with policies and guidelines.",
     link: "/forms/policies.pdf",
   },
   {
     title: "Career Services",
-    description: "Get support with job placement, resume writing, and interview preparation.",
+    description:
+      "Get support with job placement, resume writing, and interview preparation.",
     link: "#",
   },
 ];
@@ -73,6 +74,13 @@ export default function StudentCenterPage() {
   return (
     <div className="bg-slate-50 text-slate-900">
       <Header />
+      <section className="w-full bg-gradient-to-r from-[#852991] via-[#9a4ba8] to-[#852991] mt-1 pb-4 sm:pb-5 pt-4 sm:pt-5">
+        <div className="mx-auto max-w-6xl px-6">
+          <h1 className="text-center text-2xl sm:text-3xl font-semibold text-white tracking-wide">
+            Student Center
+          </h1>
+        </div>
+      </section>
 
       {/* Video Banner with Overlay Content */}
       <section className="relative w-full overflow-hidden mt-1">
@@ -88,10 +96,10 @@ export default function StudentCenterPage() {
             <source src="/media/nail_tech.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          
+
           {/* Dark Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/30" />
-          
+
           {/* Overlay Content - Styled like Admissions Section */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="mx-auto max-w-6xl px-6 w-full">
@@ -105,7 +113,9 @@ export default function StudentCenterPage() {
                       Resources and information for students
                     </h2>
                     <p className="text-base text-white/90 max-w-3xl opacity-95 group-hover:opacity-100 transition-all duration-500 delay-200 transform translate-y-0 group-hover:-translate-y-0.5">
-                      Access news, resources, and support services designed to help you succeed in your educational journey at Yashica Training College.
+                      Access news, resources, and support services designed to
+                      help you succeed in your educational journey at Yashica
+                      Training College.
                     </p>
                   </div>
                 </div>
@@ -158,7 +168,9 @@ export default function StudentCenterPage() {
                   <h4 className="text-lg font-semibold text-slate-900 mb-2">
                     {resource.title}
                   </h4>
-                  <p className="text-sm text-slate-600">{resource.description}</p>
+                  <p className="text-sm text-slate-600">
+                    {resource.description}
+                  </p>
                 </Link>
               ))}
             </div>
@@ -177,7 +189,9 @@ export default function StudentCenterPage() {
                   <h4 className="text-lg font-semibold text-slate-900 mb-2">
                     {service.title}
                   </h4>
-                  <p className="text-sm text-slate-600">{service.description}</p>
+                  <p className="text-sm text-slate-600">
+                    {service.description}
+                  </p>
                 </div>
               ))}
             </div>
@@ -214,4 +228,3 @@ export default function StudentCenterPage() {
     </div>
   );
 }
-

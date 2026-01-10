@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -20,12 +20,12 @@ const slides = [
     imageAlt: "Flexible learning environment for working students",
   },
   {
-    title: "Future-ready skills with AI",
+    title: "Future-ready skills and AI",
     description:
       "Digital literacy, critical thinking, and AI applications integrated into technical trades for modern workforce readiness.",
     imageSrc: "/media/carousel_2.jpg",
     imageAlt: "Students learning technology and AI applications",
-  }
+  },
 ];
 
 const AUTO_PLAY_MS = 7000;
@@ -35,7 +35,7 @@ export default function HighlightCarousel() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    
+
     const id = window.setInterval(() => {
       setIndex((prev) => (prev + 1) % slides.length);
     }, AUTO_PLAY_MS);
@@ -70,10 +70,10 @@ export default function HighlightCarousel() {
             priority
           />
         </div>
-        
+
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/45 to-black/35 transition-opacity duration-500 group-hover:opacity-40" />
-        
+
         {/* Content Overlay */}
         <div className="relative h-full flex items-center justify-center px-6 sm:px-8 lg:px-12">
           <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-6">
@@ -83,17 +83,17 @@ export default function HighlightCarousel() {
                 Highlight {index + 1} of {slides.length}
               </p>
             </div>
-            
+
             {/* Title */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white opacity-90 group-hover:opacity-100 transition-all duration-500 delay-150 transform translate-y-0 group-hover:-translate-y-1 drop-shadow-2xl">
               {current.title}
             </h2>
-            
+
             {/* Description */}
             <p className="text-base sm:text-lg lg:text-xl text-white/85 group-hover:text-white/100 max-w-2xl mx-auto leading-relaxed opacity-90 group-hover:opacity-100 transition-all duration-500 delay-200 transform translate-y-0 group-hover:-translate-y-1 drop-shadow-lg">
               {current.description}
             </p>
-            
+
             {/* View Courses Button */}
             <div className="pt-2 opacity-90 group-hover:opacity-100 transition-all duration-500 delay-300 transform translate-y-0 group-hover:-translate-y-1">
               <Link
@@ -119,7 +119,7 @@ export default function HighlightCarousel() {
             </div>
           </div>
         </div>
-        
+
         {/* Navigation Controls */}
         <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex items-center gap-2 z-10">
           {slides.map((slide, i) => (
@@ -137,7 +137,7 @@ export default function HighlightCarousel() {
             />
           ))}
         </div>
-        
+
         {/* Previous/Next Buttons */}
         <button
           type="button"
@@ -159,5 +159,3 @@ export default function HighlightCarousel() {
     </section>
   );
 }
-
-

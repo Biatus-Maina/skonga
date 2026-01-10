@@ -8,6 +8,7 @@ const navItems = [
   { name: "Home", href: "/" },
   { name: "About", href: "/#about" },
   { name: "Academics", href: "/academics" },
+  { name: "Testimonials", href: "/testimonials" },
   { name: "Admissions", href: "/#admissions" },
   { name: "Calendar", href: "/#calendar" },
   { name: "FAQ", href: "/#faq" },
@@ -72,7 +73,9 @@ export default function Header() {
               />
             </div>
             <div className="hidden sm:block">
-              <p className="text-base font-semibold">Yashica Training College</p>
+              <p className="text-base font-semibold">
+                Yashica Training College
+              </p>
               <p className="text-sm text-slate-500">
                 Transforming lives through vocational skills.
               </p>
@@ -154,4 +157,3 @@ export default function Header() {
     </header>
   );
 }
-
