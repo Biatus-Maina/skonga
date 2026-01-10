@@ -13,7 +13,7 @@ const slides = [
     imageAlt: "Students learning practical skills",
   },
   {
-    imageSrc: "/media/carousel_3.jpg",
+    imageSrc: "/media/orientation_day.jpg",
     imageAlt: "Modern training facilities",
   },
   {
@@ -31,7 +31,7 @@ export default function AcademicsCarousel() {
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-      const id = window.setInterval(() => {
+    const id = window.setInterval(() => {
       setIsTransitioning(true);
       setTimeout(() => {
         setIndex((prev) => (prev + 1) % slides.length);
@@ -70,9 +70,7 @@ export default function AcademicsCarousel() {
         <div
           key={index}
           className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
-            isTransitioning
-              ? "scale-110 opacity-0"
-              : "scale-100 opacity-100"
+            isTransitioning ? "scale-110 opacity-0" : "scale-100 opacity-100"
           }`}
         >
           <Image
