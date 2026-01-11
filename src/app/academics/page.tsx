@@ -44,7 +44,7 @@ const vocationalTrades = {
       name: "Baking and Pastry",
       description:
         "Learn the art of baking and pastry making including bread, cakes, pastries, and confectionery. Master techniques for both traditional and modern baked goods.",
-      image: "/media/baking_and_pastry.jpeg",
+      image: "/media/baking_and_pastry.jpg",
     },
     {
       name: "Barbering",
@@ -56,7 +56,7 @@ const vocationalTrades = {
       name: "Dreadlock",
       description:
         "Specialized training in dreadlock creation, maintenance, and styling. Master various techniques including natural, crochet, and interlocking methods for diverse hair types.",
-      image: "/media/dreadlocks_2.jpeg",
+      image: "/media/dreadlocks_2.jpg",
     },
   ],
 };
