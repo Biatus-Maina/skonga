@@ -625,15 +625,6 @@ export default function Home() {
                       open doors to immediate employment and entrepreneurial
                       opportunities.&quot;
                     </p>
-
-                    <p className="text-base leading-relaxed">
-                      &quot;We are proud to offer comprehensive scholarships to
-                      ensure that financial constraints never stand in the way
-                      of your dreams. Together, we are building a generation of
-                      skilled professionals who will not only improve their own
-                      lives but also contribute to the economic development of
-                      our communities.&quot;
-                    </p>
                   </div>
 
                   <div className="flex flex-wrap gap-4 pt-4 justify-center">
