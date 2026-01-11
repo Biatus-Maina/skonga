@@ -418,6 +418,7 @@ export default function Home() {
               >
                 View Courses
               </Link>
+
               <Link
                 href="/testimonials"
                 className="inline-flex items-center justify-center rounded-full border border-[#852991] bg-white px-5 py-3 text-sm font-semibold text-[#852991] transition hover:bg-[#852991] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
@@ -736,6 +737,57 @@ export default function Home() {
                     KES 108,000
                   </span>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Scholarship Announcement */}
+        <section className="mt-16">
+          <div className="rounded-3xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 p-8 shadow-xl shadow-yellow-500/20">
+            <div className="text-center space-y-4">
+              <div className="inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm">
+                <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
+                🎓 Great News!
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-bold text-white">
+                2026 Scholarship Applications Now Open!
+              </h3>
+              <p className="text-lg text-white/95 max-w-2xl mx-auto">
+                Get <strong>100% tuition fee coverage</strong> for select
+                skill-based courses. Only pay a small monthly commitment fee of{" "}
+                <strong>Ksh. 2,999</strong>.
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-4 text-white/90 text-sm">
+                <div className="flex items-center gap-1">
+                  <span className="text-green-300">✓</span>
+                  <span>Admission Ongoing</span>
+                </div>
+              </div>
+
+              <div className="pt-2">
+                <Link
+                  href="/scholarships"
+                  className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-white px-6 py-3 text-lg font-bold text-yellow-600 shadow-xl transition-all duration-300 hover:bg-yellow-50 hover:shadow-2xl hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                >
+                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-12 transform translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></span>
+                  <span className="relative flex items-center gap-2">
+                    Apply for Scholarship
+                    <svg
+                      className="h-5 w-5 transition-transform group-hover:translate-x-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
+                  </span>
+                </Link>
               </div>
             </div>
           </div>

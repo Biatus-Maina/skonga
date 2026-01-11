@@ -94,8 +94,8 @@ export default function HighlightCarousel() {
               {current.description}
             </p>
 
-            {/* View Courses Button */}
-            <div className="pt-2 opacity-90 group-hover:opacity-100 transition-all duration-500 delay-300 transform translate-y-0 group-hover:-translate-y-1">
+            {/* Action Buttons */}
+            <div className="pt-2 opacity-90 group-hover:opacity-100 transition-all duration-500 delay-300 transform translate-y-0 group-hover:-translate-y-1 space-y-4">
               <Link
                 href="/academics"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[#852991] px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-semibold text-white shadow-xl shadow-[#852991]/30 transition-all duration-300 hover:bg-[#9a4ba8] hover:shadow-2xl hover:shadow-[#852991]/40 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
@@ -116,6 +116,34 @@ export default function HighlightCarousel() {
                   <path d="m12 5 7 7-7 7" />
                 </svg>
               </Link>
+
+              {/* Scholarship Button */}
+              <div>
+                <Link
+                  href="/scholarships"
+                  className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold text-white shadow-xl shadow-yellow-500/40 glitter-effect transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-500/60 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow-400 animate-pulse"
+                >
+                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-12 transform translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></span>
+                  <span className="absolute top-1 left-2 w-1 h-1 bg-white rounded-full animate-sparkle"></span>
+                  <span
+                    className="absolute top-2 right-3 w-1 h-1 bg-white rounded-full animate-sparkle"
+                    style={{ animationDelay: "0.5s" }}
+                  ></span>
+                  <span
+                    className="absolute bottom-2 left-4 w-1 h-1 bg-white rounded-full animate-sparkle"
+                    style={{ animationDelay: "1s" }}
+                  ></span>
+                  <span className="relative flex items-center gap-2">
+                    ✨ Full Scholarships 2026
+                    <span
+                      className="inline-block animate-bounce text-lg"
+                      style={{ animationDelay: "0.2s" }}
+                    >
+                      🎓
+                    </span>
+                  </span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
