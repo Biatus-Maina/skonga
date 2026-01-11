@@ -8,7 +8,7 @@ import AcademicsCarousel from "@/components/AcademicsCarousel";
 const vocationalTrades = {
   title: "Vocational Trades",
   introduction:
-    "Our Vocational Trades department offers hands-on, practical training in essential skills that lead directly to employment or entrepreneurship. With industry-standard equipment and experienced instructors, students gain real-world expertise in high-demand fields. We offer flexible course durations: 9-month programs include Hairdressing, Beauty Therapy, Electrical Installation, Plumbing, and Music - Piano. Our 3-month programs include Baking and Pastry, Make up, Nail Tech, Barbering, Dreadlock, Music - DJing and Music - Vocals.",
+    "Our Vocational Trades department offers hands-on, practical training in essential skills that lead directly to employment or entrepreneurship. With industry-standard equipment and experienced instructors, students gain real-world expertise in high-demand fields. We offer flexible course durations: 9-month programs include Hairdressing, Beauty Therapy, Electrical Installation, Plumbing, and Music - Piano. Our 3-month programs include Baking and Pastry, Facial Makeup, Nail Tech, Barbering, Dreadlock, Music - DJing and Music - Vocals.",
   courses: [
     {
       name: "Hairdressing",
@@ -57,6 +57,12 @@ const vocationalTrades = {
       description:
         "Specialized training in dreadlock creation, maintenance, and styling. Master various techniques including natural, crochet, and interlocking methods for diverse hair types.",
       image: "/media/dreadlocks_2.jpg",
+    },
+    {
+      name: "Facial Makeup",
+      description:
+        "Professional makeup artistry training covering facial makeup techniques, color theory, contouring, highlighting, and special occasion makeup. Learn to enhance natural beauty for various events and clients.",
+      image: "/media/facial_makeup.jpg",
     },
   ],
 };
