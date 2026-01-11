@@ -23,7 +23,7 @@ const slides = [
     title: "Future-ready skills and AI",
     description:
       "Digital literacy, critical thinking, and AI applications integrated into technical trades for modern workforce readiness.",
-    imageSrc: "/media/carousel_2.jpeg",
+    imageSrc: "/media/academics_carousel_1.jpeg",
     imageAlt: "Students learning technology and AI applications",
   },
 ];
