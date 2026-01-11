@@ -275,9 +275,9 @@ export default function Home() {
   return (
     <div className="bg-slate-50 text-slate-900">
       <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center">
+        <div className="mx-auto flex max-w-7xl items-center px-6 py-4">
+          <div className="flex items-center gap-3 mr-8">
+            <div className="flex h-11 w-11 items-center justify-center flex-shrink-0">
               <Image
                 src="/media/logo.png"
                 alt="Yashica Training College Logo"
@@ -287,45 +287,47 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="hidden sm:block">
-              <p className="text-base font-semibold">
+            <div className="hidden sm:block min-w-max">
+              <p className="text-base font-semibold whitespace-nowrap">
                 Yashica Training College
               </p>
-              <p className="text-sm text-slate-500">
+              <p className="text-sm text-slate-500 whitespace-nowrap">
                 Transforming lives through vocational skills.
               </p>
             </div>
             <div className="block sm:hidden">
-              <p className="text-sm font-semibold">Yashica</p>
+              <p className="text-sm font-semibold whitespace-nowrap">Yashica</p>
             </div>
           </div>
-          <nav
-            aria-label="Primary"
-            className="hidden items-center gap-5 md:flex"
-          >
-            {navItems.map((item) => (
+          <div className="flex-1 flex items-center justify-between">
+            <nav
+              aria-label="Primary"
+              className="hidden items-center gap-4 md:flex lg:gap-5 xl:gap-6 justify-center flex-1"
+            >
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="text-sm font-medium text-slate-700 transition hover:text-[#852991] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991] whitespace-nowrap"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+            <div className="hidden items-center gap-3 sm:flex ml-6 lg:ml-8 xl:ml-12">
               <Link
-                key={item.name}
-                href={item.href}
-                className="text-sm font-medium text-slate-700 transition hover:text-[#852991] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
+                href="#admissions"
+                className="rounded-full bg-[#852991] px-3 py-2 text-sm font-semibold text-white shadow-md shadow-[#d6c7df] transition hover:bg-[#852991]/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991] whitespace-nowrap"
               >
-                {item.name}
+                Enroll Today
               </Link>
-            ))}
-          </nav>
-          <div className="hidden items-center gap-3 sm:flex">
-            <Link
-              href="#admissions"
-              className="rounded-full bg-[#852991] px-4 py-2 text-sm font-semibold text-white shadow-md shadow-[#d6c7df] transition hover:bg-[#852991]/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
-            >
-              Enroll Today
-            </Link>
-            <Link
-              href="#contact"
-              className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-800 transition hover:border-[#d6c7df] hover:bg-[#d6c7df] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
-            >
-              Contact Us
-            </Link>
+              <Link
+                href="#contact"
+                className="rounded-full border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-800 transition hover:border-[#d6c7df] hover:bg-[#d6c7df] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991] whitespace-nowrap"
+              >
+                Contact Us
+              </Link>
+            </div>
           </div>
           <button
             type="button"
@@ -339,7 +341,7 @@ export default function Home() {
         </div>
         {mobileMenuOpen && (
           <div className="border-t border-slate-200 bg-white md:hidden">
-            <nav className="mx-auto max-w-6xl px-6 py-4">
+            <nav className="mx-auto max-w-7xl px-6 py-4">
               <div className="flex flex-col gap-4">
                 {navItems.map((item) => (
                   <Link
