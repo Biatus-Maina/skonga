@@ -10,7 +10,6 @@ const navItems = [
   { name: "Academics", href: "/academics" },
   { name: "Testimonials", href: "/testimonials" },
   { name: "Admissions", href: "/#admissions" },
-  { name: "Calendar", href: "/#calendar" },
   { name: "FAQ", href: "/#faq" },
   { name: "Student Center", href: "/student-center" },
 ];

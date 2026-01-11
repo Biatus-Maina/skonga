@@ -5,11 +5,11 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
-    imageSrc: "/media/carousel_1.jpg",
+    imageSrc: "/media/academics_carousel_1.jpeg",
     imageAlt: "Vocational training at Yashica Training College",
   },
   {
-    imageSrc: "/media/carousel_2.jpg",
+    imageSrc: "/media/academics_carousel_2.jpeg",
     imageAlt: "Students learning practical skills",
   },
   {

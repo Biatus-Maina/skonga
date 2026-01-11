@@ -14,7 +14,6 @@ const navItems = [
   { name: "Academics", href: "/academics" },
   { name: "Testimonials", href: "/testimonials" },
   { name: "Admissions", href: "#admissions" },
-  { name: "Calendar", href: "#calendar" },
   { name: "FAQ", href: "#faq" },
   { name: "Student Center", href: "/student-center" },
 ];
@@ -571,6 +570,86 @@ export default function Home() {
           </section>
         </AnimateOnScroll>
 
+        {/* Principal's Welcome Message */}
+        <AnimateOnScroll delay={200}>
+          <section className="mt-20">
+            <div className="rounded-3xl bg-gradient-to-r from-[#852991]/5 via-white to-[#852991]/5 border border-[#852991]/10 p-8 lg:p-12 shadow-xl">
+              <div className="flex flex-col items-center text-center space-y-10">
+                <div className="relative">
+                  <div className="relative overflow-hidden rounded-full shadow-2xl w-48 h-48 mx-auto">
+                    <Image
+                      src="/media/school_principal.jpg"
+                      alt="Evaline Andia - School Principal"
+                      width={192}
+                      height={192}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#852991]/20 to-transparent rounded-full"></div>
+                  </div>
+                  <div className="absolute -bottom-2 -right-2 rounded-full bg-white p-3 shadow-lg border-4 border-[#852991]/10">
+                    <div className="text-xl">🎓</div>
+                  </div>
+                </div>
+
+                <div className="space-y-6 max-w-4xl">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#852991] mb-2">
+                      Principal&apos;s Message
+                    </p>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
+                      Welcome to Yashica Training College
+                    </h3>
+                    <p className="text-[#852991] font-semibold text-lg">
+                      Evaline Andia, School Principal
+                    </p>
+                  </div>
+
+                  <div className="space-y-4 text-slate-700">
+                    <p className="text-base leading-relaxed">
+                      &quot;It is my pleasure to welcome you to Yashica Training
+                      College, where we believe that every young person deserves
+                      the opportunity to build a successful and fulfilling
+                      career. Our commitment goes beyond just providing
+                      education, we are dedicated to transforming lives and
+                      empowering communities.&quot;
+                    </p>
+
+                    <p className="text-base leading-relaxed">
+                      &quot;At Yashica, we understand the unique challenges
+                      faced by youth in Gikambura, Kikuyu, Kawangware, and
+                      surrounding areas. That&apos;s why we&apos;ve designed our
+                      programs to be practical, affordable, and directly
+                      relevant to today&apos;s job market. Our students
+                      don&apos;t just learn, they develop real-world skills that
+                      open doors to immediate employment and entrepreneurial
+                      opportunities.&quot;
+                    </p>
+
+                    <p className="text-base leading-relaxed">
+                      &quot;We are proud to offer comprehensive scholarships to
+                      ensure that financial constraints never stand in the way
+                      of your dreams. Together, we are building a generation of
+                      skilled professionals who will not only improve their own
+                      lives but also contribute to the economic development of
+                      our communities.&quot;
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap gap-4 pt-4 justify-center">
+                    <div className="rounded-full bg-[#852991]/10 px-4 py-2 text-sm font-medium text-[#852991]">
+                      Community-Focused Leadership
+                    </div>
+                    <div className="rounded-full bg-[#852991]/10 px-4 py-2 text-sm font-medium text-[#852991]">
+                      Student Success Champion
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </AnimateOnScroll>
+
         <section id="academics" className="mt-20 space-y-8">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -739,57 +818,6 @@ export default function Home() {
                     KES 108,000
                   </span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Scholarship Announcement */}
-        <section className="mt-16">
-          <div className="rounded-3xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 p-8 shadow-xl shadow-yellow-500/20">
-            <div className="text-center space-y-4">
-              <div className="inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm">
-                <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
-                🎓 Great News!
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white">
-                2026 Scholarship Applications Now Open!
-              </h3>
-              <p className="text-lg text-white/95 max-w-2xl mx-auto">
-                Get <strong>100% tuition fee coverage</strong> for select
-                skill-based courses. Only pay a small monthly commitment fee of{" "}
-                <strong>Ksh. 2,999</strong>.
-              </p>
-              <div className="flex flex-wrap items-center justify-center gap-4 text-white/90 text-sm">
-                <div className="flex items-center gap-1">
-                  <span className="text-green-300">✓</span>
-                  <span>Admission Ongoing</span>
-                </div>
-              </div>
-
-              <div className="pt-2">
-                <Link
-                  href="/scholarships"
-                  className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-white px-6 py-3 text-lg font-bold text-yellow-600 shadow-xl transition-all duration-300 hover:bg-yellow-50 hover:shadow-2xl hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-                >
-                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-12 transform translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></span>
-                  <span className="relative flex items-center gap-2">
-                    Apply for Scholarship
-                    <svg
-                      className="h-5 w-5 transition-transform group-hover:translate-x-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M13 7l5 5m0 0l-5 5m5-5H6"
-                      />
-                    </svg>
-                  </span>
-                </Link>
               </div>
             </div>
           </div>
@@ -966,6 +994,56 @@ export default function Home() {
                   </div>
                 </div>
               </AnimateOnScroll>
+            </div>
+          </div>
+        </section>
+
+        {/* Scholarship Announcement */}
+        <section className="mt-16">
+          <div className="rounded-3xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 p-8 shadow-xl shadow-yellow-500/20">
+            <div className="text-center space-y-4">
+              <div className="inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm">
+                <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
+                🎓 Great News!
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-bold text-white">
+                2026 Scholarship Applications Now Open!
+              </h3>
+              <p className="text-lg text-white/95 max-w-2xl mx-auto">
+                Get <strong>100% tuition fee coverage</strong> for select
+                skill-based courses. Only pay a small monthly commitment fee of{" "}
+                <strong>Ksh. 2,999</strong>.
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-4 text-white/90 text-sm">
+                <div className="flex items-center gap-1">
+                  <span className="text-green-300">✓</span>
+                  <span>Admission Ongoing</span>
+                </div>
+              </div>
+              <div className="pt-2">
+                <Link
+                  href="/scholarships"
+                  className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-white px-6 py-3 text-lg font-bold text-yellow-600 shadow-xl transition-all duration-300 hover:bg-yellow-50 hover:shadow-2xl hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                >
+                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-12 transform translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></span>
+                  <span className="relative flex items-center gap-2">
+                    Apply for Scholarship
+                    <svg
+                      className="h-5 w-5 transition-transform group-hover:translate-x-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
