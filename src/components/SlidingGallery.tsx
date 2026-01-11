@@ -4,16 +4,10 @@ import Image from "next/image";
 
 const galleryImages = [
   "/media/sliding_image_0.jpg",
-  "/media/sliding_image_1.jpg",
+  "/media/academics_carousel_2.jpeg",
   "/media/sliding_image_2.jpg",
-  "/media/sliding_image_3.jpg",
   "/media/sliding_image_4.jpg",
-  "/media/carousel_1.jpg",
-  "/media/carousel_2.jpg",
-  "/media/carousel_3.jpg",
-  "/media/sliding_image_5.jpg",
-  "/media/beauty_therapy.jpeg",
-  "/media/nail_technology.jpeg",
+  "/media/certification_1.jpeg",
 ];
 
 export default function SlidingGallery() {

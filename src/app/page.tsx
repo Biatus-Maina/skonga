@@ -114,8 +114,8 @@ const gallery = [
     alt: "Students enjoying games sessions at the student center",
   },
   {
-    src: "/media/class_image_1.jpg",
-    alt: "Classrooms with students enjoying lessons from their instructors",
+    src: "/media/certification_1.jpeg",
+    alt: "Students receiving certificates after completing their courses",
   },
   {
     src: "/media/discussion_forum.jpg",
