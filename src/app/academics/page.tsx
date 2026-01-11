@@ -14,7 +14,7 @@ const vocationalTrades = {
       name: "Hairdressing",
       description:
         "Master the art of hair styling, cutting, coloring, and treatment. Learn modern techniques and traditional methods to serve diverse client needs.",
-      image: "/media/hairdressing.jpeg",
+      image: "/media/hairdressing.jpg",
     },
     {
       name: "Beauty Therapy",
