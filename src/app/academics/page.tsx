@@ -93,6 +93,38 @@ const creativeArts = {
   ],
 };
 
+const careerEnhancementCourses = {
+  title: "Career Enhancement Courses",
+  introduction:
+    "Our Career Enhancement Courses are designed to equip students with essential professional skills for career advancement and personal development. These specialized programs focus on building competencies that are highly valued in today's competitive job market.",
+  courses: [
+    {
+      name: "Entrepreneurship",
+      description:
+        "Learn the fundamentals of starting and managing a business. Develop skills in business planning, market research, financial management, and innovation to turn your ideas into successful ventures.",
+      image: "/media/entrepreneurship.jpeg",
+    },
+    {
+      name: "Social Media and Marketing",
+      description:
+        "Master digital marketing strategies and social media management. Learn content creation, brand building, audience engagement, and effective marketing campaigns across various platforms.",
+      image: "/media/social_media_marketing.png",
+    },
+    {
+      name: "Guidance and Counselling",
+      description:
+        "Develop counseling skills and techniques for supporting individuals through personal and professional challenges. Learn active listening, assessment methods, and intervention strategies.",
+      image: "/media/guidance_counselling.jpg",
+    },
+    {
+      name: "Communication Skills",
+      description:
+        "Enhance your verbal and written communication abilities. Master public speaking, presentation skills, interpersonal communication, and professional correspondence for career success.",
+      image: "/media/communication_skills.jpg",
+    },
+  ],
+};
+
 const otherDepartments = [
   {
     title: "Future-Ready Skills",
@@ -249,6 +281,53 @@ export default function AcademicsPage() {
           </AnimateOnScroll>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {creativeArts.courses.map((course, index) => (
+              <AnimateOnScroll key={course.name} delay={200 + index * 50}>
+                <div className="flex flex-col rounded-3xl border border-slate-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg overflow-hidden group">
+                  <div className="relative h-48 w-full overflow-hidden">
+                    <Image
+                      src={course.image}
+                      alt={course.name}
+                      width={400}
+                      height={300}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="flex flex-col flex-1 p-5 space-y-2">
+                    <h4 className="text-lg font-semibold text-slate-900">
+                      {course.name}
+                    </h4>
+                    <p className="text-sm text-slate-600 leading-relaxed flex-1">
+                      {course.description}
+                    </p>
+                    <Link
+                      href="/#contact"
+                      className="mt-4 inline-flex items-center justify-center rounded-full bg-[#852991] px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-[#d6c7df]/50 transition-all duration-300 hover:bg-[#9a4ba8] hover:shadow-lg hover:shadow-[#d6c7df] hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
+                    >
+                      Enroll Now
+                      <IconArrowRight />
+                    </Link>
+                  </div>
+                </div>
+              </AnimateOnScroll>
+            ))}
+          </div>
+
+          {/* Career Enhancement Courses Department */}
+          <AnimateOnScroll delay={100}>
+            <div className="space-y-6 mt-12">
+              <div className="space-y-3">
+                <h3 className="text-2xl font-semibold text-slate-900">
+                  {careerEnhancementCourses.title}
+                </h3>
+                <p className="text-base text-slate-600 max-w-3xl">
+                  {careerEnhancementCourses.introduction}
+                </p>
+              </div>
+            </div>
+          </AnimateOnScroll>
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {careerEnhancementCourses.courses.map((course, index) => (
               <AnimateOnScroll key={course.name} delay={200 + index * 50}>
                 <div className="flex flex-col rounded-3xl border border-slate-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg overflow-hidden group">
                   <div className="relative h-48 w-full overflow-hidden">
