@@ -1,8 +1,134 @@
+"use client";
+
 import Link from "next/link";
-import Image from "next/image";
 import Header from "@/components/Header";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Footer from "@/components/Footer";
+import { useState, useEffect, useRef } from "react";
+
+// Avatar gradient combinations for professional look
+const avatarGradients = [
+  "bg-gradient-to-br from-purple-500 to-pink-500",
+  "bg-gradient-to-br from-blue-500 to-cyan-500",
+  "bg-gradient-to-br from-green-500 to-emerald-500",
+  "bg-gradient-to-br from-orange-500 to-red-500",
+  "bg-gradient-to-br from-indigo-500 to-purple-500",
+  "bg-gradient-to-br from-pink-500 to-rose-500",
+  "bg-gradient-to-br from-cyan-500 to-blue-500",
+  "bg-gradient-to-br from-emerald-500 to-teal-500",
+];
+
+// Generate initials from full name
+function getInitials(name: string): string {
+  return name
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase())
+    .slice(0, 2)
+    .join("");
+}
+
+// Get consistent gradient for a name using hash
+function getGradientForName(name: string): string {
+  let hash = 0;
+  for (let i = 0; i < name.length; i++) {
+    hash = ((hash << 5) - hash + name.charCodeAt(i)) & 0xffffffff;
+  }
+  return avatarGradients[Math.abs(hash) % avatarGradients.length];
+}
+
+// Avatar component
+interface AvatarProps {
+  name: string;
+  size: number;
+}
+
+function Avatar({ name, size }: AvatarProps) {
+  const initials = getInitials(name);
+  const gradient = getGradientForName(name);
+
+  return (
+    <div
+      className={`${gradient} flex items-center justify-center rounded-full text-white font-bold shadow-lg`}
+      style={{
+        width: `${size}px`,
+        height: `${size}px`,
+        fontSize: `${size * 0.4}px`,
+      }}
+    >
+      {initials}
+    </div>
+  );
+}
+
+// Animated Counter Component
+interface AnimatedCounterProps {
+  target: string;
+  duration?: number;
+  className?: string;
+}
+
+function AnimatedCounter({
+  target,
+  duration = 2000,
+  className = "",
+}: AnimatedCounterProps) {
+  const [count, setCount] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const elementRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const element = elementRef.current;
+    if (!element || hasAnimated) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setHasAnimated(true);
+
+          // Extract numeric value from target string
+          const numericValue = parseInt(target.replace(/[^0-9]/g, ""));
+          if (isNaN(numericValue)) return;
+
+          let startTime: number;
+          const animate = (currentTime: number) => {
+            if (!startTime) startTime = currentTime;
+            const progress = Math.min((currentTime - startTime) / duration, 1);
+
+            // Easing function for smooth animation
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            const currentCount = Math.floor(easeOutQuart * numericValue);
+
+            setCount(currentCount);
+
+            if (progress < 1) {
+              requestAnimationFrame(animate);
+            } else {
+              setCount(numericValue);
+            }
+          };
+
+          requestAnimationFrame(animate);
+        }
+      },
+      { threshold: 0.5 },
+    );
+
+    observer.observe(element);
+    return () => observer.unobserve(element);
+  }, [target, duration, hasAnimated]);
+
+  const displayValue = target.includes("%")
+    ? `${count}%`
+    : target.includes("+")
+      ? `${count}+`
+      : count.toString();
+
+  return (
+    <div ref={elementRef} className={className}>
+      {displayValue}
+    </div>
+  );
+}
 
 interface StudentTestimonial {
   name: string;
@@ -187,7 +313,11 @@ export default function TestimonialsPage() {
               <div className="mt-8 flex justify-center gap-8">
                 {stats.map((stat) => (
                   <div key={stat.label} className="text-center">
-                    <div className="text-3xl font-bold">{stat.number}</div>
+                    <AnimatedCounter
+                      target={stat.number}
+                      className="text-3xl font-bold"
+                      duration={2500}
+                    />
                     <div className="text-sm text-white/80">{stat.label}</div>
                   </div>
                 ))}
@@ -242,17 +372,7 @@ export default function TestimonialsPage() {
                       </blockquote>
 
                       <div className="flex items-center gap-4">
-                        <div className="h-12 w-12 overflow-hidden rounded-full bg-slate-200">
-                          <Image
-                            src={
-                              testimonial.image || "/media/hero_training.jpg"
-                            }
-                            alt={testimonial.name}
-                            width={48}
-                            height={48}
-                            className="h-full w-full object-cover"
-                          />
-                        </div>
+                        <Avatar name={testimonial.name} size={48} />
                         <div className="flex-1">
                           <div className="font-semibold text-slate-900">
                             {testimonial.name}
@@ -305,9 +425,11 @@ export default function TestimonialsPage() {
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
                 <Link
                   href="/#admissions"
-                  className="inline-flex items-center justify-center rounded-full bg-white px-10 py-4 text-lg font-black text-gray-900 shadow-xl transition-all duration-200 hover:bg-gray-50 hover:scale-105 hover:shadow-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                  className="inline-flex items-center justify-center rounded-full bg-white px-10 py-4 text-lg font-black shadow-xl transition-all duration-200 hover:bg-gray-50 hover:scale-105 hover:shadow-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
                 >
-                  <span className="tracking-wide">Start Your Journey</span>
+                  <span className="tracking-wide text-gray-900">
+                    Start Your Journey
+                  </span>
                 </Link>
                 <Link
                   href="/#contact"

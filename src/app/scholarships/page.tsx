@@ -236,7 +236,7 @@ export default function ScholarshipPage() {
                 What Your Scholarship Includes
               </h2>
               <div className="space-y-6">
-                {benefits.map((benefit, index) => (
+                {benefits.map((benefit) => (
                   <div key={benefit} className="flex items-start gap-4 group">
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-green-100 group-hover:bg-green-200 transition-colors">
                       <svg

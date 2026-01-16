@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import HighlightCarousel from "@/components/HighlightCarousel";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Footer from "@/components/Footer";
@@ -70,6 +70,149 @@ const admissionsSteps = [
       "Begin your journey with hands-on training, mentorship, and support toward employment or entrepreneurship.",
   },
 ];
+
+// Animated Counter Component
+interface AnimatedCounterProps {
+  target: string;
+  duration?: number;
+  className?: string;
+}
+
+function AnimatedCounter({
+  target,
+  duration = 2000,
+  className = "",
+}: AnimatedCounterProps) {
+  const [displayText, setDisplayText] = useState(target);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const elementRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const element = elementRef.current;
+    if (!element || hasAnimated) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setHasAnimated(true);
+
+          // Handle different formats
+          if (target.includes("-") && target.includes("months")) {
+            // Handle "3-9 months" format
+            const numbers = target.match(/\d+/g);
+            if (numbers && numbers.length >= 2) {
+              const startNum = parseInt(numbers[0]);
+              const endNum = parseInt(numbers[1]);
+
+              let currentStart = 0;
+              let startTime: number;
+
+              const animate = (currentTime: number) => {
+                if (!startTime) startTime = currentTime;
+                const progress = Math.min(
+                  (currentTime - startTime) / duration,
+                  1,
+                );
+                const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+
+                const animatedStart = Math.floor(easeOutQuart * startNum);
+                const animatedEnd = Math.floor(easeOutQuart * endNum);
+
+                setDisplayText(`${animatedStart}-${animatedEnd} months`);
+
+                if (progress < 1) {
+                  requestAnimationFrame(animate);
+                } else {
+                  setDisplayText(target);
+                }
+              };
+
+              requestAnimationFrame(animate);
+            }
+          } else if (target.includes("–")) {
+            // Handle "18–35" format
+            const numbers = target.match(/\d+/g);
+            if (numbers && numbers.length >= 2) {
+              const startNum = parseInt(numbers[0]);
+              const endNum = parseInt(numbers[1]);
+
+              let startTime: number;
+
+              const animate = (currentTime: number) => {
+                if (!startTime) startTime = currentTime;
+                const progress = Math.min(
+                  (currentTime - startTime) / duration,
+                  1,
+                );
+                const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+
+                const animatedStart = Math.floor(easeOutQuart * startNum);
+                const animatedEnd = Math.floor(easeOutQuart * endNum);
+
+                setDisplayText(`${animatedStart}–${animatedEnd}`);
+
+                if (progress < 1) {
+                  requestAnimationFrame(animate);
+                } else {
+                  setDisplayText(target);
+                }
+              };
+
+              requestAnimationFrame(animate);
+            }
+          } else {
+            // Handle simple numeric values with suffixes
+            const numericValue = parseInt(target.replace(/[^0-9]/g, ""));
+            if (isNaN(numericValue)) {
+              setDisplayText(target);
+              return;
+            }
+
+            let startTime: number;
+            const animate = (currentTime: number) => {
+              if (!startTime) startTime = currentTime;
+              const progress = Math.min(
+                (currentTime - startTime) / duration,
+                1,
+              );
+
+              const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+              const currentCount = Math.floor(easeOutQuart * numericValue);
+
+              const displayValue = target.includes("%")
+                ? `${currentCount}%`
+                : target.includes("+")
+                  ? `${currentCount}+`
+                  : target.includes(" shifts")
+                    ? `${currentCount} shifts`
+                    : currentCount.toString();
+
+              setDisplayText(displayValue);
+
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                setDisplayText(target);
+              }
+            };
+
+            requestAnimationFrame(animate);
+          }
+        }
+      },
+      { threshold: 0.5 },
+    );
+
+    observer.observe(element);
+    return () => observer.unobserve(element);
+  }, [target, duration, hasAnimated]);
+
+  return (
+    <div ref={elementRef} className={className}>
+      {displayText}
+    </div>
+  );
+}
 
 const faqs = [
   {
@@ -432,9 +575,11 @@ export default function Home() {
                   key={stat.label}
                   className="rounded-2xl border border-slate-100 bg-slate-50 px-4 py-3 shadow-sm"
                 >
-                  <p className="text-lg font-semibold text-slate-900">
-                    {stat.value}
-                  </p>
+                  <AnimatedCounter
+                    target={stat.value}
+                    className="text-lg font-semibold text-slate-900"
+                    duration={2000}
+                  />
                   <p className="text-sm text-slate-600">{stat.label}</p>
                 </div>
               ))}
