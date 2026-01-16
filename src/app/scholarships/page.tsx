@@ -85,7 +85,7 @@ export default function ScholarshipPage() {
               href="/"
               className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition-all hover:bg-slate-50 hover:border-[#852991] focus:outline-none focus:ring-2 focus:ring-[#852991] focus:ring-offset-2"
             >
-              ← Back to Home
+              ← Home
             </Link>
           </div>
         </div>
