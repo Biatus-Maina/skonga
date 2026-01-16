@@ -61,12 +61,12 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center px-6 py-4">
         <div className="flex items-center gap-3 mr-8">
           <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center flex-shrink-0">
+            <div className="flex h-16 w-16 items-center justify-center flex-shrink-0">
               <Image
                 src="/media/logo.png"
                 alt="Yashica Training College Logo"
-                width={44}
-                height={44}
+                width={64}
+                height={64}
                 className="h-full w-auto"
                 priority
               />
