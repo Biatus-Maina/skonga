@@ -235,31 +235,40 @@ export default function AcademicsPage() {
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {vocationalTrades.courses.map((course, index) => (
               <AnimateOnScroll key={course.name} delay={200 + index * 50}>
-                <div className="flex flex-col rounded-3xl border border-slate-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg overflow-hidden group">
-                  <div className="relative h-48 w-full overflow-hidden">
+                <div className="flex flex-col rounded-3xl border border-slate-200/60 bg-gradient-to-br from-white via-white to-slate-50/30 shadow-lg shadow-slate-200/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-slate-300/30 hover:border-[#852991]/20 overflow-hidden group relative">
+                  <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent z-10"></div>
                     <Image
                       src={course.image}
                       alt={course.name}
                       width={400}
                       height={300}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110"
                       loading="lazy"
                     />
+                    <div className="absolute top-3 right-3 w-8 h-8 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
+                      <div className="w-2 h-2 bg-[#852991] rounded-full"></div>
+                    </div>
                   </div>
-                  <div className="flex flex-col flex-1 p-5 space-y-2">
-                    <h4 className="text-lg font-semibold text-slate-900">
-                      {course.name}
-                    </h4>
-                    <p className="text-sm text-slate-600 leading-relaxed flex-1">
-                      {course.description}
-                    </p>
-                    <Link
-                      href="/#contact"
-                      className="mt-4 inline-flex items-center justify-center rounded-full bg-[#852991] px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-[#d6c7df]/50 transition-all duration-300 hover:bg-[#9a4ba8] hover:shadow-lg hover:shadow-[#d6c7df] hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
-                    >
-                      Enroll Now
-                      <IconArrowRight />
-                    </Link>
+                  <div className="flex flex-col flex-1 p-6 space-y-3 relative">
+                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-[#852991]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative z-10">
+                      <h4 className="text-lg font-bold text-slate-900 group-hover:text-[#852991] transition-colors duration-300">
+                        {course.name}
+                      </h4>
+                      <p className="text-sm text-slate-600 leading-relaxed flex-1 group-hover:text-slate-700 transition-colors duration-300">
+                        {course.description}
+                      </p>
+                      <Link
+                        href="/#contact"
+                        className="mt-4 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#852991] to-[#9a4ba8] px-5 py-3 text-sm font-bold text-white shadow-lg shadow-[#852991]/30 transition-all duration-500 hover:shadow-xl hover:shadow-[#852991]/40 hover:from-[#9a4ba8] hover:to-[#852991] hover:-translate-y-1 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991] group/btn"
+                      >
+                        <span className="mr-1">Enroll Now</span>
+                        <span className="transition-transform duration-300 group-hover/btn:translate-x-1">
+                          <IconArrowRight />
+                        </span>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -282,31 +291,40 @@ export default function AcademicsPage() {
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {creativeArts.courses.map((course, index) => (
               <AnimateOnScroll key={course.name} delay={200 + index * 50}>
-                <div className="flex flex-col rounded-3xl border border-slate-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg overflow-hidden group">
-                  <div className="relative h-48 w-full overflow-hidden">
+                <div className="flex flex-col rounded-3xl border border-slate-200/60 bg-gradient-to-br from-white via-white to-slate-50/30 shadow-lg shadow-slate-200/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-slate-300/30 hover:border-[#852991]/20 overflow-hidden group relative">
+                  <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent z-10"></div>
                     <Image
                       src={course.image}
                       alt={course.name}
                       width={400}
                       height={300}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110"
                       loading="lazy"
                     />
+                    <div className="absolute top-3 right-3 w-8 h-8 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
+                      <div className="w-2 h-2 bg-[#852991] rounded-full"></div>
+                    </div>
                   </div>
-                  <div className="flex flex-col flex-1 p-5 space-y-2">
-                    <h4 className="text-lg font-semibold text-slate-900">
-                      {course.name}
-                    </h4>
-                    <p className="text-sm text-slate-600 leading-relaxed flex-1">
-                      {course.description}
-                    </p>
-                    <Link
-                      href="/#contact"
-                      className="mt-4 inline-flex items-center justify-center rounded-full bg-[#852991] px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-[#d6c7df]/50 transition-all duration-300 hover:bg-[#9a4ba8] hover:shadow-lg hover:shadow-[#d6c7df] hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
-                    >
-                      Enroll Now
-                      <IconArrowRight />
-                    </Link>
+                  <div className="flex flex-col flex-1 p-6 space-y-3 relative">
+                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-[#852991]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative z-10">
+                      <h4 className="text-lg font-bold text-slate-900 group-hover:text-[#852991] transition-colors duration-300">
+                        {course.name}
+                      </h4>
+                      <p className="text-sm text-slate-600 leading-relaxed flex-1 group-hover:text-slate-700 transition-colors duration-300">
+                        {course.description}
+                      </p>
+                      <Link
+                        href="/#contact"
+                        className="mt-4 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#852991] to-[#9a4ba8] px-5 py-3 text-sm font-bold text-white shadow-lg shadow-[#852991]/30 transition-all duration-500 hover:shadow-xl hover:shadow-[#852991]/40 hover:from-[#9a4ba8] hover:to-[#852991] hover:-translate-y-1 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991] group/btn"
+                      >
+                        <span className="mr-1">Enroll Now</span>
+                        <span className="transition-transform duration-300 group-hover/btn:translate-x-1">
+                          <IconArrowRight />
+                        </span>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -329,31 +347,40 @@ export default function AcademicsPage() {
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {careerEnhancementCourses.courses.map((course, index) => (
               <AnimateOnScroll key={course.name} delay={200 + index * 50}>
-                <div className="flex flex-col rounded-3xl border border-slate-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg overflow-hidden group">
-                  <div className="relative h-48 w-full overflow-hidden">
+                <div className="flex flex-col rounded-3xl border border-slate-200/60 bg-gradient-to-br from-white via-white to-slate-50/30 shadow-lg shadow-slate-200/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-slate-300/30 hover:border-[#852991]/20 overflow-hidden group relative">
+                  <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent z-10"></div>
                     <Image
                       src={course.image}
                       alt={course.name}
                       width={400}
                       height={300}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110"
                       loading="lazy"
                     />
+                    <div className="absolute top-3 right-3 w-8 h-8 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
+                      <div className="w-2 h-2 bg-[#852991] rounded-full"></div>
+                    </div>
                   </div>
-                  <div className="flex flex-col flex-1 p-5 space-y-2">
-                    <h4 className="text-lg font-semibold text-slate-900">
-                      {course.name}
-                    </h4>
-                    <p className="text-sm text-slate-600 leading-relaxed flex-1">
-                      {course.description}
-                    </p>
-                    <Link
-                      href="/#contact"
-                      className="mt-4 inline-flex items-center justify-center rounded-full bg-[#852991] px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-[#d6c7df]/50 transition-all duration-300 hover:bg-[#9a4ba8] hover:shadow-lg hover:shadow-[#d6c7df] hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991]"
-                    >
-                      Enroll Now
-                      <IconArrowRight />
-                    </Link>
+                  <div className="flex flex-col flex-1 p-6 space-y-3 relative">
+                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-[#852991]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative z-10">
+                      <h4 className="text-lg font-bold text-slate-900 group-hover:text-[#852991] transition-colors duration-300">
+                        {course.name}
+                      </h4>
+                      <p className="text-sm text-slate-600 leading-relaxed flex-1 group-hover:text-slate-700 transition-colors duration-300">
+                        {course.description}
+                      </p>
+                      <Link
+                        href="/#contact"
+                        className="mt-4 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#852991] to-[#9a4ba8] px-5 py-3 text-sm font-bold text-white shadow-lg shadow-[#852991]/30 transition-all duration-500 hover:shadow-xl hover:shadow-[#852991]/40 hover:from-[#9a4ba8] hover:to-[#852991] hover:-translate-y-1 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#852991] group/btn"
+                      >
+                        <span className="mr-1">Enroll Now</span>
+                        <span className="transition-transform duration-300 group-hover/btn:translate-x-1">
+                          <IconArrowRight />
+                        </span>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -364,28 +391,31 @@ export default function AcademicsPage() {
           <div className="grid gap-5 md:grid-cols-2">
             {otherDepartments.map((department, index) => (
               <AnimateOnScroll key={department.title} delay={400 + index * 100}>
-                <div className="flex h-full flex-col rounded-3xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                  <p className="text-lg font-semibold text-slate-900">
-                    {department.title}
-                  </p>
-                  <p className="mt-3 text-sm text-slate-600">
-                    {department.description}
-                  </p>
-                  <div className="mt-4 space-y-2">
-                    <p className="text-sm font-semibold text-slate-800">
-                      Options Available:
+                <div className="flex h-full flex-col rounded-3xl border border-slate-200/60 bg-gradient-to-br from-white via-white to-slate-50/30 p-6 shadow-lg shadow-slate-200/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-slate-300/30 hover:border-[#852991]/20 group relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-[#852991]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <p className="text-lg font-bold text-slate-900 group-hover:text-[#852991] transition-colors duration-300">
+                      {department.title}
                     </p>
-                    <ul className="list-none space-y-1.5">
-                      {department.courses.map((course, index) => (
-                        <li
-                          key={index}
-                          className="flex items-start gap-2 text-sm text-slate-700"
-                        >
-                          <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#852991] flex-shrink-0" />
-                          <span>{course}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <p className="mt-3 text-sm text-slate-600 group-hover:text-slate-700 transition-colors duration-300">
+                      {department.description}
+                    </p>
+                    <div className="mt-4 space-y-2">
+                      <p className="text-sm font-bold text-slate-800 group-hover:text-[#852991] transition-colors duration-300">
+                        Options Available:
+                      </p>
+                      <ul className="list-none space-y-1.5">
+                        {department.courses.map((course, index) => (
+                          <li
+                            key={index}
+                            className="flex items-start gap-2 text-sm text-slate-700 group-hover:text-slate-800 transition-colors duration-300"
+                          >
+                            <span className="mt-1.5 h-2 w-2 rounded-full bg-gradient-to-r from-[#852991] to-[#9a4ba8] flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                            <span>{course}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </AnimateOnScroll>
