@@ -75,9 +75,6 @@ export default function Header() {
               <p className="text-base font-semibold whitespace-nowrap">
                 Yashica Training College
               </p>
-              <p className="text-sm text-slate-500 whitespace-nowrap">
-                Transforming lives through vocational skills.
-              </p>
             </div>
             <div className="block sm:hidden">
               <p className="text-sm font-semibold whitespace-nowrap">Yashica</p>
