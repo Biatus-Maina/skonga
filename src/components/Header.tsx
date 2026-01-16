@@ -77,7 +77,9 @@ export default function Header() {
               </p>
             </div>
             <div className="block sm:hidden">
-              <p className="text-sm font-semibold whitespace-nowrap">Yashica</p>
+              <p className="text-sm font-semibold whitespace-nowrap">
+                Yashica College
+              </p>
             </div>
           </Link>
         </div>

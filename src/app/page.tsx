@@ -292,7 +292,9 @@ export default function Home() {
               </p>
             </div>
             <div className="block sm:hidden">
-              <p className="text-sm font-semibold whitespace-nowrap">Yashica</p>
+              <p className="text-sm font-semibold whitespace-nowrap">
+                Yashica College
+              </p>
             </div>
           </div>
           <div className="flex-1 flex items-center justify-between">
