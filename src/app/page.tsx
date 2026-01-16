@@ -104,7 +104,6 @@ function AnimatedCounter({
               const startNum = parseInt(numbers[0]);
               const endNum = parseInt(numbers[1]);
 
-              let currentStart = 0;
               let startTime: number;
 
               const animate = (currentTime: number) => {
