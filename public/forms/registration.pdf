@@ -88,7 +88,7 @@ endobj
 
 9 0 obj
 <<
-/Length 2800
+/Length 2950
 >>
 stream
 BT
@@ -96,7 +96,7 @@ BT
 72 720 Td
 (YASHICA TRAINING COLLEGE) Tj
 0 -30 Td
-/F2 16 Tf
+/F2 18 Tf
 (2025-26 ENROLLMENT PACKET) Tj
 
 0 -50 Td
@@ -116,67 +116,95 @@ BT
 0 -25 Td
 /F1 12 Tf
 (9-MONTH COMPREHENSIVE PROGRAMS:) Tj
-0 -20 Td
-/F2 11 Tf
-(• Hairdressing - Professional styling, coloring, and salon management) Tj
-0 -15 Td
-(• Beauty Therapy - Nail technology, skincare, and beauty treatments) Tj
-0 -15 Td
-(• Baking & Pastry - Culinary arts and entrepreneurship skills) Tj
-0 -15 Td
-(• Electrical Installation - Wiring, systems, and safety protocols) Tj
-0 -15 Td
-(• Plumbing - Installation, maintenance, and repair techniques) Tj
-0 -15 Td
-(• Music - Piano - Classical and contemporary piano performance) Tj
 
-0 -25 Td
+% Create table structure for programs
+0 -20 Td
+(____________________________________________) Tj
+0 -15 Td
+/F2 11 Tf
+(PROGRAM NAME         |  DESCRIPTION) Tj
+0 -10 Td
+(____________________________________________) Tj
+
+0 -15 Td
+(Hairdressing         | Professional styling, coloring,) Tj
+0 -12 Td
+(                     | salon management) Tj
+
+0 -15 Td
+(Beauty Therapy       | Nail technology, skincare,) Tj
+0 -12 Td
+(                     | beauty treatments) Tj
+
+0 -15 Td
+(Baking & Pastry      | Culinary arts and) Tj
+0 -12 Td
+(                     | entrepreneurship skills) Tj
+
+0 -15 Td
+(Electrical Installation | Wiring, systems,) Tj
+0 -12 Td
+(                       | safety protocols) Tj
+
+0 -15 Td
+(Plumbing             | Installation, maintenance,) Tj
+0 -12 Td
+(                     | repair techniques) Tj
+
+0 -15 Td
+(Music - Piano        | Classical and contemporary) Tj
+0 -12 Td
+(                     | performance) Tj
+
+0 -20 Td
 /F1 12 Tf
 (3-MONTH INTENSIVE PROGRAMS:) Tj
-0 -20 Td
+
+0 -15 Td
+(____________________________________________) Tj
+0 -15 Td
 /F2 11 Tf
-(• Barbering - Modern cutting and styling techniques) Tj
+(Barbering            | Modern cutting and) Tj
+0 -12 Td
+(                     | styling techniques) Tj
+
 0 -15 Td
-(• Dreadlock Specialist - Professional dreadlock installation and maintenance) Tj
+(Dreadlock Specialist | Professional installation) Tj
+0 -12 Td
+(                     | and maintenance) Tj
+
 0 -15 Td
-(• Music - Vocals - Voice training and performance skills) Tj
+(Music - Vocals       | Voice training and) Tj
+0 -12 Td
+(                     | performance skills) Tj
+
 0 -15 Td
-(• Music - DJing - Mixing, equipment operation, and event management) Tj
+(Music - DJing        | Mixing, equipment operation,) Tj
+0 -12 Td
+(                     | event management) Tj
 
 0 -30 Td
 /F1 16 Tf
 (FLEXIBLE SCHEDULING OPTIONS) Tj
 
 0 -25 Td
-/F2 12 Tf
+/F1 12 Tf
 (Choose the shift that works for your lifestyle:) Tj
-0 -20 Td
-(• Morning Shift: 8:00 AM - 12:00 PM) Tj
-0 -15 Td
-(• Afternoon Shift: 1:00 PM - 5:00 PM) Tj
-0 -15 Td
-(• Evening Shift: 6:00 PM - 10:00 PM) Tj
 
-0 -30 Td
-/F1 16 Tf
-(ENHANCED LEARNING FEATURES) Tj
-
-0 -25 Td
-/F2 12 Tf
-(All programs include modern skill integration:) Tj
-0 -20 Td
-(• Digital Literacy - Essential computer and internet skills) Tj
 0 -15 Td
-(• Critical Thinking - Problem-solving and decision-making) Tj
+(____________________________________________) Tj
 0 -15 Td
-(• AI Applications - Future-ready technology integration) Tj
+/F2 11 Tf
+(SHIFT        | TIME               | IDEAL FOR) Tj
+0 -10 Td
+(____________________________________________) Tj
 
-0 -30 Td
-/F1 16 Tf
-(TARGET DEMOGRAPHIC) Tj
-0 -25 Td
-/F2 12 Tf
-(Ideal for individuals aged 18-35 seeking practical, market-ready skills) Tj
+0 -15 Td
+(Morning      | 8:00 AM - 12:00 PM | Early risers) Tj
+0 -15 Td
+(Afternoon    | 1:00 PM - 5:00 PM  | Midday learners) Tj
+0 -15 Td
+(Evening      | 6:00 PM - 10:00 PM | Working professionals) Tj
 
 ET
 endstream
@@ -184,7 +212,7 @@ endobj
 
 10 0 obj
 <<
-/Length 2600
+/Length 3200
 >>
 stream
 BT
@@ -211,18 +239,28 @@ BT
 (SCHOLARSHIP COVERAGE) Tj
 
 0 -25 Td
-/F2 12 Tf
-(✓ 100% Tuition Fee Coverage for selected programs) Tj
+/F1 12 Tf
+(What is included:) Tj
 0 -15 Td
-(✓ Professional Certification upon completion) Tj
+(____________________________________________) Tj
 0 -15 Td
-(✓ Access to modern equipment and facilities) Tj
+/F2 11 Tf
+(BENEFIT                 | DESCRIPTION) Tj
+0 -10 Td
+(____________________________________________) Tj
+
 0 -15 Td
-(✓ Expert instructor guidance throughout the program) Tj
+(Tuition Coverage        | 100% of program fees) Tj
 0 -15 Td
-(✓ Career placement support and job readiness training) Tj
+(Professional Certification | Upon completion) Tj
 0 -15 Td
-(✓ Entrepreneurship guidance for self-employment opportunities) Tj
+(Modern Equipment        | Full access included) Tj
+0 -15 Td
+(Expert Instruction      | Qualified trainers) Tj
+0 -15 Td
+(Career Support          | Job placement assistance) Tj
+0 -15 Td
+(Business Training       | Entrepreneurship guidance) Tj
 
 0 -25 Td
 /F1 14 Tf
@@ -230,73 +268,66 @@ BT
 
 0 -30 Td
 /F1 16 Tf
-(ELIGIBLE PROGRAMS FOR SCHOLARSHIP) Tj
+(ELIGIBLE SCHOLARSHIP PROGRAMS) Tj
 
-0 -25 Td
-/F2 12 Tf
-(• Hairdressing \(9 months\)) Tj
+0 -20 Td
+(____________________________________________) Tj
 0 -15 Td
-(• Beauty Therapy \(9 months\)) Tj
+/F2 11 Tf
+(PROGRAM             | DURATION | MONTHLY FEE) Tj
+0 -10 Td
+(____________________________________________) Tj
+
 0 -15 Td
-(• Baking & Pastry \(9 months\)) Tj
+(Hairdressing        | 9 months | Ksh. 2,999) Tj
 0 -15 Td
-(• Electrical Installation \(9 months\)) Tj
+(Beauty Therapy      | 9 months | Ksh. 2,999) Tj
+0 -15 Td
+(Baking & Pastry     | 9 months | Ksh. 2,999) Tj
+0 -15 Td
+(Electrical Installation | 9 months | Ksh. 2,999) Tj
 
 0 -30 Td
 /F1 16 Tf
 (APPLICATION REQUIREMENTS) Tj
 
-0 -25 Td
-/F2 12 Tf
-(To apply for the scholarship program, you need:) Tj
 0 -20 Td
-(1. Two \(2\) recent passport-size photographs) Tj
+(____________________________________________) Tj
 0 -15 Td
-(2. Photocopy of National ID or Birth Certificate) Tj
+/F2 11 Tf
+(ITEM                    | QUANTITY) Tj
+0 -10 Td
+(____________________________________________) Tj
+
 0 -15 Td
-(3. Monthly commitment fee of Ksh. 2,999) Tj
+(Passport Photos         | 2 recent copies) Tj
 0 -15 Td
-(4. Completed application form) Tj
+(ID/Birth Certificate    | 1 photocopy) Tj
+0 -15 Td
+(Commitment Fee          | Ksh. 2,999 monthly) Tj
+0 -15 Td
+(Application Form        | Completed form) Tj
 
 0 -30 Td
 /F1 16 Tf
 (ENROLLMENT PROCESS) Tj
 
-0 -25 Td
-/F1 12 Tf
-(STEP 1: Contact Us) Tj
-0 -15 Td
-/F2 11 Tf
-(Call or WhatsApp 0705 252 790 to discuss program options,) Tj
-0 -12 Td
-(schedules, and scholarship availability.) Tj
-
 0 -20 Td
-/F1 12 Tf
-(STEP 2: Choose Your Program) Tj
+(____________________________________________) Tj
 0 -15 Td
 /F2 11 Tf
-(Select from available vocational trades or creative arts programs) Tj
-0 -12 Td
-(that align with your career goals and interests.) Tj
+(STEP | ACTION            | CONTACT METHOD) Tj
+0 -10 Td
+(____________________________________________) Tj
 
-0 -20 Td
-/F1 12 Tf
-(STEP 3: Complete Enrollment) Tj
 0 -15 Td
-/F2 11 Tf
-(Submit required documents and payment. We offer flexible) Tj
-0 -12 Td
-(payment options to accommodate different financial situations.) Tj
-
-0 -20 Td
-/F1 12 Tf
-(STEP 4: Begin Your Journey) Tj
+(1    | Initial Contact   | Call 0705 252 790) Tj
 0 -15 Td
-/F2 11 Tf
-(Start hands-on training with expert mentorship and comprehensive) Tj
-0 -12 Td
-(support toward employment or entrepreneurship success.) Tj
+(2    | Program Selection | Visit our campus) Tj
+0 -15 Td
+(3    | Document Submit   | Bring requirements) Tj
+0 -15 Td
+(4    | Begin Training    | Start your journey) Tj
 
 ET
 endstream
@@ -304,7 +335,7 @@ endobj
 
 11 0 obj
 <<
-/Length 2200
+/Length 2800
 >>
 stream
 BT
@@ -319,113 +350,124 @@ BT
 0 -25 Td
 /F1 12 Tf
 (3-MONTH PROGRAMS:) Tj
-0 -20 Td
+
+0 -15 Td
+(____________________________________________) Tj
+0 -15 Td
 /F2 11 Tf
-(• Barbering: Ksh. 15,000 total) Tj
+(PROGRAM             | TOTAL FEE    | MONTHLY) Tj
+0 -10 Td
+(____________________________________________) Tj
+
 0 -15 Td
-(• Dreadlock Specialist: Ksh. 12,000 total) Tj
+(Barbering           | Ksh. 15,000  | Ksh. 5,000) Tj
 0 -15 Td
-(• Music - Vocals: Ksh. 18,000 total) Tj
+(Dreadlock Specialist| Ksh. 12,000  | Ksh. 4,000) Tj
 0 -15 Td
-(• Music - DJing: Ksh. 20,000 total) Tj
+(Music - Vocals      | Ksh. 18,000  | Ksh. 6,000) Tj
+0 -15 Td
+(Music - DJing       | Ksh. 20,000  | Ksh. 6,667) Tj
 
 0 -25 Td
 /F1 12 Tf
 (9-MONTH PROGRAMS:) Tj
-0 -20 Td
+
+0 -15 Td
+(____________________________________________) Tj
+0 -15 Td
 /F2 11 Tf
-(• Hairdressing: Ksh. 45,000 total) Tj
+(PROGRAM             | TOTAL FEE    | MONTHLY) Tj
+0 -10 Td
+(____________________________________________) Tj
+
 0 -15 Td
-(• Beauty Therapy: Ksh. 40,000 total) Tj
+(Hairdressing        | Ksh. 45,000  | Ksh. 5,000) Tj
 0 -15 Td
-(• Baking & Pastry: Ksh. 35,000 total) Tj
+(Beauty Therapy      | Ksh. 40,000  | Ksh. 4,444) Tj
 0 -15 Td
-(• Electrical Installation: Ksh. 50,000 total) Tj
+(Baking & Pastry     | Ksh. 35,000  | Ksh. 3,889) Tj
 0 -15 Td
-(• Plumbing: Ksh. 48,000 total) Tj
+(Electrical Installation | Ksh. 50,000 | Ksh. 5,556) Tj
 0 -15 Td
-(• Music - Piano: Ksh. 42,000 total) Tj
+(Plumbing            | Ksh. 48,000  | Ksh. 5,333) Tj
+0 -15 Td
+(Music - Piano       | Ksh. 42,000  | Ksh. 4,667) Tj
 
 0 -30 Td
 /F1 16 Tf
-(PAYMENT OPTIONS) Tj
+(PAYMENT OPTIONS & DISCOUNTS) Tj
 
-0 -25 Td
-/F2 12 Tf
-(We understand that education is an investment. Choose from:) Tj
 0 -20 Td
-(• Full payment discount: 10% off total fees) Tj
+(____________________________________________) Tj
 0 -15 Td
-(• Monthly installments: Divide fees across program duration) Tj
+/F2 11 Tf
+(OPTION              | BENEFIT      | DETAILS) Tj
+0 -10 Td
+(____________________________________________) Tj
+
 0 -15 Td
-(• Scholarship programs: Up to 100% tuition coverage) Tj
+(Full Payment        | 10% Discount | Pay complete fee) Tj
 0 -15 Td
-(• Work-study arrangements: Available for qualifying students) Tj
+(Monthly Installment | Flexible     | Spread payments) Tj
+0 -15 Td
+(Scholarship Program | 100% Coverage| Apply by Dec 18) Tj
+0 -15 Td
+(Work-Study Plan     | Reduced Fees | Qualifying students) Tj
 
 0 -30 Td
 /F1 16 Tf
-(WHAT'S INCLUDED) Tj
+(WHAT IS INCLUDED IN YOUR PROGRAM) Tj
 
-0 -25 Td
-/F2 12 Tf
-(Your program fee covers:) Tj
 0 -20 Td
-(✓ All training materials and supplies) Tj
-0 -15 Td
-(✓ Access to modern equipment and facilities) Tj
-0 -15 Td
-(✓ Professional certification upon completion) Tj
-0 -15 Td
-(✓ Career guidance and job placement support) Tj
-0 -15 Td
-(✓ Entrepreneurship training and business planning) Tj
-0 -15 Td
-(✓ Digital literacy and AI applications training) Tj
-
-0 -30 Td
-/F1 16 Tf
-(CORE VALUES) Tj
-
-0 -25 Td
 /F2 12 Tf
-(• Affordable, quality education accessible to all) Tj
+(Your program fee covers all of the following:) Tj
+
 0 -15 Td
-(• Flexible learning options for diverse schedules) Tj
+(+ All training materials and supplies) Tj
 0 -15 Td
-(• Inclusivity, fairness, and community-backed support) Tj
+(+ Modern equipment and facility access) Tj
 0 -15 Td
-(• Transforming lives through practical skills and self-reliance) Tj
+(+ Professional certification upon completion) Tj
+0 -15 Td
+(+ Career guidance and job placement support) Tj
+0 -15 Td
+(+ Entrepreneurship training and business planning) Tj
+0 -15 Td
+(+ Digital literacy and AI applications training) Tj
 
 0 -30 Td
 /F1 16 Tf
 (CONTACT INFORMATION) Tj
 
-0 -25 Td
-/F2 12 Tf
-(Ready to start your journey? Get in touch today!) Tj
 0 -20 Td
-/F1 12 Tf
-(Address: ) Tj
-/F2 12 Tf
-(Rubis Petrol Station, Gikambura Kikuyu, 2nd Floor) Tj
+(____________________________________________) Tj
 0 -15 Td
-/F1 12 Tf
-(Phone/WhatsApp: ) Tj
-/F2 12 Tf
-(0705 252 790) Tj
-0 -15 Td
-/F1 12 Tf
-(Operating Hours: ) Tj
-/F2 12 Tf
-(Monday - Friday: 8:00 AM - 10:00 PM) Tj
-0 -12 Td
-(Saturday: 8:00 AM - 5:00 PM) Tj
+/F2 11 Tf
+(CONTACT TYPE        | DETAILS) Tj
+0 -10 Td
+(____________________________________________) Tj
 
-0 -25 Td
-/F3 10 Tf
-(This enrollment packet contains essential information for prospective students.) Tj
+0 -15 Td
+/F1 12 Tf
+(Address             |) Tj
+/F2 12 Tf
+( Rubis Petrol Station,) Tj
 0 -12 Td
-(Please retain for your records and refer to it throughout the application process.) Tj
+(                    | Gikambura Kikuyu, 2nd Floor) Tj
+
+0 -15 Td
+/F1 12 Tf
+(Phone/WhatsApp      |) Tj
+/F2 12 Tf
+( 0705 252 790) Tj
+
+0 -15 Td
+/F1 12 Tf
+(Office Hours        |) Tj
+/F2 12 Tf
+( Mon-Fri: 8AM-10PM) Tj
+0 -12 Td
+(                    | Saturday: 8AM-5PM) Tj
 
 ET
 endstream
@@ -443,8 +485,8 @@ xref
 0000000586 00000 n
 0000000643 00000 n
 0000000706 00000 n
-0000003558 00000 n
-0000006210 00000 n
+0000003708 00000 n
+0000006960 00000 n
 trailer
 <<
 /Size 12
@@ -457,5 +499,5 @@ trailer
 >>
 >>
 startxref
-8462
+9812
 %%EOF

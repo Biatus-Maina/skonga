@@ -104,7 +104,7 @@ endobj
 
 10 0 obj
 <<
-/Length 2900
+/Length 3200
 >>
 stream
 BT
@@ -150,73 +150,73 @@ BT
 (Core Values:) Tj
 0 -15 Td
 /F2 11 Tf
-(• Excellence in education and training delivery) Tj
+(+ Excellence in education and training delivery) Tj
 0 -12 Td
-(• Inclusivity and equal opportunities for all students) Tj
+(+ Inclusivity and equal opportunities for all students) Tj
 0 -12 Td
-(• Integrity in all our interactions and operations) Tj
+(+ Integrity in all our interactions and operations) Tj
 0 -12 Td
-(• Innovation through modern teaching methods and technology) Tj
+(+ Innovation through modern teaching methods and technology) Tj
 0 -12 Td
-(• Community support and social responsibility) Tj
+(+ Community support and social responsibility) Tj
 
 0 -30 Td
 /F1 16 Tf
 (ACADEMIC CALENDAR 2025-26) Tj
 
-0 -25 Td
-/F1 12 Tf
-(TERM 1: January 13 - April 4, 2025) Tj
-0 -15 Td
-/F2 11 Tf
-(• Orientation Week: January 13-17, 2025) Tj
-0 -12 Td
-(• Mid-term Evaluations: February 17-21, 2025) Tj
-0 -12 Td
-(• Term Break: April 7-11, 2025) Tj
-
 0 -20 Td
 /F1 12 Tf
-(TERM 2: April 14 - July 4, 2025) Tj
+(_________________________________________________) Tj
 0 -15 Td
 /F2 11 Tf
-(• Skills Assessment Week: May 19-23, 2025) Tj
-0 -12 Td
-(• Mid-year Break: July 7-18, 2025) Tj
+(TERM    | DATES              | KEY EVENTS) Tj
+0 -10 Td
+(_________________________________________________) Tj
 
-0 -20 Td
-/F1 12 Tf
-(TERM 3: July 21 - October 10, 2025) Tj
 0 -15 Td
-/F2 11 Tf
-(• Final Projects & Certifications: September 14-18, 2025) Tj
+(Term 1  | Jan 13 - Apr 4     | Orientation: Jan 13-17) Tj
 0 -12 Td
-(• Graduation Ceremony: October 13, 2025) Tj
+(        | 2025               | Mid-term: Feb 17-21) Tj
+0 -12 Td
+(        |                    | Break: Apr 7-11) Tj
+
+0 -15 Td
+(Term 2  | Apr 14 - Jul 4     | Skills Test: May 19-23) Tj
+0 -12 Td
+(        | 2025               | Break: Jul 7-18) Tj
+
+0 -15 Td
+(Term 3  | Jul 21 - Oct 10    | Final Projects: Sep 14-18) Tj
+0 -12 Td
+(        | 2025               | Graduation: Oct 13) Tj
 
 0 -30 Td
 /F1 16 Tf
 (CLASS SCHEDULES) Tj
 
-0 -25 Td
+0 -20 Td
 /F1 12 Tf
-(Morning Shift: 8:00 AM - 12:00 PM) Tj
+(_________________________________________________) Tj
 0 -15 Td
 /F2 11 Tf
-(Ideal for early risers and those with afternoon commitments) Tj
+(SHIFT      | TIME              | IDEAL FOR) Tj
+0 -10 Td
+(_________________________________________________) Tj
 
 0 -15 Td
-/F1 12 Tf
-(Afternoon Shift: 1:00 PM - 5:00 PM) Tj
-0 -15 Td
-/F2 11 Tf
-(Perfect for students who prefer midday learning) Tj
+(Morning    | 8:00 AM - 12:00 PM | Early risers with) Tj
+0 -12 Td
+(           |                   | afternoon commitments) Tj
 
 0 -15 Td
-/F1 12 Tf
-(Evening Shift: 6:00 PM - 10:00 PM) Tj
+(Afternoon  | 1:00 PM - 5:00 PM  | Students who prefer) Tj
+0 -12 Td
+(           |                   | midday learning) Tj
+
 0 -15 Td
-/F2 11 Tf
-(Designed for working professionals and those with daytime obligations) Tj
+(Evening    | 6:00 PM - 10:00 PM | Working professionals) Tj
+0 -12 Td
+(           |                   | with daytime jobs) Tj
 
 ET
 endstream
@@ -224,7 +224,7 @@ endobj
 
 11 0 obj
 <<
-/Length 3100
+/Length 3600
 >>
 stream
 BT
@@ -243,41 +243,63 @@ BT
 (the full benefit of their chosen programs and develop professional habits.) Tj
 
 0 -25 Td
-/F1 12 Tf
-(Attendance Requirements:) Tj
-0 -18 Td
-/F2 11 Tf
-(• Minimum 80% attendance required for program completion) Tj
-0 -15 Td
-(• Students must attend at least 4 out of 5 classes per week) Tj
-0 -15 Td
-(• Practical sessions are mandatory and cannot be made up easily) Tj
-0 -15 Td
-(• Late arrivals \(more than 15 minutes\) count as 0.5 absence) Tj
+/F1 16 Tf
+(ATTENDANCE REQUIREMENTS TABLE) Tj
 
 0 -20 Td
 /F1 12 Tf
-(Excused Absences:) Tj
-0 -18 Td
+(_________________________________________________) Tj
+0 -15 Td
 /F2 11 Tf
-(• Medical emergencies \(doctor's note required\)) Tj
+(REQUIREMENT        | STANDARD          | DETAILS) Tj
+0 -10 Td
+(_________________________________________________) Tj
+
 0 -15 Td
-(• Family emergencies \(documentation may be requested\)) Tj
+(Minimum Attendance | 80% of classes    | Required for completion) Tj
 0 -15 Td
-(• Religious observances \(advance notice required\)) Tj
+(Weekly Attendance  | 4 out of 5 classes| Mandatory requirement) Tj
 0 -15 Td
-(• Court appearances \(legal documentation required\)) Tj
+(Practical Sessions | Mandatory         | Cannot be made up easily) Tj
+0 -15 Td
+(Late Arrivals      | 15+ minutes       | Counts as 0.5 absence) Tj
+
+0 -25 Td
+/F1 16 Tf
+(EXCUSED ABSENCES) Tj
 
 0 -20 Td
 /F1 12 Tf
-(Reporting Absences:) Tj
-0 -18 Td
+(_________________________________________________) Tj
+0 -15 Td
 /F2 11 Tf
-(• Contact the college at 0705 252 790 before 9:00 AM) Tj
+(TYPE               | DOCUMENTATION     | ADVANCE NOTICE) Tj
+0 -10 Td
+(_________________________________________________) Tj
+
 0 -15 Td
-(• Provide reason for absence and expected return date) Tj
+(Medical Emergency  | Doctor's note     | Not required) Tj
 0 -15 Td
-(• Submit supporting documentation within 3 days of return) Tj
+(Family Emergency   | May be requested  | When possible) Tj
+0 -15 Td
+(Religious Observ.  | None required     | Required) Tj
+0 -15 Td
+(Court Appearance   | Legal documents   | Required) Tj
+
+0 -25 Td
+/F1 16 Tf
+(REPORTING PROCEDURES) Tj
+
+0 -25 Td
+/F1 12 Tf
+(How to report absences:) Tj
+0 -15 Td
+/F2 11 Tf
+(1. Contact college at 0705 252 790 before 9:00 AM) Tj
+0 -15 Td
+(2. Provide reason for absence and expected return date) Tj
+0 -15 Td
+(3. Submit supporting documentation within 3 days of return) Tj
 
 0 -30 Td
 /F1 20 Tf
@@ -288,49 +310,28 @@ BT
 (Creating a respectful learning environment) Tj
 
 0 -25 Td
-/F1 12 Tf
-(Professional Behavior:) Tj
-0 -18 Td
-/F2 11 Tf
-(• Treat all students, instructors, and staff with respect) Tj
-0 -15 Td
-(• Use appropriate language at all times) Tj
-0 -15 Td
-(• Dress appropriately for your chosen field of study) Tj
-0 -15 Td
-(• Maintain personal hygiene standards) Tj
-0 -15 Td
-(• Be punctual for all classes and appointments) Tj
+/F1 16 Tf
+(PROFESSIONAL BEHAVIOR STANDARDS) Tj
 
 0 -20 Td
 /F1 12 Tf
-(Classroom Etiquette:) Tj
-0 -18 Td
+(_________________________________________________) Tj
+0 -15 Td
 /F2 11 Tf
-(• Silence mobile phones during class sessions) Tj
-0 -15 Td
-(• Participate actively in discussions and practical exercises) Tj
-0 -15 Td
-(• Ask questions when you need clarification) Tj
-0 -15 Td
-(• Respect others' learning space and equipment) Tj
-0 -15 Td
-(• Clean up your workspace after each session) Tj
+(AREA               | EXPECTATION       | EXAMPLES) Tj
+0 -10 Td
+(_________________________________________________) Tj
 
-0 -20 Td
-/F1 12 Tf
-(Prohibited Behaviors:) Tj
-0 -18 Td
-/F2 11 Tf
-(• Harassment, discrimination, or bullying of any kind) Tj
 0 -15 Td
-(• Use of alcohol or illegal substances on campus) Tj
+(Respect            | All interactions  | Students, staff, visitors) Tj
 0 -15 Td
-(• Smoking in designated non-smoking areas) Tj
+(Language           | Appropriate use   | No offensive language) Tj
 0 -15 Td
-(• Theft or damage to college property) Tj
+(Dress Code         | Field appropriate | Clean, professional) Tj
 0 -15 Td
-(• Disruptive behavior that interferes with learning) Tj
+(Personal Hygiene   | Maintained        | Daily grooming) Tj
+0 -15 Td
+(Punctuality        | All commitments   | Classes, appointments) Tj
 
 ET
 endstream
@@ -338,7 +339,7 @@ endobj
 
 12 0 obj
 <<
-/Length 3200
+/Length 3800
 >>
 stream
 BT
@@ -351,47 +352,68 @@ BT
 (Responsible use of college resources) Tj
 
 0 -25 Td
-/F1 12 Tf
-(Equipment Usage:) Tj
-0 -18 Td
-/F2 11 Tf
-(• All equipment must be used under instructor supervision) Tj
-0 -15 Td
-(• Report any damage or malfunctions immediately) Tj
-0 -15 Td
-(• Students are responsible for equipment during their use) Tj
-0 -15 Td
-(• Return all tools and materials to designated areas) Tj
-0 -15 Td
-(• Personal protective equipment must be worn when required) Tj
+/F1 16 Tf
+(EQUIPMENT USAGE GUIDELINES) Tj
 
 0 -20 Td
 /F1 12 Tf
-(Digital Literacy Guidelines:) Tj
-0 -18 Td
+(_________________________________________________) Tj
+0 -15 Td
 /F2 11 Tf
-(• Use computers and internet resources for educational purposes) Tj
+(RULE               | REQUIREMENT       | CONSEQUENCE) Tj
+0 -10 Td
+(_________________________________________________) Tj
+
 0 -15 Td
-(• Respect intellectual property and copyright laws) Tj
+(Supervision        | Instructor present| Equipment restricted) Tj
 0 -15 Td
-(• Maintain appropriate online behavior in digital communications) Tj
+(Damage Reporting   | Immediate         | Repair charges apply) Tj
 0 -15 Td
-(• Protect login credentials and personal information) Tj
+(Responsibility     | During use period | Student liable) Tj
 0 -15 Td
-(• Report any technical issues to instructors promptly) Tj
+(Return Policy      | Designated areas  | End of each session) Tj
+0 -15 Td
+(Safety Equipment   | When required     | Mandatory usage) Tj
+
+0 -25 Td
+/F1 16 Tf
+(DIGITAL LITERACY GUIDELINES) Tj
 
 0 -20 Td
 /F1 12 Tf
-(AI and Technology Integration:) Tj
-0 -18 Td
+(_________________________________________________) Tj
+0 -15 Td
 /F2 11 Tf
-(• Learn to use AI tools ethically and effectively) Tj
+(USAGE TYPE         | PURPOSE           | RESTRICTIONS) Tj
+0 -10 Td
+(_________________________________________________) Tj
+
 0 -15 Td
-(• Understand the limitations and capabilities of AI applications) Tj
+(Computer Access    | Educational only  | No personal use) Tj
 0 -15 Td
-(• Apply technology solutions to enhance your chosen trade) Tj
+(Internet Usage     | Learning resources| Appropriate content) Tj
 0 -15 Td
-(• Stay updated with industry-relevant technological advances) Tj
+(Online Behavior    | Professional      | Respectful communication) Tj
+0 -15 Td
+(Login Security     | Protected         | No sharing passwords) Tj
+0 -15 Td
+(Technical Issues   | Report promptly   | To instructors) Tj
+
+0 -25 Td
+/F1 16 Tf
+(AI AND TECHNOLOGY INTEGRATION) Tj
+
+0 -25 Td
+/F2 12 Tf
+(Learning objectives for modern technology:) Tj
+0 -15 Td
+(+ Learn ethical and effective use of AI tools) Tj
+0 -15 Td
+(+ Understand limitations and capabilities of AI applications) Tj
+0 -15 Td
+(+ Apply technology solutions to enhance your chosen trade) Tj
+0 -15 Td
+(+ Stay updated with industry-relevant technological advances) Tj
 
 0 -30 Td
 /F1 20 Tf
@@ -402,75 +424,44 @@ BT
 (Ensuring a safe learning environment) Tj
 
 0 -25 Td
-/F1 12 Tf
-(General Safety:) Tj
-0 -18 Td
-/F2 11 Tf
-(• Follow all safety procedures and protocols) Tj
-0 -15 Td
-(• Wear appropriate safety gear when required) Tj
-0 -15 Td
-(• Report accidents, injuries, or safety hazards immediately) Tj
-0 -15 Td
-(• Keep walkways and emergency exits clear) Tj
-0 -15 Td
-(• Know the location of fire extinguishers and first aid kits) Tj
+/F1 16 Tf
+(GENERAL SAFETY REQUIREMENTS) Tj
 
 0 -20 Td
 /F1 12 Tf
-(Health Requirements:) Tj
-0 -18 Td
+(_________________________________________________) Tj
+0 -15 Td
 /F2 11 Tf
-(• Do not attend classes when experiencing contagious illness) Tj
-0 -15 Td
-(• Inform instructors of any medical conditions that may affect learning) Tj
-0 -15 Td
-(• Keep emergency contact information updated) Tj
-0 -15 Td
-(• Maintain personal hygiene appropriate for your program) Tj
+(SAFETY ITEM        | REQUIREMENT       | LOCATION) Tj
+0 -10 Td
+(_________________________________________________) Tj
 
-0 -20 Td
-/F1 12 Tf
-(Emergency Procedures:) Tj
-0 -18 Td
-/F2 11 Tf
-(• Familiarize yourself with evacuation routes) Tj
 0 -15 Td
-(• Follow instructor directions during emergency situations) Tj
+(Safety Procedures  | Follow all        | Posted in each room) Tj
 0 -15 Td
-(• Assembly point: Main parking area near Rubis Petrol Station) Tj
+(Protective Gear    | Wear when required| Available at stations) Tj
 0 -15 Td
-(• Emergency contact: 0705 252 790) Tj
-
-0 -30 Td
-/F1 20 Tf
-(ASSESSMENT & CERTIFICATION) Tj
+(Accident Reporting | Immediate         | To instructor/office) Tj
+0 -15 Td
+(Emergency Exits    | Keep clear        | Marked throughout) Tj
+0 -15 Td
+(Safety Equipment   | Know locations    | Fire, first aid kits) Tj
 
 0 -25 Td
-/F1 12 Tf
-(Evaluation Methods:) Tj
-0 -18 Td
-/F2 11 Tf
-(• Continuous assessment through practical demonstrations) Tj
-0 -15 Td
-(• Written examinations on theoretical knowledge) Tj
-0 -15 Td
-(• Final project or portfolio presentation) Tj
-0 -15 Td
-(• Peer evaluation and self-assessment components) Tj
+/F1 16 Tf
+(HEALTH REQUIREMENTS) Tj
 
-0 -20 Td
-/F1 12 Tf
-(Certification Requirements:) Tj
-0 -18 Td
-/F2 11 Tf
-(• Minimum 80% attendance throughout the program) Tj
+0 -25 Td
+/F2 12 Tf
+(Student health responsibilities:) Tj
 0 -15 Td
-(• Passing grade of 70% or higher on all assessments) Tj
+(+ Do not attend classes when experiencing contagious illness) Tj
 0 -15 Td
-(• Completion of all required practical hours) Tj
+(+ Inform instructors of medical conditions affecting learning) Tj
 0 -15 Td
-(• Settlement of all financial obligations) Tj
+(+ Keep emergency contact information updated) Tj
+0 -15 Td
+(+ Maintain personal hygiene appropriate for your program) Tj
 
 ET
 endstream
@@ -478,131 +469,145 @@ endobj
 
 13 0 obj
 <<
-/Length 2800
+/Length 3600
 >>
 stream
 BT
 /F1 20 Tf
 72 720 Td
-(FINANCIAL POLICIES) Tj
+(FINANCIAL POLICIES & ASSESSMENT) Tj
 
 0 -25 Td
 /F1 14 Tf
 (Clear and fair financial arrangements) Tj
 
 0 -25 Td
-/F1 12 Tf
-(Payment Schedules:) Tj
-0 -18 Td
-/F2 11 Tf
-(• Registration fee due at enrollment \(non-refundable\)) Tj
-0 -15 Td
-(• Monthly installments due by the 5th of each month) Tj
-0 -15 Td
-(• Late payment fee of Ksh. 500 after 10 days) Tj
-0 -15 Td
-(• Payment receipts will be issued for all transactions) Tj
+/F1 16 Tf
+(PAYMENT SCHEDULE TABLE) Tj
 
 0 -20 Td
 /F1 12 Tf
-(Refund Policy:) Tj
-0 -18 Td
+(_________________________________________________) Tj
+0 -15 Td
 /F2 11 Tf
-(• Registration fees are non-refundable) Tj
-0 -15 Td
-(• Withdrawal within first week: 90% refund of tuition) Tj
-0 -15 Td
-(• Withdrawal within first month: 70% refund of tuition) Tj
-0 -15 Td
-(• No refunds after first month of program) Tj
-0 -15 Td
-(• Medical withdrawals considered on case-by-case basis) Tj
+(PAYMENT TYPE       | DUE DATE          | LATE FEE) Tj
+0 -10 Td
+(_________________________________________________) Tj
 
-0 -20 Td
-/F1 12 Tf
-(Scholarship Obligations:) Tj
-0 -18 Td
-/F2 11 Tf
-(• Monthly commitment fee of Ksh. 2,999 must be paid on time) Tj
 0 -15 Td
-(• Maintain minimum 80% attendance to retain scholarship) Tj
+(Registration Fee   | At enrollment     | Non-refundable) Tj
 0 -15 Td
-(• Achieve satisfactory academic progress) Tj
+(Monthly Payment    | 5th of each month | Ksh. 500 after 10 days) Tj
 0 -15 Td
-(• Complete community service hours as required) Tj
-
-0 -30 Td
-/F1 20 Tf
-(STUDENT SUPPORT SERVICES) Tj
+(Final Payment      | Before graduation | No late fees) Tj
+0 -15 Td
+(Scholarship Fee    | Monthly: Ksh 2999 | Must maintain 80% attendance) Tj
 
 0 -25 Td
-/F1 12 Tf
-(Academic Support:) Tj
-0 -18 Td
-/F2 11 Tf
-(• Individual tutoring available upon request) Tj
-0 -15 Td
-(• Study groups organized for challenging subjects) Tj
-0 -15 Td
-(• Career counseling and job placement assistance) Tj
-0 -15 Td
-(• Entrepreneurship guidance and business planning support) Tj
+/F1 16 Tf
+(REFUND POLICY TABLE) Tj
 
 0 -20 Td
 /F1 12 Tf
-(Personal Support:) Tj
-0 -18 Td
+(_________________________________________________) Tj
+0 -15 Td
 /F2 11 Tf
-(• Flexible scheduling accommodations when possible) Tj
-0 -15 Td
-(• Referrals to community resources for various needs) Tj
-0 -15 Td
-(• Conflict resolution assistance) Tj
-0 -15 Td
-(• Financial counseling and payment plan options) Tj
+(WITHDRAWAL TIME    | REFUND PERCENT    | CONDITIONS) Tj
+0 -10 Td
+(_________________________________________________) Tj
 
-0 -30 Td
-/F1 20 Tf
-(GRIEVANCE PROCEDURES) Tj
+0 -15 Td
+(Registration       | 0%                | Non-refundable) Tj
+0 -15 Td
+(Within 1 week      | 90%               | Of tuition only) Tj
+0 -15 Td
+(Within 1 month     | 70%               | Of tuition only) Tj
+0 -15 Td
+(After 1 month      | 0%                | No refunds) Tj
+0 -15 Td
+(Medical withdrawal | Case by case      | Documentation required) Tj
+
+0 -25 Td
+/F1 16 Tf
+(ASSESSMENT & CERTIFICATION) Tj
+
+0 -20 Td
+/F1 12 Tf
+(_________________________________________________) Tj
+0 -15 Td
+/F2 11 Tf
+(EVALUATION METHOD  | WEIGHT            | REQUIREMENT) Tj
+0 -10 Td
+(_________________________________________________) Tj
+
+0 -15 Td
+(Practical Demos    | 40%               | Hands-on skills) Tj
+0 -15 Td
+(Written Exams      | 30%               | Theory knowledge) Tj
+0 -15 Td
+(Final Project      | 20%               | Portfolio/presentation) Tj
+0 -15 Td
+(Peer/Self Assess   | 10%               | Collaboration skills) Tj
+
+0 -25 Td
+/F1 16 Tf
+(CERTIFICATION REQUIREMENTS) Tj
 
 0 -25 Td
 /F2 12 Tf
-(We are committed to addressing student concerns promptly and fairly.) Tj
+(To receive your professional certification:) Tj
+0 -15 Td
+(+ Minimum 80% attendance throughout the program) Tj
+0 -15 Td
+(+ Passing grade of 70% or higher on all assessments) Tj
+0 -15 Td
+(+ Completion of all required practical hours) Tj
+0 -15 Td
+(+ Settlement of all financial obligations) Tj
 
 0 -25 Td
+/F1 16 Tf
+(STUDENT SUPPORT SERVICES) Tj
+
+0 -20 Td
 /F1 12 Tf
-(Step 1: Direct Communication) Tj
+(_________________________________________________) Tj
 0 -15 Td
 /F2 11 Tf
-(Speak directly with the instructor or staff member involved) Tj
+(SERVICE TYPE       | AVAILABILITY      | CONTACT METHOD) Tj
+0 -10 Td
+(_________________________________________________) Tj
 
 0 -15 Td
-/F1 12 Tf
-(Step 2: Formal Complaint) Tj
+(Academic Tutoring  | Upon request      | Speak to instructor) Tj
 0 -15 Td
-/F2 11 Tf
-(Submit written complaint to the Program Coordinator) Tj
+(Study Groups       | Organized         | Check notice board) Tj
+0 -15 Td
+(Career Counseling  | Weekly sessions   | Book appointment) Tj
+0 -15 Td
+(Business Guidance  | Available         | Schedule meeting) Tj
 
-0 -15 Td
-/F1 12 Tf
-(Step 3: Administrative Review) Tj
-0 -15 Td
-/F2 11 Tf
-(Appeal to the College Director if unsatisfied with initial response) Tj
-
-0 -30 Td
+0 -25 Td
 /F1 16 Tf
 (CONTACT INFORMATION) Tj
 
-0 -25 Td
-/F2 12 Tf
-(Main Office: 0705 252 790) Tj
+0 -20 Td
+/F1 12 Tf
+(_________________________________________________) Tj
 0 -15 Td
-(Address: Rubis Petrol Station, Gikambura Kikuyu, 2nd Floor) Tj
+/F2 11 Tf
+(CONTACT TYPE       | DETAILS           | HOURS) Tj
+0 -10 Td
+(_________________________________________________) Tj
+
 0 -15 Td
-(Office Hours: Monday-Friday 8:00 AM - 6:00 PM) Tj
+(Main Office        | 0705 252 790      | Mon-Fri: 8AM-6PM) Tj
 0 -15 Td
-(Saturday: 8:00 AM - 2:00 PM) Tj
+(Address            | Rubis Petrol Station | Saturday: 8AM-2PM) Tj
+0 -12 Td
+(                   | Gikambura Kikuyu  |) Tj
+0 -12 Td
+(                   | 2nd Floor         |) Tj
 
 0 -25 Td
 /F3 11 Tf
@@ -631,9 +636,9 @@ xref
 0000000783 00000 n
 0000000840 00000 n
 0000000903 00000 n
-0000003855 00000 n
-0000007007 00000 n
-0000010260 00000 n
+0000004155 00000 n
+0000007807 00000 n
+0000011659 00000 n
 trailer
 <<
 /Size 14
@@ -646,5 +651,5 @@ trailer
 >>
 >>
 startxref
-13112
+15311
 %%EOF
