@@ -1,20 +1,650 @@
 %PDF-1.4
-1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
-2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
-3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >> endobj
-4 0 obj << /Length 109 >> stream
-BT /F1 18 Tf 72 720 Td (Skonga Family Handbook - attendance, conduct, technology, and safety policies.) Tj ET
-endstream endobj
-5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R 4 0 R 5 0 R 6 0 R]
+/Count 4
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Resources <<
+/Font <<
+/F1 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+>>
+>>
+/Contents 10 0 R
+>>
+endobj
+
+4 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Resources <<
+/Font <<
+/F1 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+>>
+>>
+/Contents 11 0 R
+>>
+endobj
+
+5 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Resources <<
+/Font <<
+/F1 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+>>
+>>
+/Contents 12 0 R
+>>
+endobj
+
+6 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Resources <<
+/Font <<
+/F1 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+>>
+>>
+/Contents 13 0 R
+>>
+endobj
+
+7 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+8 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+9 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Oblique
+>>
+endobj
+
+10 0 obj
+<<
+/Length 2900
+>>
+stream
+BT
+/F1 24 Tf
+72 720 Td
+(YASHICA TRAINING COLLEGE) Tj
+0 -30 Td
+/F2 18 Tf
+(STUDENT HANDBOOK & POLICIES) Tj
+0 -20 Td
+/F3 14 Tf
+(2025-26 Academic Year) Tj
+
+0 -50 Td
+/F1 16 Tf
+(WELCOME TO YOUR JOURNEY) Tj
+
+0 -25 Td
+/F2 12 Tf
+(Welcome to Yashica Training College! This handbook contains essential) Tj
+0 -15 Td
+(information about our policies, procedures, and expectations to ensure) Tj
+0 -15 Td
+(a positive and productive learning environment for all students.) Tj
+
+0 -30 Td
+/F1 16 Tf
+(OUR MISSION & VALUES) Tj
+
+0 -25 Td
+/F1 12 Tf
+(Mission:) Tj
+0 -15 Td
+/F2 11 Tf
+(To provide affordable, high-quality vocational education that transforms) Tj
+0 -12 Td
+(lives through practical skills development and prepares students for) Tj
+0 -12 Td
+(successful careers and entrepreneurship opportunities.) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Core Values:) Tj
+0 -15 Td
+/F2 11 Tf
+(• Excellence in education and training delivery) Tj
+0 -12 Td
+(• Inclusivity and equal opportunities for all students) Tj
+0 -12 Td
+(• Integrity in all our interactions and operations) Tj
+0 -12 Td
+(• Innovation through modern teaching methods and technology) Tj
+0 -12 Td
+(• Community support and social responsibility) Tj
+
+0 -30 Td
+/F1 16 Tf
+(ACADEMIC CALENDAR 2025-26) Tj
+
+0 -25 Td
+/F1 12 Tf
+(TERM 1: January 13 - April 4, 2025) Tj
+0 -15 Td
+/F2 11 Tf
+(• Orientation Week: January 13-17, 2025) Tj
+0 -12 Td
+(• Mid-term Evaluations: February 17-21, 2025) Tj
+0 -12 Td
+(• Term Break: April 7-11, 2025) Tj
+
+0 -20 Td
+/F1 12 Tf
+(TERM 2: April 14 - July 4, 2025) Tj
+0 -15 Td
+/F2 11 Tf
+(• Skills Assessment Week: May 19-23, 2025) Tj
+0 -12 Td
+(• Mid-year Break: July 7-18, 2025) Tj
+
+0 -20 Td
+/F1 12 Tf
+(TERM 3: July 21 - October 10, 2025) Tj
+0 -15 Td
+/F2 11 Tf
+(• Final Projects & Certifications: September 14-18, 2025) Tj
+0 -12 Td
+(• Graduation Ceremony: October 13, 2025) Tj
+
+0 -30 Td
+/F1 16 Tf
+(CLASS SCHEDULES) Tj
+
+0 -25 Td
+/F1 12 Tf
+(Morning Shift: 8:00 AM - 12:00 PM) Tj
+0 -15 Td
+/F2 11 Tf
+(Ideal for early risers and those with afternoon commitments) Tj
+
+0 -15 Td
+/F1 12 Tf
+(Afternoon Shift: 1:00 PM - 5:00 PM) Tj
+0 -15 Td
+/F2 11 Tf
+(Perfect for students who prefer midday learning) Tj
+
+0 -15 Td
+/F1 12 Tf
+(Evening Shift: 6:00 PM - 10:00 PM) Tj
+0 -15 Td
+/F2 11 Tf
+(Designed for working professionals and those with daytime obligations) Tj
+
+ET
+endstream
+endobj
+
+11 0 obj
+<<
+/Length 3100
+>>
+stream
+BT
+/F1 20 Tf
+72 720 Td
+(ATTENDANCE POLICY) Tj
+
+0 -30 Td
+/F1 14 Tf
+(Regular attendance is crucial for academic success) Tj
+
+0 -25 Td
+/F2 12 Tf
+(We maintain high standards of attendance to ensure all students receive) Tj
+0 -15 Td
+(the full benefit of their chosen programs and develop professional habits.) Tj
+
+0 -25 Td
+/F1 12 Tf
+(Attendance Requirements:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Minimum 80% attendance required for program completion) Tj
+0 -15 Td
+(• Students must attend at least 4 out of 5 classes per week) Tj
+0 -15 Td
+(• Practical sessions are mandatory and cannot be made up easily) Tj
+0 -15 Td
+(• Late arrivals \(more than 15 minutes\) count as 0.5 absence) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Excused Absences:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Medical emergencies \(doctor's note required\)) Tj
+0 -15 Td
+(• Family emergencies \(documentation may be requested\)) Tj
+0 -15 Td
+(• Religious observances \(advance notice required\)) Tj
+0 -15 Td
+(• Court appearances \(legal documentation required\)) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Reporting Absences:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Contact the college at 0705 252 790 before 9:00 AM) Tj
+0 -15 Td
+(• Provide reason for absence and expected return date) Tj
+0 -15 Td
+(• Submit supporting documentation within 3 days of return) Tj
+
+0 -30 Td
+/F1 20 Tf
+(STUDENT CONDUCT EXPECTATIONS) Tj
+
+0 -25 Td
+/F1 14 Tf
+(Creating a respectful learning environment) Tj
+
+0 -25 Td
+/F1 12 Tf
+(Professional Behavior:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Treat all students, instructors, and staff with respect) Tj
+0 -15 Td
+(• Use appropriate language at all times) Tj
+0 -15 Td
+(• Dress appropriately for your chosen field of study) Tj
+0 -15 Td
+(• Maintain personal hygiene standards) Tj
+0 -15 Td
+(• Be punctual for all classes and appointments) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Classroom Etiquette:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Silence mobile phones during class sessions) Tj
+0 -15 Td
+(• Participate actively in discussions and practical exercises) Tj
+0 -15 Td
+(• Ask questions when you need clarification) Tj
+0 -15 Td
+(• Respect others' learning space and equipment) Tj
+0 -15 Td
+(• Clean up your workspace after each session) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Prohibited Behaviors:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Harassment, discrimination, or bullying of any kind) Tj
+0 -15 Td
+(• Use of alcohol or illegal substances on campus) Tj
+0 -15 Td
+(• Smoking in designated non-smoking areas) Tj
+0 -15 Td
+(• Theft or damage to college property) Tj
+0 -15 Td
+(• Disruptive behavior that interferes with learning) Tj
+
+ET
+endstream
+endobj
+
+12 0 obj
+<<
+/Length 3200
+>>
+stream
+BT
+/F1 20 Tf
+72 720 Td
+(TECHNOLOGY & EQUIPMENT POLICIES) Tj
+
+0 -25 Td
+/F1 14 Tf
+(Responsible use of college resources) Tj
+
+0 -25 Td
+/F1 12 Tf
+(Equipment Usage:) Tj
+0 -18 Td
+/F2 11 Tf
+(• All equipment must be used under instructor supervision) Tj
+0 -15 Td
+(• Report any damage or malfunctions immediately) Tj
+0 -15 Td
+(• Students are responsible for equipment during their use) Tj
+0 -15 Td
+(• Return all tools and materials to designated areas) Tj
+0 -15 Td
+(• Personal protective equipment must be worn when required) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Digital Literacy Guidelines:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Use computers and internet resources for educational purposes) Tj
+0 -15 Td
+(• Respect intellectual property and copyright laws) Tj
+0 -15 Td
+(• Maintain appropriate online behavior in digital communications) Tj
+0 -15 Td
+(• Protect login credentials and personal information) Tj
+0 -15 Td
+(• Report any technical issues to instructors promptly) Tj
+
+0 -20 Td
+/F1 12 Tf
+(AI and Technology Integration:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Learn to use AI tools ethically and effectively) Tj
+0 -15 Td
+(• Understand the limitations and capabilities of AI applications) Tj
+0 -15 Td
+(• Apply technology solutions to enhance your chosen trade) Tj
+0 -15 Td
+(• Stay updated with industry-relevant technological advances) Tj
+
+0 -30 Td
+/F1 20 Tf
+(SAFETY & HEALTH POLICIES) Tj
+
+0 -25 Td
+/F1 14 Tf
+(Ensuring a safe learning environment) Tj
+
+0 -25 Td
+/F1 12 Tf
+(General Safety:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Follow all safety procedures and protocols) Tj
+0 -15 Td
+(• Wear appropriate safety gear when required) Tj
+0 -15 Td
+(• Report accidents, injuries, or safety hazards immediately) Tj
+0 -15 Td
+(• Keep walkways and emergency exits clear) Tj
+0 -15 Td
+(• Know the location of fire extinguishers and first aid kits) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Health Requirements:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Do not attend classes when experiencing contagious illness) Tj
+0 -15 Td
+(• Inform instructors of any medical conditions that may affect learning) Tj
+0 -15 Td
+(• Keep emergency contact information updated) Tj
+0 -15 Td
+(• Maintain personal hygiene appropriate for your program) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Emergency Procedures:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Familiarize yourself with evacuation routes) Tj
+0 -15 Td
+(• Follow instructor directions during emergency situations) Tj
+0 -15 Td
+(• Assembly point: Main parking area near Rubis Petrol Station) Tj
+0 -15 Td
+(• Emergency contact: 0705 252 790) Tj
+
+0 -30 Td
+/F1 20 Tf
+(ASSESSMENT & CERTIFICATION) Tj
+
+0 -25 Td
+/F1 12 Tf
+(Evaluation Methods:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Continuous assessment through practical demonstrations) Tj
+0 -15 Td
+(• Written examinations on theoretical knowledge) Tj
+0 -15 Td
+(• Final project or portfolio presentation) Tj
+0 -15 Td
+(• Peer evaluation and self-assessment components) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Certification Requirements:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Minimum 80% attendance throughout the program) Tj
+0 -15 Td
+(• Passing grade of 70% or higher on all assessments) Tj
+0 -15 Td
+(• Completion of all required practical hours) Tj
+0 -15 Td
+(• Settlement of all financial obligations) Tj
+
+ET
+endstream
+endobj
+
+13 0 obj
+<<
+/Length 2800
+>>
+stream
+BT
+/F1 20 Tf
+72 720 Td
+(FINANCIAL POLICIES) Tj
+
+0 -25 Td
+/F1 14 Tf
+(Clear and fair financial arrangements) Tj
+
+0 -25 Td
+/F1 12 Tf
+(Payment Schedules:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Registration fee due at enrollment \(non-refundable\)) Tj
+0 -15 Td
+(• Monthly installments due by the 5th of each month) Tj
+0 -15 Td
+(• Late payment fee of Ksh. 500 after 10 days) Tj
+0 -15 Td
+(• Payment receipts will be issued for all transactions) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Refund Policy:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Registration fees are non-refundable) Tj
+0 -15 Td
+(• Withdrawal within first week: 90% refund of tuition) Tj
+0 -15 Td
+(• Withdrawal within first month: 70% refund of tuition) Tj
+0 -15 Td
+(• No refunds after first month of program) Tj
+0 -15 Td
+(• Medical withdrawals considered on case-by-case basis) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Scholarship Obligations:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Monthly commitment fee of Ksh. 2,999 must be paid on time) Tj
+0 -15 Td
+(• Maintain minimum 80% attendance to retain scholarship) Tj
+0 -15 Td
+(• Achieve satisfactory academic progress) Tj
+0 -15 Td
+(• Complete community service hours as required) Tj
+
+0 -30 Td
+/F1 20 Tf
+(STUDENT SUPPORT SERVICES) Tj
+
+0 -25 Td
+/F1 12 Tf
+(Academic Support:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Individual tutoring available upon request) Tj
+0 -15 Td
+(• Study groups organized for challenging subjects) Tj
+0 -15 Td
+(• Career counseling and job placement assistance) Tj
+0 -15 Td
+(• Entrepreneurship guidance and business planning support) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Personal Support:) Tj
+0 -18 Td
+/F2 11 Tf
+(• Flexible scheduling accommodations when possible) Tj
+0 -15 Td
+(• Referrals to community resources for various needs) Tj
+0 -15 Td
+(• Conflict resolution assistance) Tj
+0 -15 Td
+(• Financial counseling and payment plan options) Tj
+
+0 -30 Td
+/F1 20 Tf
+(GRIEVANCE PROCEDURES) Tj
+
+0 -25 Td
+/F2 12 Tf
+(We are committed to addressing student concerns promptly and fairly.) Tj
+
+0 -25 Td
+/F1 12 Tf
+(Step 1: Direct Communication) Tj
+0 -15 Td
+/F2 11 Tf
+(Speak directly with the instructor or staff member involved) Tj
+
+0 -15 Td
+/F1 12 Tf
+(Step 2: Formal Complaint) Tj
+0 -15 Td
+/F2 11 Tf
+(Submit written complaint to the Program Coordinator) Tj
+
+0 -15 Td
+/F1 12 Tf
+(Step 3: Administrative Review) Tj
+0 -15 Td
+/F2 11 Tf
+(Appeal to the College Director if unsatisfied with initial response) Tj
+
+0 -30 Td
+/F1 16 Tf
+(CONTACT INFORMATION) Tj
+
+0 -25 Td
+/F2 12 Tf
+(Main Office: 0705 252 790) Tj
+0 -15 Td
+(Address: Rubis Petrol Station, Gikambura Kikuyu, 2nd Floor) Tj
+0 -15 Td
+(Office Hours: Monday-Friday 8:00 AM - 6:00 PM) Tj
+0 -15 Td
+(Saturday: 8:00 AM - 2:00 PM) Tj
+
+0 -25 Td
+/F3 11 Tf
+(This handbook is updated annually. Students will be notified of any) Tj
+0 -12 Td
+(significant policy changes during the academic year.) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Version 2025-26 | Effective January 1, 2025) Tj
+
+ET
+endstream
+endobj
+
 xref
-0 6
-0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000115 00000 n 
-0000000241 00000 n 
-0000000401 00000 n 
-trailer << /Size 6 /Root 1 0 R /Info << /Title (policies) >> >>
+0 14
+0000000000 65535 f
+0000000009 00000 n
+0000000058 00000 n
+0000000124 00000 n
+0000000273 00000 n
+0000000422 00000 n
+0000000571 00000 n
+0000000720 00000 n
+0000000783 00000 n
+0000000840 00000 n
+0000000903 00000 n
+0000003855 00000 n
+0000007007 00000 n
+0000010260 00000 n
+trailer
+<<
+/Size 14
+/Root 1 0 R
+/Info <<
+/Title (Yashica Training College - Student Handbook & Policies)
+/Author (Yashica Training College)
+/Subject (Academic Policies, Student Conduct, and Institutional Guidelines)
+/Creator (Yashica Training College Administration)
+>>
+>>
 startxref
-471
+13112
 %%EOF
