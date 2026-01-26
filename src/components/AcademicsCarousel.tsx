@@ -5,19 +5,19 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
-    imageSrc: "/media/academics_carousel_1.jpeg",
+    imageSrc: "/media/academics_carousel_1.webp",
     imageAlt: "Vocational training at Yashica Training College",
   },
   {
-    imageSrc: "/media/academics_carousel_2.jpeg",
+    imageSrc: "/media/academics_carousel_2.webp",
     imageAlt: "Students learning practical skills",
   },
   {
-    imageSrc: "/media/orientation_day.jpg",
+    imageSrc: "/media/orientation_day.webp",
     imageAlt: "Modern training facilities",
   },
   {
-    imageSrc: "/media/class_image_1.jpg",
+    imageSrc: "/media/class_image_1.webp",
     imageAlt: "Hands-on learning experience",
   },
 ];

@@ -3,11 +3,11 @@
 import Image from "next/image";
 
 const galleryImages = [
-  "/media/sliding_image_0.jpg",
-  "/media/academics_carousel_2.jpeg",
-  "/media/sliding_image_2.jpg",
-  "/media/sliding_image_4.jpg",
-  "/media/certification_1.jpeg",
+  "/media/sliding_image_0.webp",
+  "/media/academics_carousel_2.webp",
+  "/media/sliding_image_2.webp",
+  "/media/sliding_image_4.webp",
+  "/media/certification_1.webp",
 ];
 
 export default function SlidingGallery() {

@@ -14,25 +14,25 @@ const vocationalTrades = {
       name: "Hairdressing",
       description:
         "Master the art of hair styling, cutting, coloring, and treatment. Learn modern techniques and traditional methods to serve diverse client needs.",
-      image: "/media/hairdressing.jpg",
+      image: "/media/hairdressing.webp",
     },
     {
       name: "Beauty Therapy",
       description:
         "Comprehensive beauty therapy training covering facial treatments, skincare, makeup application, and client consultation techniques.",
-      image: "/media/beauty_therapy.jpeg",
+      image: "/media/beauty_therapy.webp",
     },
     {
       name: "Nail Technology",
       description:
         "Specialized training in manicure, pedicure, nail art, and nail extensions. Learn the latest trends and techniques in nail care.",
-      image: "/media/nail_technology.jpeg",
+      image: "/media/nail_technology.webp",
     },
     {
       name: "Plumbing",
       description:
         "Practical plumbing skills including pipe installation, repairs, fixture installation, and maintenance for residential and commercial settings.",
-      image: "/media/plumbing.jpg",
+      image: "/media/plumbing.webp",
     },
     {
       name: "Electrical Installation",
@@ -44,25 +44,25 @@ const vocationalTrades = {
       name: "Baking and Pastry",
       description:
         "Learn the art of baking and pastry making including bread, cakes, pastries, and confectionery. Master techniques for both traditional and modern baked goods.",
-      image: "/media/baking_and_pastry.jpg",
+      image: "/media/baking_and_pastry.webp",
     },
     {
       name: "Barbering",
       description:
         "Professional barbering training covering men's haircuts, beard trimming, styling, and grooming techniques. Learn classic and modern barbering skills for a successful career.",
-      image: "/media/barbering.jpg",
+      image: "/media/barbering.webp",
     },
     {
       name: "Dreadlock",
       description:
         "Specialized training in dreadlock creation, maintenance, and styling. Master various techniques including natural, crochet, and interlocking methods for diverse hair types.",
-      image: "/media/dreadlocks_2.jpg",
+      image: "/media/dreadlocks_2.webp",
     },
     {
       name: "Facial Makeup",
       description:
         "Professional makeup artistry training covering facial makeup techniques, color theory, contouring, highlighting, and special occasion makeup. Learn to enhance natural beauty for various events and clients.",
-      image: "/media/facial_makeup.jpg",
+      image: "/media/facial_makeup.webp",
     },
   ],
 };
@@ -108,7 +108,7 @@ const careerEnhancementCourses = {
       name: "Social Media and Marketing",
       description:
         "Master digital marketing strategies and social media management. Learn content creation, brand building, audience engagement, and effective marketing campaigns across various platforms.",
-      image: "/media/social_media_marketing.png",
+      image: "/media/social_media_marketing.webp",
     },
     {
       name: "Guidance and Counselling",

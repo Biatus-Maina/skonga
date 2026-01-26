@@ -248,19 +248,19 @@ const faqs = [
 
 const gallery = [
   {
-    src: "/media/orientation_day.jpg",
+    src: "/media/orientation_day.webp",
     alt: "Orientation Day Celebration",
   },
   {
-    src: "/media/sports_day_6.jpg",
+    src: "/media/sports_day_6.webp",
     alt: "Students enjoying games sessions at the student center",
   },
   {
-    src: "/media/certification_1.jpeg",
+    src: "/media/certification_1.webp",
     alt: "Students receiving certificates after completing their courses",
   },
   {
-    src: "/media/discussion_forum.jpg",
+    src: "/media/discussion_forum.webp",
     alt: "Discussion session with students and instructors",
   },
 ];
@@ -590,7 +590,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/10" />
             <div className="relative h-full">
               <Image
-                src="/media/hero_training.jpg"
+                src="/media/hero_training.webp"
                 alt="Students at Yashica Training College"
                 width={1200}
                 height={900}
@@ -721,7 +721,7 @@ export default function Home() {
                 <div className="relative">
                   <div className="relative overflow-hidden rounded-full shadow-2xl w-48 h-48 mx-auto">
                     <Image
-                      src="/media/school_principal.jpg"
+                      src="/media/school_principal.webp"
                       alt="Evaline Andia - School Principal"
                       width={192}
                       height={192}
